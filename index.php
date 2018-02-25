@@ -7,7 +7,7 @@
     <?php
         require_once 'PHP-Includes/ClassAutoload.php';
         $t = new test();
-        $t->test();
+        $t->testecho();
     ?>
 </body>
 </html>

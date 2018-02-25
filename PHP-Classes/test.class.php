@@ -1,6 +1,6 @@
 <?php
 class test {
-    public function test() {
+    public function testecho() {
         echo 'Success!';
     }
 }
