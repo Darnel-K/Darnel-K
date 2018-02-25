@@ -11,6 +11,7 @@
 <head>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/SASS/Main.min.css">
+    <script src="/JS/jquery-3.3.1.min.js"></script>
     <script src="/JS/particles.min.js"></script>
     <script src="/JS/Main.js"></script>
     <title>Document</title>
