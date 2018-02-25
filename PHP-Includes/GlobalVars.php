@@ -4,5 +4,5 @@
         array('Home', '/'),
         array('link2', '/Link2')
     );
-    var_dump($HeaderLinks);
+    echo $HeaderLinks[0];
 ?>
