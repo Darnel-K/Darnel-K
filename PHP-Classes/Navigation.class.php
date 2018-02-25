@@ -2,7 +2,7 @@
 class Navigation {
     public $NavLinks = null;
 
-    public function __construct(array $LinkArray, $spacer = '|') {
+    public function __construct($LinkArray, $spacer = '|') {
         $this->$NavLinks = $LinkArray;
     }
 
