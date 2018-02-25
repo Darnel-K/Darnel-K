@@ -14,6 +14,7 @@ class Navigation {
             var_dump(pos($arr));
         }
         $output += "</ul>";
+        return $output;
     }
 }
 ?>
