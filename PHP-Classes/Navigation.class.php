@@ -11,7 +11,7 @@ class Navigation {
         $arr = $this->NavLinks;
         foreach ($arr as $i) {
             $output += "<li><a href='" . $i[1] . "'>" . $i[0] . "</a></li>";
-            var_dump(pos($arr));
+            var_dump(pos($i));
         }
         $output += "</ul>";
         return $output;
