@@ -9,9 +9,6 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-        $t = new test();
-        $t->testecho();
-    ?>
+    
 </body>
 </html>
