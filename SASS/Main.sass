@@ -1,4 +1,4 @@
-$HeaderHeight: 100px
+$LogoSize: 100px
 $NavBarHeight: 50px
 
 ::-webkit-scrollbar
@@ -30,20 +30,21 @@ body
     width: 100%
 
 header
-    width: 100%
+    width: 100vw
+    height: 100vh
     nav
         display: block
-        height: $HeaderHeight
+        height: $NavBarHeight
         img
-            width: $HeaderHeight
-            height: $HeaderHeight
+            width: $LogoSize
+            height: $LogoSize
             display: inline-block
         ul
             padding: 0
             list-style: none
             display: inline-block
             height: $NavBarHeight
-            margin: calc(($HeaderHeight - $NavBarHeight) / 2)
+            margin: 0
             .spacer
                 color: #BBB
             li

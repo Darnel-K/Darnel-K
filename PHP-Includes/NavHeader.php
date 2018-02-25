@@ -1,6 +1,6 @@
 <?php
-$HeaderBar = "<header><nav><img src='Images/Logo - White Text.svg' alt='Logo SVG'>";
+$HeaderBar = "<header><nav>";
 $Nav = new Navigation($NavLinks);
 $HeaderBar .= $Nav->GenNavHTML();
-$HeaderBar .= "</nav></header>";
+$HeaderBar .= "<img src='Images/Logo - White Text.svg' alt='Logo SVG'></nav></header>";
 ?>
