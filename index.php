@@ -1,3 +1,8 @@
+<?php
+    spl_autoload_register(function($class) {
+        include_once('PHP-Classes/' . $class . '.class.php');
+    });
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +10,6 @@
 </head>
 <body>
     <?php
-        require_once 'PHP-Includes/ClassAutoload.php';
         $t = new test();
         $t->testecho();
     ?>
