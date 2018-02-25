@@ -9,6 +9,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/SASS/Main.min.css">
     <title>Document</title>
 </head>
 <body>
