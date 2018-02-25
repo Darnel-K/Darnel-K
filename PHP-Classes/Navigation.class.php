@@ -13,10 +13,7 @@ class Navigation {
         $arr = $this->NavLinks;
         foreach ($arr as $i) {
             $output .= "<li><a href='" . $i[1] . "'>" . $i[0] . "</a></li>";
-            if (count($arr) != array_search($i, $arr)) {
-                echo count($arr);
-                echo " ";
-                echo array_search($i, $arr);
+            if (count($arr) - 1 != array_search($i, $arr)) {
                 $output .= "<li>" . $this->Spacer . "</li>";
             }
         }
