@@ -13,7 +13,7 @@ class Navigation {
             $output += "<li><a href='" . $i[1] . "'>" . $i[0] . "</a></li>";
         }
         $output += "</ul>";
-        return $output;
+        echo $output;
     }
 }
 ?>
