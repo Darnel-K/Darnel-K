@@ -12,7 +12,7 @@
     <?php
     include 'PHP-Includes/GlobalVars.php';
     $test = new Navigation($NavLinks);
-    echo $test->GenNavHTML();
+    $test->GenNavHTML();
     ?>
 </body>
 </html>
