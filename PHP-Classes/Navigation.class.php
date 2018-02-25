@@ -10,10 +10,10 @@ class Navigation {
         $output = "<ul>";
         $arr = $this->NavLinks;
         foreach ($arr as $i) {
-            $output += "<li><a href='" . $i[1] . "'>" . $i[0] . "</a></li>";
+            $output .= "<li><a href='" . $i[1] . "'>" . $i[0] . "</a></li>";
         }
-        $output += "</ul>";
-        echo $output;
+        $output .= "</ul>";
+        return $output;
     }
 }
 ?>
