@@ -1,6 +1,6 @@
 <?php
 class Navigation {
-    private $NavLinks = null;
+    protected $NavLinks = null;
 
     public function __construct(array $LinkArray, $spacer = '|') {
         $this->$NavLinks = $LinkArray;
