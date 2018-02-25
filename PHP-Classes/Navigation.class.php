@@ -14,7 +14,7 @@ class Navigation {
         foreach ($arr as $i) {
             $output .= "<li><a href='" . $i[1] . "'>" . $i[0] . "</a></li>";
             if (count($arr) - 1 != array_search($i, $arr)) {
-                $output .= "<li>" . $this->Spacer . "</li>";
+                $output .= "<li class='NavBarSpacer'>" . $this->Spacer . "</li>";
             }
         }
         $output .= "</ul>";

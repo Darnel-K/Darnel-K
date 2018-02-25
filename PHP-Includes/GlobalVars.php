@@ -1,8 +1,9 @@
 <?php
-
+    $HTML = "";
     $NavLinks = array(
         array('Home', '/'),
-        array('link2', '/Link2')
+        array('CV', '/CV'),
+        array('Portfolio', '/Portfolio')
     );
     
 ?>
