@@ -31,4 +31,52 @@ body {
   overflow-x: hidden;
   width: 100%;
 }
+
+header {
+  width: 100%;
+}
+
+header nav {
+  display: block;
+  height: 100px;
+}
+
+header nav img {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+header nav ul {
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  height: 50px;
+  margin: calc(($HeaderHeight - $NavBarHeight) / 2);
+}
+
+header nav ul .spacer {
+  color: #BBB;
+}
+
+header nav ul li {
+  display: inline-block;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  padding: 0 5px;
+  font-weight: bold;
+  font-size: medium;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  vertical-align: middle;
+  color: #444;
+}
+
+header nav ul li a:hover {
+  color: #AAA;
+}
 /*# sourceMappingURL=Main.css.map */

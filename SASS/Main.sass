@@ -28,3 +28,36 @@ body
     font-family: monospace
     overflow-x: hidden
     width: 100%
+
+header
+    width: 100%
+    nav
+        display: block
+        height: $HeaderHeight
+        img
+            width: $HeaderHeight
+            height: $HeaderHeight
+            display: inline-block
+        ul
+            padding: 0
+            list-style: none
+            display: inline-block
+            height: $NavBarHeight
+            margin: calc(($HeaderHeight - $NavBarHeight) / 2)
+            .spacer
+                color: #BBB
+            li
+                display: inline-block
+                float: left
+                height: $NavBarHeight
+                line-height: $NavBarHeight
+                vertical-align: middle
+                padding: 0 5px
+                font-weight: bold
+                font-size: medium
+                a
+                    text-decoration: none
+                    vertical-align: middle
+                    color: #444
+                a:hover
+                    color: #AAA
