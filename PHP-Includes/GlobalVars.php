@@ -4,5 +4,5 @@
         array('Home', '/'),
         array('link2', '/Link2')
     );
-    echo $HeaderLinks[0];
+    echo $HeaderLinks[0][0];
 ?>
