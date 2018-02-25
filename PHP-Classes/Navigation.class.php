@@ -11,6 +11,9 @@ class Navigation {
         $arr = $this->NavLinks;
         foreach ($arr as $i) {
             $output .= "<li><a href='" . $i[1] . "'>" . $i[0] . "</a></li>";
+            if (count($arr) != array_search($i, $arr)) {
+                echo "s";
+            }
         }
         $output .= "</ul>";
         return $output;
