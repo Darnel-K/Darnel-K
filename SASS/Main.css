@@ -86,6 +86,7 @@ nav {
   height: 50px;
   position: fixed;
   z-index: 5;
+  width: 100%;
 }
 
 nav ul {
