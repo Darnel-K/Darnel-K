@@ -122,6 +122,8 @@ $(document).ready(function() {
     }
 
     $(window).on('scroll', function() {
-        console.log($(window).scrollTop());
+        if ($(window).scrollTop() >= ($(window).height() - 50)) {
+            console.log($(window).scrollTop());
+        }
     });
 });
