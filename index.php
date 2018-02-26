@@ -3,8 +3,6 @@
         include_once('PHP-Classes/' . $class . '.class.php');
     });
     require_once 'PHP-Includes/GlobalVars.php';
-    require_once 'PHP-Includes/NavHeader.php';
-    $HTML .= $HeaderBar;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,6 +16,19 @@
     <title>Document</title>
 </head>
 <body>
-    <?php echo $HTML; ?>
+    <header>
+        <div id='particles-js'></div>
+        <div id='overlay'>
+            <nav>
+                <?php
+                    $Nav = new Navigation($NavLinks);
+                    $HeaderBar .= $Nav->GenNavHTML();
+                ?>
+            </nav>
+            <section>
+                <img src='Images/Logo - White Text.svg' alt='Logo SVG'>
+            </section>
+        </div>
+    </header>
 </body>
 </html>
