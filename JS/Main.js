@@ -1,4 +1,5 @@
-var particlesJSON = {
+$(document).ready(function() {
+    var particlesJSON = {
   "particles": {
     "number": {
       "value": 80,
@@ -110,3 +111,4 @@ var particlesJSON = {
 };
 
 window.particlesJS("particles-js", particlesJSON);
+});
