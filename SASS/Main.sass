@@ -66,32 +66,32 @@ header
                 text-align: center
                 color: #EEE
                 margin: 40px 0
-        nav
-            display: block
+nav
+    display: block
+    height: $NavBarHeight
+    ul
+        padding: 0
+        list-style: none
+        display: inline-block
+        height: $NavBarHeight
+        margin: 0 0 0 10px
+        .NavBarSpacer
+            color: #999
+        li
+            display: inline-block
+            float: left
             height: $NavBarHeight
-            ul
-                padding: 0
-                list-style: none
-                display: inline-block
-                height: $NavBarHeight
-                margin: 0 0 0 10px
-                .NavBarSpacer
-                    color: #999
-                li
-                    display: inline-block
-                    float: left
-                    height: $NavBarHeight
-                    line-height: $NavBarHeight
-                    vertical-align: middle
-                    padding: 0 5px
-                    font-weight: bold
-                    font-size: medium
-                    a
-                        text-decoration: none
-                        vertical-align: middle
-                        color: #DDD
-                    a:hover
-                        color: #999
+            line-height: $NavBarHeight
+            vertical-align: middle
+            padding: 0 5px
+            font-weight: bold
+            font-size: medium
+            a
+                text-decoration: none
+                vertical-align: middle
+                color: #DDD
+            a:hover
+                color: #999
 
 #wrapper
     position: absolute

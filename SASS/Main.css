@@ -81,12 +81,12 @@ header #overlay section h2 {
   margin: 40px 0;
 }
 
-header #overlay nav {
+nav {
   display: block;
   height: 50px;
 }
 
-header #overlay nav ul {
+nav ul {
   padding: 0;
   list-style: none;
   display: inline-block;
@@ -94,11 +94,11 @@ header #overlay nav ul {
   margin: 0 0 0 10px;
 }
 
-header #overlay nav ul .NavBarSpacer {
+nav ul .NavBarSpacer {
   color: #999;
 }
 
-header #overlay nav ul li {
+nav ul li {
   display: inline-block;
   float: left;
   height: 50px;
@@ -109,13 +109,13 @@ header #overlay nav ul li {
   font-size: medium;
 }
 
-header #overlay nav ul li a {
+nav ul li a {
   text-decoration: none;
   vertical-align: middle;
   color: #DDD;
 }
 
-header #overlay nav ul li a:hover {
+nav ul li a:hover {
   color: #999;
 }
 

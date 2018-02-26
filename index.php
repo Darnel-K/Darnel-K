@@ -17,15 +17,16 @@
     <title>Darnel-K | Home</title>
 </head>
 <body>
-    <header>
-        <div id='particles-js'></div>
-        <div id='overlay'>
-            <nav>
+<nav>
                 <?php
                     $Nav = new Navigation($NavLinks);
                     echo $Nav->GenNavHTML();
                 ?>
             </nav>
+    <header>
+        <div id='particles-js'></div>
+        <div id='overlay'>
+            
             <section>
                 <img src='Images/Logo - White Text.svg' alt='Logo SVG'>
                 <h2>Freelance Web Design &amp; Development</h2>
