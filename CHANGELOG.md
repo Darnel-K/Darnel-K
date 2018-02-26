@@ -7,9 +7,14 @@ Versioning numbers defined as MAJOR.MINOR.PATCH
 ## [0.2.0] - 2018-02-26
 ### Added
 - Particles JS Header Background
+- Header text
+- Clickable bouncing down arrow
+- Auto scroll on bouncing arrow click
+- Arrow fades on scroll down
 
 ### Changed
 - Logo Position
+- Logo size
 - Nav Bar Moved To The Far Left
 
 ## [0.1.0] - 2018-02-25
