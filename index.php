@@ -30,7 +30,7 @@
                 <img src='Images/Logo - White Text.svg' alt='Logo SVG'>
                 <h2>Freelance Web Design &amp; Development</h2>
             </section>
-            <p><i class="fas fa-angle-down fa-3x"></i></p>
+            <p><i class="fas fa-angle-down fa-3x" id="DownArrow"></i></p>
         </div>
     </header>
     <div id="wrapper"></div>
