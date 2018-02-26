@@ -44,6 +44,7 @@ header #particles-js {
   position: absolute;
   top: 0;
   left: 0;
+  background-color: #1F1F1F;
 }
 
 header #overlay {
@@ -63,6 +64,7 @@ header #overlay img {
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 3;
 }
 
 header #overlay nav {
@@ -96,10 +98,10 @@ header #overlay nav ul li {
 header #overlay nav ul li a {
   text-decoration: none;
   vertical-align: middle;
-  color: #444;
+  color: #DDD;
 }
 
 header #overlay nav ul li a:hover {
-  color: #AAA;
+  color: #777;
 }
 /*# sourceMappingURL=Main.css.map */
