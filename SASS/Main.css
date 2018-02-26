@@ -75,6 +75,12 @@ header #overlay section img {
   display: block;
 }
 
+header #overlay section h2 {
+  text-align: center;
+  color: #EEE;
+  margin: 40px 0;
+}
+
 header #overlay nav {
   display: block;
   height: 50px;

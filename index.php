@@ -27,6 +27,7 @@
             </nav>
             <section>
                 <img src='Images/Logo - White Text.svg' alt='Logo SVG'>
+                <h2>Freelance Web Design &amp; Development</h2>
             </section>
         </div>
     </header>
