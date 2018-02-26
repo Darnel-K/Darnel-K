@@ -135,12 +135,12 @@ header #overlay nav ul li a:hover {
             transform: translateY(0);
   }
   40% {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
   }
   60% {
-    -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
 }
 
@@ -150,12 +150,12 @@ header #overlay nav ul li a:hover {
             transform: translateY(0);
   }
   40% {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
   }
   60% {
-    -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
 }
 

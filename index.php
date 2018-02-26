@@ -33,7 +33,7 @@
             <p><i class="fas fa-angle-down fa-3x bounce" id="DownArrow"></i></p>
         </div>
     </header>
-    <div id="wrapper" style="height:1000px;"></div>
+    <div id="wrapper"></div>
     <!-- /#wrapper -->
 </body>
 </html>
