@@ -39,8 +39,8 @@ header {
 
 header #particles-js {
   z-index: 1;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -49,8 +49,8 @@ header #particles-js {
 
 header #overlay {
   z-index: 2;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: relative;
   top: 0;
 }
