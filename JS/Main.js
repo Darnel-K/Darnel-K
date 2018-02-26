@@ -117,7 +117,7 @@ $(document).ready(function() {
           $("html, body").animate({ scrollTop: $("#wrapper").offset().top }, 2000);
         });
         $(window).on('scroll', function() {
-            $('#DownArrow').css('opacity', 1 - $(window).scrollTop() / 125);
+            $('#DownArrow').css('opacity', 1 - $(window).scrollTop() / 500);
         });
     }
 });
