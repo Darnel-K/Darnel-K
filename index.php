@@ -17,12 +17,12 @@
     <title>Darnel-K | Home</title>
 </head>
 <body>
-<nav>
-                <?php
-                    $Nav = new Navigation($NavLinks);
-                    echo $Nav->GenNavHTML();
-                ?>
-            </nav>
+    <nav>
+        <?php
+            $Nav = new Navigation($NavLinks);
+            echo $Nav->GenNavHTML();
+        ?>
+    </nav>
     <header>
         <div id='particles-js'></div>
         <div id='overlay'>
