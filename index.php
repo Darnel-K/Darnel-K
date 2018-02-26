@@ -22,7 +22,7 @@
             <nav>
                 <?php
                     $Nav = new Navigation($NavLinks);
-                    $HeaderBar .= $Nav->GenNavHTML();
+                    echo $Nav->GenNavHTML();
                 ?>
             </nav>
             <section>
