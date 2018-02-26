@@ -120,4 +120,8 @@ $(document).ready(function() {
             $('#DownArrow').css('opacity', 1 - $(window).scrollTop() / 500);
         });
     }
+
+    $(window).on('scroll', function() {
+        console.log($(window).scrollTop());
+    });
 });

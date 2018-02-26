@@ -14,7 +14,7 @@
     <script src="/JS/jquery-3.3.1.min.js"></script>
     <script src="/JS/particles.min.js"></script>
     <script src="/JS/Main.js"></script>
-    <title>Document</title>
+    <title>Darnel-K | Home</title>
 </head>
 <body>
     <header>
