@@ -116,5 +116,8 @@ $(document).ready(function() {
         $("#DownArrow").on("click", function() {
           $("html, body").animate({ scrollTop: $("#wrapper").offset().top }, 2000);
         });
+        $(window).on('scroll', function() {
+            $('#DownArrow').css('opacity', 1 - $(window).scrollTop() / 250);
+        });
     }
 });
