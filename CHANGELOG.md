@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 Versioning numbers defined as MAJOR.MINOR.PATCH
 
+## [0.2.0] - 2018-02-26
+### Added
+- Particles JS Header Background
+
+### Changed
+- Logo Position
+- Nav Bar Moved To The Far Left
+
 ## [0.1.0] - 2018-02-25
 ### Added
 - PHP class autoloader
