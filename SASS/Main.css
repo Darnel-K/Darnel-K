@@ -40,7 +40,7 @@ header {
 header #particles-js {
   z-index: 1;
   width: 100vw;
-  height: 100vh;
+  height: 50px;
   position: fixed;
   top: 0;
   left: 0;
@@ -86,7 +86,7 @@ nav {
   height: 50px;
   position: fixed;
   z-index: 5;
-  width: 100%;
+  width: 100vw;
 }
 
 nav ul {
