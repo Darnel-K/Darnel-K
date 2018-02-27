@@ -117,7 +117,6 @@ function SetupWindowEvents() {
         } else {
             $("nav").removeClass("fixed");
         }
-        $("#DownArrow").css("opacity", 1 - ($(window).outerHeight() - 50));
     });
 }
 
@@ -126,6 +125,9 @@ function SetupDownArrowEvents() {
     if ($("#DownArrow")) {
         $("#DownArrow").on("click", function() {
             $("html, body").animate({ scrollTop: $("#wrapper").offset().top }, 2000);
+        });
+        $(window).on("scroll", function() {
+            $("#DownArrow").css("opacity", 1 - ($(window).outerHeight() - 50));
         });
     }
 }
