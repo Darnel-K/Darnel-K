@@ -5,7 +5,7 @@
         array('CV', '/CV'),
         array('Portfolio', '/Portfolio'),
         array('Projects', '/Projects'),
-        // array('Price List', '/PriceList'),
+        array('Get A Quote', '/QuoteMe'),
         array('Contact', '/Contact')
     );
     

@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 Versioning numbers defined as MAJOR.MINOR.PATCH
 
+## [0.3.0] - 2018-02-27
+### Changed
+- Menu Bar Links
+
 ## [0.2.0] - 2018-02-26
 ### Added
 - Particles JS Header Background
