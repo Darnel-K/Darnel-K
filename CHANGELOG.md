@@ -7,6 +7,7 @@ Versioning numbers defined as MAJOR.MINOR.PATCH
 ## [0.3.0] - 2018-02-27
 ### Changed
 - Menu Bar Links
+- Down Arrow Disappear Point
 
 ## [0.2.0] - 2018-02-26
 ### Added
