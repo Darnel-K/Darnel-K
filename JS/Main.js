@@ -112,13 +112,12 @@ var particlesJSON = {
 function SetupWindowEvents() {
     // All events attached to the browser window
     $(window).on("scroll", function() {
-        if ($(window).scrollTop() >= $(window).height() - 25) {
+        if ($(window).scrollTop() >= $(window).outerHeight() - 25) {
             console.log($(window).scrollTop());
             $("nav").addClass("fixed");
         } else {
             $("nav").removeClass("fixed");
         }
-        alert($(window).outerHeight());
     });
 }
 
