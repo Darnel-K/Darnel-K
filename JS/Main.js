@@ -117,7 +117,7 @@ function SetupWindowEvents() {
         } else {
             $("nav").removeClass("fixed");
         }
-        $("#DownArrow").css("opacity", 1 - $(window).scrollTop() / ($(window).outerHeight() - 50));
+        $("#DownArrow").css("opacity", 1 - $(window).scrollTop() / ($(window).outerHeight() - 150));
     });
 }
 
