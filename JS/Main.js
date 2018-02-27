@@ -118,7 +118,6 @@ function SetupWindowEvents() {
         } else {
             $("nav").removeClass("fixed");
         }
-        alert($(window).height());
     });
 }
 
