@@ -127,7 +127,7 @@ function SetupDownArrowEvents() {
             $("html, body").animate({ scrollTop: $("#wrapper").offset().top }, 2000);
         });
         $(window).on("scroll", function() {
-            $("#DownArrow").css("opacity", 1 - ($(window).outerHeight() - 50));
+            $("#DownArrow").css("opacity", 1 - $(window).scrollTop() / ($(window).outerHeight() - 50));
         });
     }
 }
