@@ -26,14 +26,13 @@
     <header>
         <div id='particles-js'></div>
         <div id='overlay'>
-            
             <section>
                 <img src='Images/Logo - White Text.svg' alt='Logo SVG'>
                 <h1>Freelance Web Design &amp; Development</h1>
             </section>
         </div>
     </header>
-    <div id="wrapper">
+    <div id="HomeWrapper">
         <p id="DownArrowContainer">
             <i class="fas fa-angle-down fa-3x bounce" id="DownArrow"></i>
         </p>
