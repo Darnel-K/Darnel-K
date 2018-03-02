@@ -112,10 +112,12 @@ var particlesJSON = {
 function SetupWindowEvents() {
     // All events attached to the browser window
     $(window).on("scroll", function() {
-        if ($(window).scrollTop() >= $(window).outerHeight() - 25) {
-            $("nav").addClass("fixed");
-        } else {
-            $("nav").removeClass("fixed");
+        if ($('#HomePage')) {
+            if ($(window).scrollTop() >= $(window).outerHeight() - 25) {
+                $("nav").addClass("fixed");
+            } else {
+                $("nav").removeClass("fixed");
+            }
         }
         $("#DownArrow").css("opacity", 1 - $(window).scrollTop() / ($(window).outerHeight() - 150));
     });

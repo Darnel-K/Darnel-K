@@ -16,7 +16,7 @@
     <script src="/JS/Main.js"></script>
     <title>Darnel-K | Home</title>
 </head>
-<body>
+<body id="HomePage">
     <nav>
         <?php
             $Nav = new Navigation($NavLinks);
