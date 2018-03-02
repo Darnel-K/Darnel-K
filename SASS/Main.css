@@ -141,11 +141,11 @@ nav.fixed ul li a {
   z-index: 4;
 }
 
-#Home {
+#HomeWrapper {
   margin-top: 100vh;
 }
 
-#Home #DownArrowContainer {
+#HomeWrapper #DownArrowContainer {
   width: 100%;
   height: 50px;
   margin: 0;
