@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="//use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link async href="//use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/SASS/Main.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
