@@ -32,7 +32,7 @@
             </section>
         </div>
     </header>
-    <div id="HomeWrapper">
+    <div id="Wrapper">
         <p id="DownArrowContainer">
             <i class="fas fa-angle-down fa-3x bounce" id="DownArrow"></i>
         </p>

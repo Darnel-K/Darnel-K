@@ -132,7 +132,15 @@ nav.fixed ul li a {
   color: #2F2F2F;
 }
 
-#Wrapper, #HomeWrapper {
+.NoHomeNav {
+  background-color: #FFF;
+}
+
+.NoHomeNav ul li a {
+  color: #2F2F2F;
+}
+
+#Wrapper, #HomePage #Wrapper {
   position: absolute;
   top: 0;
   min-height: 1000px;
@@ -141,11 +149,11 @@ nav.fixed ul li a {
   z-index: 4;
 }
 
-#HomeWrapper {
+#HomePage {
   margin-top: 100vh;
 }
 
-#HomeWrapper #DownArrowContainer {
+#HomePage #DownArrowContainer {
   width: 100%;
   height: 50px;
   margin: 0;
