@@ -149,6 +149,10 @@ nav.fixed ul li a {
   z-index: 4;
 }
 
+#Wrapper section, #HomePage #Wrapper section {
+  width: 100%;
+}
+
 #HomePage #Wrapper {
   margin-top: 100vh;
 }
