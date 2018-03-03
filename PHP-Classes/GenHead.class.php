@@ -4,7 +4,7 @@ class GenHead {
     public static function GenCSS(array $arr) {
         $out = "";
         foreach ($arr as $i) {
-            $out .= "<link rel='stylesheet' " . ( $i['Async'] ? 'ASYNC' : '') . ($i['Async'] && $i['Defer'] ? ' ' : '') . ( $i['Defer'] ? 'DEFER' : '') . ($i['Async'] || $i['Defer'] ? ' ' : '') . ($i['Path'] ? $i['Path'] : 'DISABLED') . ($i['Path'] && $i['Media'] ? $i['Media'] : '') . ">";
+            $out .= "<link rel='stylesheet' " . ( $i['Async'] ? 'ASYNC' : '') . ($i['Async'] && $i['Defer'] ? ' ' : '') . ( $i['Defer'] ? 'DEFER' : '') . ($i['Async'] || $i['Defer'] ? ' ' : '') . ($i['Path'] ? "href='" . $i['Path'] . "'" : 'DISABLED') . ($i['Path'] && $i['Media'] ? "media='" . $i['Media'] . "'" : '') . ">";
         }
         return $out;
     }
