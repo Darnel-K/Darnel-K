@@ -1,6 +1,7 @@
 {
  "name": "Darnel-K Website",
  "short_name": "Darnel-K",
+ "theme_color": "#3F3F3F",
  "icons": [
   {
    "src": "\/Icons\/android-icon-36x36.png",
