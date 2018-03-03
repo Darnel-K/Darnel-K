@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 Versioning numbers defined as MAJOR.MINOR.PATCH
 
+## [0.5.1] - 2018-03-03
+### Fixed
+- Index.php undefined variabled $CSS, line 10
+
+## [0.5.0] - 2018-03-03
+### Removed
+- GlobalVars.php
+
+### Added
+- GlobalVars php class
+- GenHead class 'GenCSS' function
+- GlobalVars class 'NavLinks' Static Variable
+- GlobalVars class 'CSS' Static Variable
+- GlobalVars class 'LogoPath' Static Variable
+
+### Changed
+- GenHead class functions to static functions
+
 ## [0.4.0] - 2018-03-03
 ### Changed
 - Styles

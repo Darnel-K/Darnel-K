@@ -7,7 +7,7 @@
 <html lang="en">
 <head>
     <?php
-        echo GenHead::GenCSS($CSS);
+        echo GenHead::GenCSS(GlobalVars::$CSS);
     ?>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
