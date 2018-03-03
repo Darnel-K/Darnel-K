@@ -1,5 +1,5 @@
 <?php
-class Navigation {
+class GenNav {
     public $NavLinks = array();
     public $Spacer = "";
 

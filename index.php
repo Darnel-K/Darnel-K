@@ -19,7 +19,7 @@
 <body id="HomePage">
     <nav>
         <?php
-            $Nav = new Navigation($NavLinks);
+            $Nav = new GenNav($NavLinks);
             echo $Nav->GenNavHTML();
         ?>
     </nav>
