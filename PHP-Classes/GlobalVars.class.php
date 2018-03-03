@@ -10,8 +10,8 @@ class GlobalVars {
     );
 
     public static $CSS = array(
-        array("Path" => "//use.fontawesome.com/releases/v5.0.6/css/all.css", "Media" => null, "Async" => true, "Defer" => false),
-        array("Path" => "/SASS/Main.min.css", "Media" => null, "Async" => true, "Defer" => false)
+        array("Path" => "//use.fontawesome.com/releases/v5.0.6/css/all.css", "Media" => null, "Async" => false, "Defer" => true),
+        array("Path" => "/SASS/Main.min.css", "Media" => null, "Async" => false, "Defer" => true)
     );
 
     public static $Scripts = array(
