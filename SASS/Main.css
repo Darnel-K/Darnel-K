@@ -132,14 +132,6 @@ nav.fixed ul li a {
   color: #2F2F2F;
 }
 
-.NoHomeNav {
-  background-color: #FFF;
-}
-
-.NoHomeNav ul li a {
-  color: #2F2F2F;
-}
-
 #Wrapper, #HomePage #Wrapper {
   position: absolute;
   top: 0;
