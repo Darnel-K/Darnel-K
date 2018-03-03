@@ -8,10 +8,13 @@ Versioning numbers defined as MAJOR.MINOR.PATCH
 ### Changed
 - Styles
 - Renamed Navigation class to GenNav
-- Only toggle nav 'fixed' class on home page
 
 ### Added
 - Class to generate html head
+
+## [0.3.1] - 2018-03-03
+### Fixed
+- Only toggle nav 'fixed' class on home page
 
 ## [0.3.0] - 2018-02-27
 ### Changed
