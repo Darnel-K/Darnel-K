@@ -15,6 +15,7 @@ class GlobalVars {
     );
 
     public static $Scripts = array(
+        array("Path" => "/JS/SWImport.js", "Async" => false, "Defer" => false, "Type" => false),
         array("Path" => "/JS/jquery-3.3.1.min.js", "Async" => false, "Defer" => false, "Type" => false),
         array("Path" => "/JS/particles.min.js", "Async" => false, "Defer" => false, "Type" => false),
         array("Path" => "/JS/Main.js", "Async" => false, "Defer" => false, "Type" => false)
