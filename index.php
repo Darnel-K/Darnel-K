@@ -19,6 +19,7 @@
         );
         echo GenHead::GenSocialCards(GlobalVars::$Twitter, $OpenGraph);
         echo GenHead::GenLinks(GlobalVars::$Links);
+        echo GenHead::GenExtraMetadata(GlobalVars::$ExtraMetadata);
     ?>
     <title>Darnel-K | Home</title>
 </head>
