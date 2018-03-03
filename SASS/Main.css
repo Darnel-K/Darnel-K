@@ -153,6 +153,10 @@ nav.fixed ul li a {
   width: 100%;
 }
 
+#Wrapper {
+  margin-top: 50px;
+}
+
 #HomePage #Wrapper {
   margin-top: 100vh;
 }
