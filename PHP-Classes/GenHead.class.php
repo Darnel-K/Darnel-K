@@ -9,15 +9,15 @@ class GenHead {
         return $out;
     }
 
-    public function GenSocialCards() {
+    public static function GenSocialCards() {
 
     }
 
-    public function GenIconLinks() {
+    public static function GenIconLinks() {
 
     }
 
-    public function GenScripts() {
+    public static function GenScripts() {
 
     }
 }
