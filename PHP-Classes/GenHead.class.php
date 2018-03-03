@@ -34,7 +34,9 @@ class GenHead {
 
     public static function GenExtraMetadata(array $arr) {
         $out = "";
-
+        foreach ($arr as $i) {
+            $out .= ($i['Name'] && $i['Content'] ? "<meta name='" . $i['Name'] . "' content='" . $i['Content'] . "'>" : '');
+        }
         return $out;
     }
 
