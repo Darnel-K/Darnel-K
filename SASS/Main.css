@@ -149,11 +149,11 @@ nav.fixed ul li a {
   z-index: 4;
 }
 
-#HomePage {
+#HomePage #Wrapper {
   margin-top: 100vh;
 }
 
-#HomePage #DownArrowContainer {
+#HomePage #Wrapper #DownArrowContainer {
   width: 100%;
   height: 50px;
   margin: 0;
