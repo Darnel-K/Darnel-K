@@ -8,7 +8,7 @@
 <html lang="en">
 <head>
     <?php
-        GenHead::GenCSS($CSS);
+        echo GenHead::GenCSS($CSS);
     ?>
     <link async href="//use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
