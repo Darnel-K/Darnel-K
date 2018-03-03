@@ -15,7 +15,7 @@
             "URL" => ($_SERVER['HTTPS'] ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'],
             "Image" => ($_SERVER['HTTPS'] ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] . GlobalVars::$LogoPath,
             "Description" => "Development area of my site",
-            "Locale" => "en_UK"
+            "Locale" => "en_GB"
         );
         echo GenHead::GenSocialCards(GlobalVars::$Twitter, $OpenGraph);
     ?>
