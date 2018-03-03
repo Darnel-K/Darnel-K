@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 Versioning numbers defined as MAJOR.MINOR.PATCH
 
 ## [0.10.0] - 2018-03-03
+### Fixed
+- Autoscroll on click of down arrow
+
+## [0.10.0] - 2018-03-03
 ### Added
 - GlobalVars class 'ExtraMetadata' Static Variable
 - GenHead class 'GenExtraMetadata' function

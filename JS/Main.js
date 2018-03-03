@@ -127,7 +127,7 @@ function SetupDownArrowEvents() {
     // All events attached to the bouncing down arrow
     if ($("#DownArrow")) {
         $("#DownArrow").on("click", function() {
-            $("html, body").animate({ scrollTop: $("#wrapper").offset().top }, 2000);
+            $("html, body").animate({ scrollTop: $("#Wrapper").offset().top }, 2000);
         });
     }
 }
