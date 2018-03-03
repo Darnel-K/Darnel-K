@@ -8,12 +8,10 @@
 <head>
     <?php
         echo GenHead::GenCSS(GlobalVars::$CSS);
+        echo GenHead::GenScripts(GlobalVars::$Scripts);
     ?>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/JS/jquery-3.3.1.min.js"></script>
-    <script src="/JS/particles.min.js"></script>
-    <script src="/JS/Main.js"></script>
     <title>Darnel-K | Home</title>
 </head>
 <body id="HomePage">
