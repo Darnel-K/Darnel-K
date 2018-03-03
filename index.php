@@ -10,7 +10,12 @@
         echo GenHead::GenCSS(GlobalVars::$CSS);
         echo GenHead::GenScripts(GlobalVars::$Scripts);
         $OpenGraph = array(
-            
+            "Title" => "Darnel-K | Home",
+            "Type" => "website",
+            "URL" => ($_SERVER['HTTPS'] ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'],
+            "Image" => GlobalVars::$LogoPath,
+            "Description" => "Development area of my site",
+            "Locale" => "en_UK"
         );
         echo GenHead::GenSocialCards(GlobalVars::$Twitter, $OpenGraph);
     ?>

@@ -16,6 +16,11 @@ class GenHead {
                 $out .= "<meta name='twitter:" . strtolower($k) . "' content='" . $v . "' />";
             }
         }
+        foreach ($OpenGraph as $k => $v) {
+            if (strtolower($k) == 'card' || 'site' || 'creator') {
+                $out .= "<meta property='og:" . strtolower($k) . "' content='" . $v . "' />";
+            }
+        }
         return $out;
     }
 
