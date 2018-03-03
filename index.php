@@ -13,7 +13,7 @@
             "Title" => "Darnel-K | Home",
             "Type" => "website",
             "URL" => ($_SERVER['HTTPS'] ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'],
-            "Image" => ($_SERVER['HTTPS'] ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] . rawurlencode(GlobalVars::$LogoPath),
+            "Image" => ($_SERVER['HTTPS'] ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] . str_replace(' ', '%20', GlobalVars::$LogoPath),
             "Description" => "Development area of my site",
             "Locale" => "en_GB"
         );
