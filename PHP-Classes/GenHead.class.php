@@ -9,8 +9,14 @@ class GenHead {
         return $out;
     }
 
-    public static function GenSocialCards() {
-
+    public static function GenSocialCards(array $Twitter, array $OpenGraph) {
+        $out = "";
+        foreach ($Twitter as $k => $v) {
+            if (strtolower($k) == 'card' || 'site' || 'creator') {
+                $out .= "<meta name='twitter:" . strtolower($k) . "' content='" . $v . "' />";
+            }
+        }
+        return $out;
     }
 
     public static function GenIconLinks() {

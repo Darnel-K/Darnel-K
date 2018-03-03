@@ -20,6 +20,12 @@ class GlobalVars {
         array("Path" => "/JS/Main.js", "Async" => false, "Defer" => false, "Type" => false)
     );
 
+    public static $Twitter = array(
+        'Card' => 'summary',
+        'Site' => '@Darnel_Kumar',
+        'Creator' => '@Darnel_Kumar'
+    );
+
     public static $LogoPath = '/Images/Logo - White Text.svg';
 }
 ?>
