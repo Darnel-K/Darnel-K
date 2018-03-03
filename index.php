@@ -12,7 +12,7 @@
         $OpenGraph = array(
             
         );
-        echo GenHead::GenSocialCards(GlobalVars::$Twitter, $openGraph);
+        echo GenHead::GenSocialCards(GlobalVars::$Twitter, $OpenGraph);
     ?>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
