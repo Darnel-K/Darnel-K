@@ -10,8 +10,9 @@ class GlobalVars {
     );
 
     public static $CSS = array(
-        array("Path" => "//use.fontawesome.com/releases/v5.0.6/css/all.css", "Media" => null, "Async" => false, "Defer" => true),
-        array("Path" => "/SASS/Main.min.css", "Media" => null, "Async" => false, "Defer" => true)
+        array("Path" => "//use.fontawesome.com/releases/v5.0.6/css/all.css", "Media" => null, "Async" => true, "Defer" => false),
+        array("Path" => "/SASS/Main.min.css", "Media" => null, "Async" => true, "Defer" => false),
+        array("Path" => "https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Open+Sans:300,400,600,700,800|Roboto:100,300,400,500,700,900&subset=latin-ext", "Media" => null, "Async" => false, "Defer" => true)
     );
 
     public static $Scripts = array(
