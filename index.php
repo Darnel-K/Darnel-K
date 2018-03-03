@@ -22,6 +22,7 @@
         echo GenHead::GenExtraMetadata(GlobalVars::$ExtraMetadata);
     ?>
     <title>Darnel-K | Home</title>
+    <!-- <?php echo GenHead::GenScripts(GlobalVars::$Scripts); ?> -->
 </head>
 <body id="HomePage">
     <nav>
