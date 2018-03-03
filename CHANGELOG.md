@@ -7,6 +7,7 @@ Versioning numbers defined as MAJOR.MINOR.PATCH
 ## [0.6.1] - 2018-03-03
 ### Fixed
 - GenHead.class.php, undefined index 'Media', line 23
+- GenHead.class.php, GenScripts, Closing Script Tag
 
 ## [0.6.0] - 2018-03-03
 ### Added
