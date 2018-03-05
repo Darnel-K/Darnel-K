@@ -33,7 +33,7 @@ Versioning numbers defined as MAJOR.MINOR.PATCH
 
 ## [0.7.0] - 2018-03-03
 ### Added
-- Automatic twitter metadate
+- Automated twitter metadata
 - GenHead class 'GenSocialCards' function
 - GlobalVars class 'Twitter' Static Variable
 
