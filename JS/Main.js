@@ -120,7 +120,7 @@ function SetupWindowEvents() {
 
 function SetupDownArrowEvents() {
     // All events attached to the bouncing down arrow
-    ($("#DownArrow") ? $("#DownArrow").on("click", function () { $("html, body").animate({ scrollTop: $("#Wrapper").offset().top }, 750); }) : false);
+    ($("#DownArrow") ? $("#DownArrow").on("click", function () { $("html, body").animate({ scrollTop: $("#Wrapper").offset().top }, 700); }) : false);
 }
 
 function StartEvents() {
