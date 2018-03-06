@@ -35,7 +35,7 @@
         <div id='overlay'>
             <section>
                 <img src='<?php echo GlobalVars::$LogoPath; ?>' alt='Logo SVG'>
-                <h1>Freelance Web Design &amp; Development</h1>
+                <h2>Freelance Web Design &amp; Development</h2>
             </section>
         </div>
     </header>
