@@ -114,7 +114,7 @@ function SetupWindowEvents() {
     $(window).on("scroll", function() {
         ($('#HomePage') ? ($(window).scrollTop() >= $(window).outerHeight() - 25 ? $("nav").addClass("fixed") : $("nav").removeClass("fixed")) : false);
         $("#DownArrow").css("opacity", 1 - $(window).scrollTop() / ($(window).outerHeight() - 150));
-        ($('header') ? $("header").css("opacity", 1 - $(window).scrollTop() / ($(window).outerHeight() - 50)) : false);
+        ($('header') ? $("header").css("opacity", 1 - $(window).scrollTop() / ($(window).outerHeight() - 100)) : false);
     });
 }
 
