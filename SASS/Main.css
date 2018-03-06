@@ -60,7 +60,6 @@ header #overlay {
 }
 
 header #overlay section {
-  width: 400px;
   height: 250px;
   margin: auto;
   position: absolute;
