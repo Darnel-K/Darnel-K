@@ -32,6 +32,10 @@ body {
   width: 100%;
 }
 
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: Montserrat;
+}
+
 header {
   width: 100vw;
   height: 100vh;
@@ -109,7 +113,6 @@ nav ul li {
   vertical-align: middle;
   padding: 0 5px;
   font-weight: bold;
-  font-family: Montserrat;
   font-size: small;
 }
 
