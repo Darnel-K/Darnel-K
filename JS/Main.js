@@ -112,24 +112,15 @@ var particlesJSON = {
 function SetupWindowEvents() {
     // All events attached to the browser window
     $(window).on("scroll", function() {
-        if ($('#HomePage')) {
-            if ($(window).scrollTop() >= $(window).outerHeight() - 25) {
-                $("nav").addClass("fixed");
-            } else {
-                $("nav").removeClass("fixed");
-            }
-        }
+        ($('#HomePage') ? ($(window).scrollTop() >= $(window).outerHeight() - 25 ? $("nav").addClass("fixed") : $("nav").removeClass("fixed")) : false);
         $("#DownArrow").css("opacity", 1 - $(window).scrollTop() / ($(window).outerHeight() - 150));
+        ($('header') ? $("header").css("opacity", 1 - $(window).scrollTop() / ($(window).outerHeight() + 150)) : false);
     });
 }
 
 function SetupDownArrowEvents() {
     // All events attached to the bouncing down arrow
-    if ($("#DownArrow")) {
-        $("#DownArrow").on("click", function() {
-            $("html, body").animate({ scrollTop: $("#Wrapper").offset().top }, 2000);
-        });
-    }
+    ($("#DownArrow") ? $("#DownArrow").on("click", function () { $("html, body").animate({ scrollTop: $("#Wrapper").offset().top }, 2000); }) : false);
 }
 
 function StartEvents() {

@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 Versioning numbers defined as MAJOR.MINOR.PATCH
 
+## [0.12.0] - 2018-03-06
+### Changed
+- h1, h2, h3, h4, h5, h6 font changed to 'Montserrat'
+- All if statements changed to use the ternary operator '?'
+- Link font changed to 'Montserrat'
+
 ## [0.11.0] - 2018-03-03
 ### Added
 - Caching JavaScript ServiceWorker
