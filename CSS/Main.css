@@ -10,13 +10,15 @@
 
 ::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #888;
   border: thin solid #808080;
-  border-radius: 10px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
