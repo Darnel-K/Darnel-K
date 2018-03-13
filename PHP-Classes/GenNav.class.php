@@ -9,7 +9,7 @@ class GenNav {
         }
     }
 
-    public static function GenNavHTML(array $LinkArray, $spacer = '|', array $SocialLinks = null) {
+    public static function GenNavHTML(array $LinkArray, array $SocialLinks = null, $spacer = '|') {
         $output = "<ul id='links'>";
         $arr = $LinkArray;
         foreach ($arr as $i) {
