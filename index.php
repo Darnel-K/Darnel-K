@@ -26,7 +26,7 @@
 <body id="HomePage">
     <nav>
         <?php
-            echo GenNav::GenNavHTML(GlobalVars::$NavLinks, $SocialLinks = GlobalVars::$SocialLinks);
+            echo GenNav::GenNavHTML(GlobalVars::$NavLinks);
         ?>
     </nav>
     <header>
