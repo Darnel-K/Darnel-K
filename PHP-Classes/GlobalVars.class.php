@@ -10,13 +10,13 @@ class GlobalVars {
     );
 
     public static $SocialLinks = array(
-
+        array("IconClass" => 'fab fa-github', "Path" => 'https://github.com/Darnel-K', "IconSize" => false)
     );
 
     public static $CSS = array(
-        array("Path" => "//use.fontawesome.com/releases/v5.0.6/css/all.css", "Media" => null),
-        array("Path" => "/CSS/Main.min.css", "Media" => null),
-        array("Path" => "//fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Open+Sans:300,400,600,700,800|Roboto:100,300,400,500,700,900&subset=latin-ext", "Media" => null)
+        array("Path" => "//use.fontawesome.com/releases/v5.0.6/css/all.css", "Media" => false),
+        array("Path" => "/CSS/Main.min.css", "Media" => false),
+        array("Path" => "//fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Open+Sans:300,400,600,700,800|Roboto:100,300,400,500,700,900&subset=latin-ext", "Media" => false)
     );
 
     public static $Scripts = array(

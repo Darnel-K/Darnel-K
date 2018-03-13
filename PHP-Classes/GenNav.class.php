@@ -5,7 +5,7 @@ class GenNav {
         $output = '';
         $arr = $SocialLinks;
         foreach ($arr as $i) {
-            $output .= "<li><a href='" . $i[1] . "'>" . $i[0] . "</a></li>";
+            $output .= "<li><a href='" . $i['Path'] . "'><i class='" . $i['IconClass'] . ($i['IconSize'] ? ' ' . $i['IconSize'] : '') . "'></i></a></li>";
         }
     }
 
@@ -15,9 +15,6 @@ class GenNav {
         foreach ($arr as $i) {
             $output .= "<li><a href='" . $i['Path'] . "'>" . $i['Text'] . "</a></li>";
             $output .= (count($arr) - 1 != array_search($i, $arr) ? "<li class='NavBarSpacer'>" . $spacer . "</li>" : '');
-            if (count($arr) - 1 != array_search($i, $arr)) {
-                $output .= "<li class='NavBarSpacer'>" . $spacer . "</li>";
-            }
         }
         $output .= "</ul>";
         if ($SocialLinks != null) {
