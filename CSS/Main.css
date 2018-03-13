@@ -95,7 +95,8 @@ nav {
   position: fixed;
   z-index: 5;
   width: 100vw;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto -webkit-min-content;
+  grid-template-columns: auto min-content;
 }
 
 nav #links {
@@ -110,6 +111,7 @@ nav #social {
   -webkit-justify-content: end;
       -ms-flex-pack: end;
           justify-content: end;
+  margin: 0 10px 0 0;
 }
 
 nav #social i {
