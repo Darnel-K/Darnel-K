@@ -7,6 +7,7 @@ class GenNav {
         foreach ($arr as $i) {
             $output .= "<li><a href='" . $i['Path'] . "'><i class='" . $i['IconClass'] . ($i['IconSize'] ? ' ' . $i['IconSize'] : '') . "'></i></a></li>";
         }
+        return $output;
     }
 
     public static function GenNavHTML(array $LinkArray, array $SocialLinks = null, $spacer = '|') {
