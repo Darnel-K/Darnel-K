@@ -10,7 +10,7 @@ class GlobalVars {
     );
 
     public static $SocialLinks = array(
-        array("IconClass" => 'fab fa-github', "Path" => 'https://github.com/Darnel-K', "IconSize" => false)
+        array("IconClass" => 'fab fa-github', "Path" => 'https://github.com/Darnel-K', "IconSize" => 'fa-2x')
     );
 
     public static $CSS = array(

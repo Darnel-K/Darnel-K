@@ -112,6 +112,10 @@ nav #social {
           justify-content: end;
 }
 
+nav #social i {
+  vertical-align: middle;
+}
+
 nav ul {
   padding: 0;
   list-style: none;
