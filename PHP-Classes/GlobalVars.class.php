@@ -1,12 +1,12 @@
 <?php
 class GlobalVars {
     public static $NavLinks = array(
-        array('Home', '/'),
-        array('CV', '/CV'),
-        array('Portfolio', '/Portfolio'),
-        array('Projects', '/Projects'),
-        array('Get A Quote', '/QuoteMe'),
-        array('Contact', '/Contact')
+        array("Text" => 'Home', "Path" => '/'),
+        array("Text" => 'CV', "Path" => '/CV'),
+        array("Text" => 'Portfolio', "Path" => '/Portfolio'),
+        array("Text" => 'Projects', "Path" => '/Projects'),
+        array("Text" => 'Get A Quote', "Path" => '/QuoteMe'),
+        array("Text" => 'Contact', "Path" => '/Contact')
     );
 
     public static $SocialLinks = array(
