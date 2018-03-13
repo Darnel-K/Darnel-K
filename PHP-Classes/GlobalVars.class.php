@@ -2,11 +2,11 @@
 class GlobalVars {
     public static $NavLinks = array(
         array("Text" => 'Home', "Path" => '/'),
-        array("Text" => 'CV', "Path" => '/CV'),
-        array("Text" => 'Portfolio', "Path" => '/Portfolio'),
-        array("Text" => 'Projects', "Path" => '/Projects'),
-        array("Text" => 'Get A Quote', "Path" => '/QuoteMe'),
-        array("Text" => 'Contact', "Path" => '/Contact')
+        // array("Text" => 'CV', "Path" => '/CV'),
+        // array("Text" => 'Portfolio', "Path" => '/Portfolio'),
+        // array("Text" => 'Projects', "Path" => '/Projects'),
+        // array("Text" => 'Get A Quote', "Path" => '/QuoteMe'),
+        // array("Text" => 'Contact', "Path" => '/Contact')
     );
 
     public static $SocialLinks = array(
