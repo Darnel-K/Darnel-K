@@ -62,26 +62,25 @@ header #overlay {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  top: 0;
+  display: grid;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header #overlay section {
-  height: 250px;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 3;
+  display: grid;
+  grid-template-rows: auto auto;
 }
 
 header #overlay section img {
   width: 125px;
   height: 125px;
   margin: 0 auto;
-  position: relative;
-  display: block;
 }
 
 header #overlay section h1 {
