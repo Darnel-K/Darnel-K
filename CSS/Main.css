@@ -114,6 +114,10 @@ nav #social {
   margin: 0 10px 0 0;
 }
 
+nav #social li {
+  float: right;
+}
+
 nav #social i {
   vertical-align: middle;
 }
