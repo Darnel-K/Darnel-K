@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 Versioning numbers defined as MAJOR.MINOR.PATCH
 
+## [0.13.0] - 2018-03-13
+### Added
+- Social Media Buttons For Github, Twitter
+
+### Changed
+- CSS layout to CSS Grid
+
+### Removed
+- Page links that do not exist (CV, Portfolio, Projects, Get A Quote, Contact)
+
 ## [0.12.1] - 2018-03-08
 ### Changed
 - CSS files moved to separate folder from SASS files
