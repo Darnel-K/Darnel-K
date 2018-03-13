@@ -26,8 +26,7 @@
 <body id="HomePage">
     <nav>
         <?php
-            $Nav = new GenNav(GlobalVars::$NavLinks);
-            echo $Nav->GenNavHTML();
+            echo GenNav::GenNavHTML(GlobalVars::$NavLinks);
         ?>
     </nav>
     <header>
@@ -46,7 +45,7 @@
     </div>
     <!-- /#wrapper -->
     <div id="Footer">
-        
+
     </div>
     <!-- /#Footer -->
 </body>

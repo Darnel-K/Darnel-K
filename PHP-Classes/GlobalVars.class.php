@@ -9,6 +9,10 @@ class GlobalVars {
         array('Contact', '/Contact')
     );
 
+    public static $SocialLinks = array(
+
+    );
+
     public static $CSS = array(
         array("Path" => "//use.fontawesome.com/releases/v5.0.6/css/all.css", "Media" => null),
         array("Path" => "/CSS/Main.min.css", "Media" => null),
