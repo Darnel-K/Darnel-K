@@ -45,5 +45,9 @@
         </p>
     </div>
     <!-- /#wrapper -->
+    <div id="Footer">
+        
+    </div>
+    <!-- /#Footer -->
 </body>
 </html>

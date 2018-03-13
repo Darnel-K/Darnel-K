@@ -91,11 +91,25 @@ header #overlay section h1 {
 }
 
 nav {
-  display: block;
+  display: grid;
   height: 50px;
   position: fixed;
   z-index: 5;
   width: 100vw;
+}
+
+nav #links {
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+nav #social {
+  -webkit-box-pack: end;
+  -webkit-justify-content: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 nav ul {

@@ -12,7 +12,7 @@ class GlobalVars {
     public static $CSS = array(
         array("Path" => "//use.fontawesome.com/releases/v5.0.6/css/all.css", "Media" => null),
         array("Path" => "/CSS/Main.min.css", "Media" => null),
-        array("Path" => "https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Open+Sans:300,400,600,700,800|Roboto:100,300,400,500,700,900&subset=latin-ext", "Media" => null)
+        array("Path" => "//fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Open+Sans:300,400,600,700,800|Roboto:100,300,400,500,700,900&subset=latin-ext", "Media" => null)
     );
 
     public static $Scripts = array(
