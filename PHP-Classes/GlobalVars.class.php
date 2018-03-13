@@ -10,7 +10,8 @@ class GlobalVars {
     );
 
     public static $SocialLinks = array(
-        array("IconClass" => 'fab fa-github', "Path" => 'https://github.com/Darnel-K', "IconSize" => 'fa-2x')
+        array("IconClass" => 'fab fa-github', "Path" => 'https://github.com/Darnel-K', "IconSize" => 'fa-2x'),
+        array("IconClass" => 'fab fa-twitter', "Path" => 'https://twitter.com/Darnel_Kumar', "IconSize" => 'fa-2x')
     );
 
     public static $CSS = array(
