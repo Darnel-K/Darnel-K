@@ -5,8 +5,6 @@ nav
     // z-index: 5
     width: 100vw
     grid-template-columns: auto auto
-    #menubutton
-        display: none
     #links
         justify-content: start
     #social
@@ -18,7 +16,6 @@ nav
         i
             vertical-align: middle
     ul
-        z-index: 5
         padding: 0
         list-style: none
         display: inline-block
@@ -51,8 +48,7 @@ nav.fixed
 
 @media only screen and (max-width: 768px)
     nav
-        ul#menubutton
-            display: inline-block
+        #menubutton
             li
                 i
                     color: #DDD
@@ -63,7 +59,6 @@ nav.fixed
             height: 100vh
             margin: 0
             left: 0
-            z-index: -1
         .NavBarSpacer
             display: none
         li

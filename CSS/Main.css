@@ -96,10 +96,6 @@ nav {
   grid-template-columns: auto auto;
 }
 
-nav #menubutton {
-  display: none;
-}
-
 nav #links {
   -webkit-box-pack: start;
   -webkit-justify-content: start;
@@ -125,7 +121,6 @@ nav #social i {
 }
 
 nav ul {
-  z-index: 5;
   padding: 0;
   list-style: none;
   display: inline-block;
@@ -168,10 +163,7 @@ nav.fixed ul li a {
 }
 
 @media only screen and (max-width: 768px) {
-  nav ul#menubutton {
-    display: inline-block;
-  }
-  nav ul#menubutton li i {
+  nav #menubutton li i {
     color: #DDD;
     vertical-align: middle;
   }
@@ -181,7 +173,6 @@ nav.fixed ul li a {
     height: 100vh;
     margin: 0;
     left: 0;
-    z-index: -1;
   }
   nav .NavBarSpacer {
     display: none;
