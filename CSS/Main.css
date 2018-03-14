@@ -180,8 +180,8 @@ nav.fixed ul li a {
     width: 80vw;
     height: 100vh;
     margin: 0;
-    left: 0;
-    z-index: -1;
+    left: -80vw;
+    background-color: #2F2F2F;
   }
   nav ul#links .NavBarSpacer {
     display: none;
