@@ -1,19 +1,19 @@
 <?php
 class GlobalVars {
     public static $NavLinks = array(
-        array("Text" => 'Home', "Path" => '/'),
-        // array("Text" => 'CV', "Path" => '/CV'),
-        // array("Text" => 'Portfolio', "Path" => '/Portfolio'),
-        // array("Text" => 'Projects', "Path" => '/Projects'),
-        // array("Text" => 'Get A Quote', "Path" => '/QuoteMe'),
-        // array("Text" => 'Contact', "Path" => '/Contact')
+        array("Text" => 'Home', "Path" => '/', "Disabled" => false),
+        array("Text" => 'CV', "Path" => '/CV', "Disabled" => true),
+        array("Text" => 'Portfolio', "Path" => '/Portfolio', "Disabled" => true),
+        array("Text" => 'Projects', "Path" => '/Projects', "Disabled" => true),
+        array("Text" => 'Get A Quote', "Path" => '/QuoteMe', "Disabled" => true),
+        array("Text" => 'Contact', "Path" => '/Contact', "Disabled" => true)
     );
 
     public static $SocialLinks = array(
-        array("IconClass" => 'fab fa-facebook', "Path" => 'https://www.facebook.com/darnel.kumar', "IconSize" => 'fa-2x'),
-        array("IconClass" => 'fab fa-instagram', "Path" => 'https://www.instagram.com/darnelkumar/', "IconSize" => 'fa-2x'),
-        array("IconClass" => 'fab fa-twitter', "Path" => 'https://twitter.com/Darnel_Kumar', "IconSize" => 'fa-2x'),
-        array("IconClass" => 'fab fa-github', "Path" => 'https://github.com/Darnel-K', "IconSize" => 'fa-2x')
+        array("IconClass" => 'fab fa-facebook', "Path" => 'https://www.facebook.com/darnel.kumar', "IconSize" => 'fa-2x', "Disabled" => false),
+        array("IconClass" => 'fab fa-instagram', "Path" => 'https://www.instagram.com/darnelkumar/', "IconSize" => 'fa-2x', "Disabled" => false),
+        array("IconClass" => 'fab fa-twitter', "Path" => 'https://twitter.com/Darnel_Kumar', "IconSize" => 'fa-2x', "Disabled" => false),
+        array("IconClass" => 'fab fa-github', "Path" => 'https://github.com/Darnel-K', "IconSize" => 'fa-2x', "Disabled" => false)
     );
 
     public static $CSS = array(
