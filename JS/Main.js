@@ -109,6 +109,19 @@ var particlesJSON = {
     "retina_detect": true
 };
 
+function SetupMobileMenuEvents() {
+    var MenuOpen = false;
+    $('#menubutton').on("click", function() {
+        if (MenuOpen) {
+            MenuOpen = false;
+            $("#menubutton ul li i").attr('class', 'fas fa-bars fa-2x');
+        } else {
+            MenuOpen = true;
+            $("#menubutton ul li i").attr("class", "fas fa-angle-left fa-2x");
+        }
+    });
+}
+
 function SetupWindowEvents() {
     // All events attached to the browser window
     $(window).on("scroll", function() {
