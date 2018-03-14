@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 Versioning numbers defined as MAJOR.MINOR.PATCH
 
+## [0.14.0] - 2018-03-14
+### Added
+- Social Media Buttons For Facebook, Instagram
+
 ## [0.13.0] - 2018-03-13
 ### Added
 - Social Media Buttons For Github, Twitter
