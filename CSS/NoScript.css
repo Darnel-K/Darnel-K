@@ -4,6 +4,7 @@ nav {
 
 nav ul li a {
   color: #2F2F2F;
+  white-space: nowrap;
 }
 
 nav ul#links {
