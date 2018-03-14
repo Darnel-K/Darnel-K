@@ -45,20 +45,19 @@ body p {
 header {
   width: 100vw;
   height: 100vh;
+  position: relative;
 }
 
 header #particles-js {
-  z-index: 1;
+  z-index: 2;
   width: 100vw;
   height: 100vh;
   position: fixed;
-  top: 0;
-  left: 0;
   background-color: #1F1F1F;
 }
 
 header #overlay {
-  z-index: 2;
+  z-index: 3;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -171,6 +170,7 @@ nav.fixed ul li a {
   background-color: #FFF;
   width: 100vw;
   z-index: 4;
+  margin: 0 0 100px 0;
 }
 
 #Wrapper section, #HomePage #Wrapper section {
@@ -192,6 +192,14 @@ nav.fixed ul li a {
   text-align: center;
   color: #AAA;
   margin-top: -50px;
+}
+
+#Footer {
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  z-index: 1;
 }
 
 @-webkit-keyframes bounce {

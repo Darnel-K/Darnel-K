@@ -36,16 +36,15 @@ body
 header
     width: 100vw
     height: 100vh
+    position: relative
     #particles-js
-        z-index: 1
+        z-index: 2
         width: 100vw
         height: 100vh
         position: fixed
-        top: 0
-        left: 0
         background-color: #1F1F1F
     #overlay
-        z-index: 2
+        z-index: 3
         width: 100vw
         height: 100vh
         position: fixed
@@ -118,6 +117,7 @@ nav.fixed
     background-color: #FFF
     width: 100vw
     z-index: 4
+    margin: 0 0 100px 0
     section
         width: 100%
 
@@ -133,6 +133,13 @@ nav.fixed
         text-align: center
         color: #AAA
         margin-top: -50px
+
+#Footer
+    height: 100px
+    position: fixed
+    bottom: 0
+    width: 100vw
+    z-index: 1
 
 @keyframes bounce 
     0%, 20%, 50%, 80%, 100%
