@@ -6,7 +6,7 @@ nav ul li a {
   color: #2F2F2F;
 }
 
-nav .links {
+nav ul#links {
   overflow: auto hidden;
   display: -webkit-box;
   display: -webkit-flex;
