@@ -8,7 +8,7 @@
 <head>
     <?php
         echo GenHead::GenScripts(GlobalVars::$Scripts);
-        echo GenHead::GenCSS(GlobalVars::$CSS);
+        echo GenHead::GenCSS(GlobalVars::$CSS, GlobalVars::$NoScriptCSS);
         $OpenGraph = array(
             "Title" => "Darnel-K | Home",
             "Type" => "website",

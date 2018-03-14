@@ -1,11 +1,12 @@
 <?php
 class GenHead {
 
-    public static function GenCSS(array $arr) {
+    public static function GenCSS(array $arr, string $NoScript) {
         $out = "";
         foreach ($arr as $i) {
             $out .= "<link rel='stylesheet' " . ($i['Path'] ? "href='" . $i['Path'] . "'" : 'DISABLED') . ($i['Path'] && $i['Media'] ? " media='" . $i['Media'] . "'" : '') . ">";
         }
+        $out .= "<link rel='stylesheet' href='" . $NoScript . "'>";
         return $out;
     }
 

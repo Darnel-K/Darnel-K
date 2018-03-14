@@ -64,5 +64,7 @@ class GlobalVars {
     public static $LogoPath = '/Images/Logo - White Text.svg';
 
     public static $OpenGraphImage = '/Images/Logo - White Text.svg';
+
+    public static $NoScriptCSS = '/CSS/NoScript.min.css';
 }
 ?>
