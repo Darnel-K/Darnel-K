@@ -114,10 +114,10 @@ function SetupMobileMenuEvents() {
     $('#menubutton').on("click", function() {
         if (MenuOpen) {
             MenuOpen = false;
-            $("#menubutton ul li i").attr('class', 'fas fa-bars fa-2x');
+            $("#menubutton li i").attr('class', 'fas fa-bars fa-2x');
         } else {
             MenuOpen = true;
-            $("#menubutton ul li i").attr("class", "fas fa-angle-left fa-2x");
+            $("#menubutton li i").attr("class", "fas fa-angle-left fa-2x");
         }
     });
 }
