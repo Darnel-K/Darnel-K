@@ -1,2 +1,2 @@
-nav{background-color:#FFF}nav ul li a{color:#2F2F2F;white-space:nowrap}nav ul#links{overflow-x:auto;overflow-y:hidden;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin:0 10px}
+nav{background-color:#FFF}nav #menubutton{display:none}nav .links{position:initial;width:initial;height:initial;left:initial;background-color:initial}nav .links .NavBarSpacer{display:initial}nav ul li a{color:#2F2F2F;white-space:nowrap}nav ul#links{overflow-x:auto;overflow-y:hidden;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin:0 10px}
 /*# sourceMappingURL=NoScript.min.css.map */
