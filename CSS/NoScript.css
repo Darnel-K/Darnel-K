@@ -1,12 +1,12 @@
 nav {
-  background-color: #1F1F1F;
+  background-color: #FFF;
 }
 
 nav ul li a {
   color: #2F2F2F;
 }
 
-nav ul.links {
+nav .links {
   overflow: auto hidden;
   display: -webkit-box;
   display: -webkit-flex;
