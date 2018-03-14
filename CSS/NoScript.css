@@ -6,18 +6,6 @@ nav #menubutton {
   display: none !important;
 }
 
-nav .links {
-  position: initial !important;
-  width: initial !important;
-  height: initial !important;
-  left: initial !important;
-  background-color: initial !important;
-}
-
-nav .links .NavBarSpacer {
-  display: initial !important;
-}
-
 nav ul li a {
   color: #2F2F2F !important;
   white-space: nowrap !important;
@@ -31,5 +19,14 @@ nav ul#links {
   display: -ms-flexbox !important;
   display: flex !important;
   margin: 0 10px !important;
+  position: initial !important;
+  width: initial !important;
+  height: initial !important;
+  left: initial !important;
+  background-color: initial !important;
+}
+
+nav ul#links .NavBarSpacer {
+  display: initial !important;
 }
 /*# sourceMappingURL=NoScript.css.map */
