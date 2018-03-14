@@ -91,7 +91,8 @@ header #overlay section h1 {
 nav {
   display: grid;
   height: 50px;
-  position: absolute;
+  position: fixed;
+  z-index: 5;
   width: 100vw;
   grid-template-columns: auto auto;
 }
@@ -125,7 +126,6 @@ nav #social i {
 }
 
 nav ul {
-  z-index: 5;
   padding: 0;
   list-style: none;
   display: inline-block;
