@@ -11,7 +11,8 @@ class GenNav {
     }
 
     public static function GenNavHTML(array $LinkArray, array $SocialLinks = null, $spacer = '|') {
-        $output = "<ul id='links'>";
+        $output = "<ul id='menubutton'><li><i class='fas fa-bars fa-2x'></i></li></ul>";
+        $output .= "<ul id='links'>";
         $arr = $LinkArray;
         foreach ($arr as $i) {
             $output .= "<li><a href='" . $i['Path'] . ($i['Disabled'] ? "' onclick='return false;'" : "'") . ">" . $i['Text'] . "</a></li>";
