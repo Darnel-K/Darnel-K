@@ -7,7 +7,8 @@ nav ul li a {
 }
 
 nav ul#links {
-  overflow: auto hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
