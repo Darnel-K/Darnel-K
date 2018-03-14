@@ -42,10 +42,8 @@
         <p id="DownArrowContainer">
             <i class="fas fa-angle-down fa-3x bounce" id="DownArrow"></i>
         </p>
+        <footer></footer>
     </div>
     <!-- /#wrapper -->
-    <footer>
-    
-    </footer>
 </body>
 </html>

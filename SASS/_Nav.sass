@@ -1,0 +1,47 @@
+nav
+    display: grid
+    height: $NavBarHeight
+    position: fixed
+    z-index: 5
+    width: 100vw
+    grid-template-columns: auto auto
+    #links
+        justify-content: start
+    #social
+        justify-content: end
+        margin: 0 10px 0 0
+        li
+            float: right
+            font-weight: initial
+        i
+            vertical-align: middle
+    ul
+        padding: 0
+        list-style: none
+        display: inline-block
+        height: $NavBarHeight
+        margin: 0 0 0 10px
+        .NavBarSpacer
+            color: #999
+        li
+            display: inline-block
+            float: left
+            height: $NavBarHeight
+            line-height: $NavBarHeight
+            vertical-align: middle
+            padding: 0 5px
+            font-weight: bold
+            font-family: Montserrat
+            font-size: small
+            a
+                text-decoration: none
+                vertical-align: middle
+                color: #DDD
+            a:hover
+                color: #999
+nav.fixed
+    background-color: #FFF
+    ul
+        li
+            a
+                color: #2F2F2F
