@@ -115,6 +115,7 @@ nav #social {
 
 nav #social li {
   float: right;
+  font-weight: initial;
 }
 
 nav #social i {
