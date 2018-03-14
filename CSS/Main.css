@@ -164,10 +164,6 @@ nav.fixed ul li a {
 }
 
 @media only screen and (max-width: 768px) {
-  nav #menubutton li i {
-    color: #DDD;
-    vertical-align: middle;
-  }
   nav ul#links {
     position: fixed;
     width: 80vw;
@@ -175,10 +171,10 @@ nav.fixed ul li a {
     margin: 0;
     left: 0;
   }
-  nav .NavBarSpacer {
+  nav ul#links .NavBarSpacer {
     display: none;
   }
-  nav li {
+  nav ul#links li {
     width: -webkit-calc(100% - 10px);
     width: calc(100% - 10px);
     height: 60px;
