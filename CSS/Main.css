@@ -91,13 +91,10 @@ header #overlay section h1 {
 nav {
   display: grid;
   height: 50px;
-  position: absolute;
+  position: fixed;
+  z-index: 5;
   width: 100vw;
   grid-template-columns: auto auto;
-}
-
-nav #menubutton {
-  display: none;
 }
 
 nav #links {
@@ -125,7 +122,6 @@ nav #social i {
 }
 
 nav ul {
-  z-index: 5;
   padding: 0;
   list-style: none;
   display: inline-block;
@@ -174,19 +170,11 @@ nav.fixed ul li a {
     height: 100vh;
     margin: 0;
     left: 0;
-    z-index: -1;
   }
-  nav ul#menubutton {
-    display: inline-block;
-  }
-  nav ul#menubutton li i {
-    color: #DDD;
-    vertical-align: middle;
-  }
-  nav .NavBarSpacer {
+  nav ul#links .NavBarSpacer {
     display: none;
   }
-  nav li {
+  nav ul#links li {
     width: -webkit-calc(100% - 10px);
     width: calc(100% - 10px);
     height: 60px;

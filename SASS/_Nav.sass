@@ -1,12 +1,10 @@
 nav
     display: grid
     height: $NavBarHeight
-    position: absolute
-    // z-index: 5
+    position: fixed
+    z-index: 5
     width: 100vw
     grid-template-columns: auto auto
-    #menubutton
-        display: none
     #links
         justify-content: start
     #social
@@ -18,7 +16,6 @@ nav
         i
             vertical-align: middle
     ul
-        z-index: 5
         padding: 0
         list-style: none
         display: inline-block
@@ -56,14 +53,6 @@ nav.fixed
         height: 100vh
         margin: 0
         left: 0
-        z-index: -1
-    nav
-        ul#menubutton
-            display: inline-block
-            li
-                i
-                    color: #DDD
-                    vertical-align: middle
         .NavBarSpacer
             display: none
         li
