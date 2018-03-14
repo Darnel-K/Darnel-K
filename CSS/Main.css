@@ -168,13 +168,6 @@ nav.fixed ul li a {
 }
 
 @media only screen and (max-width: 768px) {
-  nav ul#menubutton {
-    display: inline-block;
-  }
-  nav ul#menubutton li i {
-    color: #DDD;
-    vertical-align: middle;
-  }
   nav ul#links {
     position: fixed;
     width: 80vw;
@@ -182,6 +175,13 @@ nav.fixed ul li a {
     margin: 0;
     left: 0;
     z-index: -1;
+  }
+  nav ul#menubutton {
+    display: inline-block;
+  }
+  nav ul#menubutton li i {
+    color: #DDD;
+    vertical-align: middle;
   }
   nav .NavBarSpacer {
     display: none;

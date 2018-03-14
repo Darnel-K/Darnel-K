@@ -50,6 +50,13 @@ nav.fixed
                 color: #2F2F2F
 
 @media only screen and (max-width: 768px)
+    nav ul#links
+        position: fixed
+        width: 80vw
+        height: 100vh
+        margin: 0
+        left: 0
+        z-index: -1
     nav
         ul#menubutton
             display: inline-block
@@ -57,13 +64,6 @@ nav.fixed
                 i
                     color: #DDD
                     vertical-align: middle
-        ul#links
-            position: fixed
-            width: 80vw
-            height: 100vh
-            margin: 0
-            left: 0
-            z-index: -1
         .NavBarSpacer
             display: none
         li
