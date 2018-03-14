@@ -171,10 +171,10 @@ nav.fixed ul li a {
     margin: 0;
     left: 0;
   }
-  nav ul#links .NavBarSpacer {
+  nav .NavBarSpacer {
     display: none;
   }
-  nav ul#links li {
+  nav li {
     width: -webkit-calc(100% - 10px);
     width: calc(100% - 10px);
     height: 60px;
