@@ -10,6 +10,8 @@ class GlobalVars {
     );
 
     public static $SocialLinks = array(
+        array("IconClass" => 'fab fa-facebook', "Path" => 'https://www.facebook.com/darnel.kumar', "IconSize" => 'fa-2x'),
+        array("IconClass" => 'fab fa-instagram', "Path" => 'https://www.instagram.com/darnelkumar/', "IconSize" => 'fa-2x'),
         array("IconClass" => 'fab fa-twitter', "Path" => 'https://twitter.com/Darnel_Kumar', "IconSize" => 'fa-2x'),
         array("IconClass" => 'fab fa-github', "Path" => 'https://github.com/Darnel-K', "IconSize" => 'fa-2x')
     );
