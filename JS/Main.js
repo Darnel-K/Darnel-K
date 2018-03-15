@@ -117,12 +117,10 @@ function SetupMobileMenuEvents() {
             MenuOpen = false;
             $("#menubutton li i").attr('class', 'fas fa-bars fa-2x');
             $("#Wrapper, header, nav, #HeaderBack").animate({ left: "0" }, MovementSpeed);
-            // $('nav ul#links').animate({left: '-80vw'}, MovementSpeed);
         } else {
             MenuOpen = true;
             $("#menubutton li i").attr("class", "fas fa-angle-left fa-3x");
             $('#Wrapper, header, nav, #HeaderBack').animate({left: '80vw'}, MovementSpeed);
-            // $('nav ul#links').animate({left: '0'}, MovementSpeed);
         }
     });
 }

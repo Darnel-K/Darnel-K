@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 Versioning numbers defined as MAJOR.MINOR.PATCH
 
+## [0.15.0] - 2018-03-15
+### Added
+- Mobile Nav Menu
+- NoScript Styles
+
 ## [0.14.0] - 2018-03-14
 ### Added
 - Social Media Buttons For Facebook, Instagram
