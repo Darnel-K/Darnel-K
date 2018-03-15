@@ -57,6 +57,19 @@ nav.fixed
 @media only screen and (max-width: 768px)
     #MobileNav
         display: grid
+        z-index: -1
+        ul#links
+            position: fixed
+            width: 80vw
+            height: 100vh
+            margin: 0
+            background-color: #2F2F2F
+            .NavBarSpacer
+                display: none
+            li
+                width: calc(100% - 10px)
+                height: 60px
+                line-height: 60px
     #DesktopNav ul#links
         display: none
     nav.fixed
@@ -65,16 +78,3 @@ nav.fixed
     nav
         ul#menubutton
             display: inline-block
-        ul#links
-            position: fixed
-            width: 80vw
-            height: 100vh
-            margin: 0
-            left: -80vw
-            background-color: #2F2F2F
-            .NavBarSpacer
-                display: none
-            li
-                width: calc(100% - 10px)
-                height: 60px
-                line-height: 60px

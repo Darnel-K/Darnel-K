@@ -179,6 +179,23 @@ nav.fixed ul li a, nav.fixed ul li i {
 @media only screen and (max-width: 768px) {
   #MobileNav {
     display: grid;
+    z-index: -1;
+  }
+  #MobileNav ul#links {
+    position: fixed;
+    width: 80vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #2F2F2F;
+  }
+  #MobileNav ul#links .NavBarSpacer {
+    display: none;
+  }
+  #MobileNav ul#links li {
+    width: -webkit-calc(100% - 10px);
+    width: calc(100% - 10px);
+    height: 60px;
+    line-height: 60px;
   }
   #DesktopNav ul#links {
     display: none;
@@ -188,23 +205,6 @@ nav.fixed ul li a, nav.fixed ul li i {
   }
   nav ul#menubutton {
     display: inline-block;
-  }
-  nav ul#links {
-    position: fixed;
-    width: 80vw;
-    height: 100vh;
-    margin: 0;
-    left: -80vw;
-    background-color: #2F2F2F;
-  }
-  nav ul#links .NavBarSpacer {
-    display: none;
-  }
-  nav ul#links li {
-    width: -webkit-calc(100% - 10px);
-    width: calc(100% - 10px);
-    height: 60px;
-    line-height: 60px;
   }
 }
 
