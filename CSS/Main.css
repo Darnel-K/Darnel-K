@@ -195,6 +195,8 @@ nav.fixed ul li a, nav.fixed ul li i {
     margin: 0;
     left: 0;
     background-color: #2F2F2F;
+    -webkit-box-shadow: inset -10px 0px 20px 0px;
+            box-shadow: inset -10px 0px 20px 0px;
   }
   #MobileNav ul#links .NavBarSpacer {
     display: none;
