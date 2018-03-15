@@ -113,6 +113,7 @@ nav #social {
   -webkit-justify-content: end;
       -ms-flex-pack: end;
           justify-content: end;
+  grid-column-start: 2;
   margin: 0 10px 0 0;
 }
 

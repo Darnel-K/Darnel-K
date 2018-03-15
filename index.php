@@ -31,11 +31,9 @@
     </nav>
     <nav>
         <ul id='menubutton'><li><i class='fas fa-bars fa-2x'></i></li></ul>
-        <ul id="social">
-            <?php
-                echo GenNav::GenSocialButtonsHTML(GlobalVars::$SocialLinks);
-            ?>
-        </ul>
+        <?php
+            echo GenNav::GenNavHTML(GlobalVars::$NavLinks, GlobalVars::$SocialLinks);
+        ?>
     </nav>
     <header>
         <div id='particles-js'></div>
