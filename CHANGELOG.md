@@ -8,9 +8,11 @@ Versioning numbers defined as MAJOR.MINOR.PATCH
 ### Added
 - Mobile Nav Menu
 - NoScript Styles
+- Sass Variables
 
 ### Changed
 - Social Buttons Open In New Tab
+- Force run scroll event on page load
 
 ## [0.14.0] - 2018-03-14
 ### Added

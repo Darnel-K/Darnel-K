@@ -131,6 +131,14 @@ function SetupWindowEvents() {
         ($('#HomePage') ? ($(window).scrollTop() >= $(window).outerHeight() - 100 ? $("nav").addClass("fixed") : $("nav").removeClass("fixed")) : false);
         $("#DownArrow").css("opacity", 1 - $(window).scrollTop() / ($(window).outerHeight() - 150));
         ($('header') ? $("header").css("opacity", 1 - $(window).scrollTop() / ($(window).outerHeight() - 100)) : false);
+        if ($(window).scrollTop() >= $(window).outerHeight()) {
+            cancelRequestAnimFrame(pJSDom[0].pJS.fn.checkAnimFrame);
+            cancelRequestAnimFrame(pJSDom[0].pJS.fn.drawAnimFrame);
+            pJSDom[0].pJS.fn.particlesEmpty();
+            pJSDom[0].pJS.fn.canvasClear();
+        } else {
+            pJSDom[0].pJS.fn.vendors.start();
+        }
     });
 }
 
