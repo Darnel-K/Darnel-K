@@ -25,7 +25,7 @@ nav
         height: $NavBarHeight
         margin: 0 0 0 10px
         .NavBarSpacer
-            color: #999
+            color: $LinkHoverColour
         li
             display: inline-block
             float: left
@@ -39,15 +39,15 @@ nav
             a, i
                 text-decoration: none
                 vertical-align: middle
-                color: #DDD
+                color: $TextColor
             a:hover, i:hover
-                color: #999
+                color: $LinkHoverColour
 nav.fixed
-    background-color: #FFF
+    background-color: $BackgroundColour
     ul
         li
             a, i
-                color: #2F2F2F
+                color: $WhiteBGTextColour
 
 #MobileNav
     display: none
@@ -64,7 +64,7 @@ nav.fixed
             height: 100%
             margin: 0
             left: 0
-            background-color: #2F2F2F
+            background-color: $MobileNavBackColour
             .NavBarSpacer
                 display: none
             li
@@ -75,7 +75,7 @@ nav.fixed
         display: none
     nav.fixed
         ul li a
-            color: #DDD
+            color: $TextColor
     nav
         ul#menubutton
             display: inline-block

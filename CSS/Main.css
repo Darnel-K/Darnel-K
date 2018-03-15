@@ -160,7 +160,7 @@ nav ul li {
 nav ul li a, nav ul li i {
   text-decoration: none;
   vertical-align: middle;
-  color: #DDD;
+  color: #EEE;
 }
 
 nav ul li a:hover, nav ul li i:hover {
@@ -209,7 +209,7 @@ nav.fixed ul li a, nav.fixed ul li i {
     display: none;
   }
   nav.fixed ul li a {
-    color: #DDD;
+    color: #EEE;
   }
   nav ul#menubutton {
     display: inline-block;
@@ -244,7 +244,7 @@ nav.fixed ul li a, nav.fixed ul li i {
   height: 50px;
   margin: 0;
   text-align: center;
-  color: #AAA;
+  color: #EEE;
   margin-top: -50px;
 }
 
