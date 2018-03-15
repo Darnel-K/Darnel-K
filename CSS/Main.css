@@ -191,7 +191,7 @@ nav.fixed ul li a, nav.fixed ul li i {
   #MobileNav ul#links {
     position: fixed;
     width: 80vw;
-    height: 100vh;
+    height: 100%;
     margin: 0;
     left: 0;
     background-color: #2F2F2F;
