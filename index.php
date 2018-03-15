@@ -24,12 +24,12 @@
     <title>Darnel-K | Home</title>
 </head>
 <body id="HomePage">
-    <nav id='#MobileNav'>
+    <nav id='MobileNav'>
         <?php
             echo GenNav::GenNavHTML(GlobalVars::$NavLinks);
         ?>
     </nav>
-    <nav id='#DesktopNav'>
+    <nav id='DesktopNav'>
         <ul id='menubutton'><li><i class='fas fa-bars fa-2x'></i></li></ul>
         <?php
             echo GenNav::GenNavHTML(GlobalVars::$NavLinks, GlobalVars::$SocialLinks);
