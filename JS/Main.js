@@ -110,6 +110,7 @@ var particlesJSON = {
 };
 
 function SetupMobileMenuEvents() {
+    // All events attached to the mobile menu & it's toggle button
     var MenuOpen = false;
     var MovementSpeed = 800;
     $('#menubutton').on("click", function() {
@@ -138,7 +139,7 @@ function SetupWindowEvents() {
             pJSDom[0].pJS.fn.particlesEmpty();
             pJSDom[0].pJS.fn.canvasClear();
             ParticlesRunning = false;
-        } else if (!ParticlesRunning) {
+        } else if (($(window).scrollTop() <= $(window).outerHeight()) && !ParticlesRunning) {
             pJSDom[0].pJS.fn.vendors.start();
             ParticlesRunning = true;
         }
