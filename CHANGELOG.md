@@ -9,6 +9,9 @@ Versioning numbers defined as MAJOR.MINOR.PATCH
 - Mobile Nav Menu
 - NoScript Styles
 
+### Changed
+- Social Buttons Open In New Tab
+
 ## [0.14.0] - 2018-03-14
 ### Added
 - Social Media Buttons For Facebook, Instagram
