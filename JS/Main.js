@@ -149,6 +149,7 @@ function init() {
     window.particlesJS("particles-js", particlesJSON);
     StartEvents();
     SetupMobileMenuEvents();
+    $(window).scroll();
 }
 
 $(document).ready(function() {
