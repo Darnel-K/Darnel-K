@@ -195,8 +195,6 @@ nav.fixed ul li a, nav.fixed ul li i {
     margin: 0;
     left: 0;
     background-color: #2F2F2F;
-    -webkit-box-shadow: inset -10px 0px 20px 0px;
-            box-shadow: inset -10px 0px 20px 0px;
   }
   #MobileNav ul#links .NavBarSpacer {
     display: none;
@@ -218,21 +216,23 @@ nav.fixed ul li a, nav.fixed ul li i {
   }
 }
 
-#Wrapper, #HomePage #Wrapper {
+#Wrapper, header {
+  -webkit-box-shadow: 0px 0px 20px 0px;
+          box-shadow: 0px 0px 20px 0px;
+}
+
+#Wrapper {
   position: absolute;
   top: 0;
   min-height: 1000px;
   background-color: #FFF;
   width: 100vw;
   z-index: 4;
-}
-
-#Wrapper section, #HomePage #Wrapper section {
-  width: 100%;
-}
-
-#Wrapper {
   margin-top: 50px;
+}
+
+#Wrapper section {
+  width: 100%;
 }
 
 #HomePage #Wrapper {
