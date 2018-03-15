@@ -35,6 +35,8 @@
             echo GenNav::GenNavHTML(GlobalVars::$NavLinks, GlobalVars::$SocialLinks);
         ?>
     </nav>
+    <div id="HeaderBack"></div>
+    <!-- /#HeaderBack -->
     <header>
         <div id='particles-js'></div>
         <div id='overlay'>
