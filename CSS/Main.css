@@ -168,6 +168,9 @@ nav.fixed ul li a, nav.fixed ul li i {
 }
 
 @media only screen and (max-width: 768px) {
+  nav.fixed ul li a {
+    color: #DDD;
+  }
   nav ul#menubutton {
     display: inline-block;
   }
