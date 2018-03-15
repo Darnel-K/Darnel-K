@@ -9,6 +9,7 @@ Versioning numbers defined as MAJOR.MINOR.PATCH
 - Mobile Nav Menu
 - NoScript Styles
 - Sass Variables
+- Toggle particles based on visibility (scroll position) - (visible = on, not visible = off)
 
 ### Changed
 - Social Buttons Open In New Tab
