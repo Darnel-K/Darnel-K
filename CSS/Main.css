@@ -42,6 +42,13 @@ body p {
   border: thin solid #666;
 }
 
+#HeaderBack {
+  width: 100vw;
+  height: 100vh;
+  background-color: #FFF;
+  position: fixed;
+}
+
 header {
   width: 100vw;
   height: 100vh;
