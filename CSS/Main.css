@@ -88,6 +88,14 @@ header #overlay section h1 {
   margin: 40px 0;
 }
 
+#MobileNav {
+  display: none;
+}
+
+#DesktopNav ul#links {
+  display: inline-block;
+}
+
 nav {
   display: grid;
   height: 50px;
@@ -169,6 +177,12 @@ nav.fixed ul li a, nav.fixed ul li i {
 }
 
 @media only screen and (max-width: 768px) {
+  #MobileNav {
+    display: grid;
+  }
+  #DesktopNav ul#links {
+    display: none;
+  }
   nav.fixed ul li a {
     color: #DDD;
   }
