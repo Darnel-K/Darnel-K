@@ -25,9 +25,17 @@
 </head>
 <body id="HomePage">
     <nav>
+        <ul id='menubutton'><li><i class='fas fa-bars fa-2x'></i></li></ul>
         <?php
-            echo GenNav::GenNavHTML(GlobalVars::$NavLinks, $SocialLinks = GlobalVars::$SocialLinks);
+            echo GenNav::GenNavHTML(GlobalVars::$NavLinks, GlobalVars::$SocialLinks);
         ?>
+    </nav>
+    <nav>
+        <ul id="social">
+            <?php
+                echo GenNav::GenSocialButtonsHTML(GlobalVars::$SocialLinks);
+            ?>
+        </ul>
     </nav>
     <header>
         <div id='particles-js'></div>
