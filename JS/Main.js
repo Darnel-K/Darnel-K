@@ -131,7 +131,7 @@ function SetupWindowEvents() {
     $(window).on("scroll", function() {
         ($('#HomePage') ? ($(window).scrollTop() >= $(window).outerHeight() - 100 ? $("nav").addClass("fixed") : $("nav").removeClass("fixed")) : false);
         $("#DownArrow").css("opacity", 1 - $(window).scrollTop() / ($(window).outerHeight() - 150));
-        ($('header') ? $("header").css("opacity", 1 - $(window).scrollTop() / ($(window).outerHeight() - 100)) : false);
+        // ($('header') ? $("header").css("opacity", 1 - $(window).scrollTop() / ($(window).outerHeight() - 100)) : false);
         if (($(window).scrollTop() >= $(window).outerHeight()) && ParticlesRunning) {
             cancelRequestAnimFrame(pJSDom[0].pJS.fn.checkAnimFrame);
             cancelRequestAnimFrame(pJSDom[0].pJS.fn.drawAnimFrame);
