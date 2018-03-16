@@ -1,36 +1,14 @@
 nav
     display: grid
-    height: $NavBarHeight
     position: fixed
-    z-index: 5
-    width: 100vw
-    grid-template-columns: auto auto
-    #menubutton
-        display: none
     #links
         justify-content: start
-        li
-            a
-                width: 100%
-                height: 100%
-                display: inline-block
-    #social
-        justify-content: end
-        grid-column-start: 2
-        margin: 0 10px 0 0
-        li
-            float: right
-            font-weight: initial
-        i
-            vertical-align: middle
     ul
         padding: 0
         list-style: none
         display: inline-block
-        height: $NavBarHeight
         margin: 0 0 0 10px
-        .NavBarSpacer
-            color: $LinkHoverColour
+        
         li
             display: inline-block
             float: left
@@ -56,8 +34,33 @@ nav.fixed
 
 #MobileNav
     display: none
-#DesktopNav ul#links
-    display: inline-block
+    #links li
+        a
+            width: 100%
+            height: 100%
+            display: inline-block
+#DesktopNav
+    width: 100vw
+    height: $NavBarHeight
+    z-index: 5
+    grid-template-columns: auto auto
+    ul
+        height: $NavBarHeight
+    #menubutton
+        display: none
+    #links
+        display: inline-block
+        .NavBarSpacer
+            color: $LinkHoverColour
+    #social
+        justify-content: end
+        grid-column-start: 2
+        margin: 0 10px 0 0
+        li
+            float: right
+            font-weight: initial
+        i
+            vertical-align: middle
 
 @media only screen and (max-width: 768px)
     #MobileNav

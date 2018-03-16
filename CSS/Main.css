@@ -102,15 +102,7 @@ header #overlay section h1 {
 
 nav {
   display: grid;
-  height: 50px;
   position: fixed;
-  z-index: 5;
-  width: 100vw;
-  grid-template-columns: auto auto;
-}
-
-nav #menubutton {
-  display: none;
 }
 
 nav #links {
@@ -120,40 +112,11 @@ nav #links {
           justify-content: start;
 }
 
-nav #links li a {
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-}
-
-nav #social {
-  -webkit-box-pack: end;
-  -webkit-justify-content: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  grid-column-start: 2;
-  margin: 0 10px 0 0;
-}
-
-nav #social li {
-  float: right;
-  font-weight: initial;
-}
-
-nav #social i {
-  vertical-align: middle;
-}
-
 nav ul {
   padding: 0;
   list-style: none;
   display: inline-block;
-  height: 50px;
   margin: 0 0 0 10px;
-}
-
-nav ul .NavBarSpacer {
-  color: #999;
 }
 
 nav ul li {
@@ -190,8 +153,51 @@ nav.fixed ul li a, nav.fixed ul li i {
   display: none;
 }
 
-#DesktopNav ul#links {
+#MobileNav #links li a {
+  width: 100%;
+  height: 100%;
   display: inline-block;
+}
+
+#DesktopNav {
+  width: 100vw;
+  height: 50px;
+  z-index: 5;
+  grid-template-columns: auto auto;
+}
+
+#DesktopNav ul {
+  height: 50px;
+}
+
+#DesktopNav #menubutton {
+  display: none;
+}
+
+#DesktopNav #links {
+  display: inline-block;
+}
+
+#DesktopNav #links .NavBarSpacer {
+  color: #999;
+}
+
+#DesktopNav #social {
+  -webkit-box-pack: end;
+  -webkit-justify-content: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  grid-column-start: 2;
+  margin: 0 10px 0 0;
+}
+
+#DesktopNav #social li {
+  float: right;
+  font-weight: initial;
+}
+
+#DesktopNav #social i {
+  vertical-align: middle;
 }
 
 @media only screen and (max-width: 768px) {
