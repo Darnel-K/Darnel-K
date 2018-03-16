@@ -126,6 +126,10 @@ nav ul li {
   color: #EEE;
 }
 
+nav ul li a, nav ul li i {
+  vertical-align: middle;
+}
+
 nav.fixed {
   background-color: #FFF;
 }
@@ -183,10 +187,6 @@ nav.fixed ul li a, nav.fixed ul li i {
 #DesktopNav #social li {
   float: right;
   font-weight: initial;
-}
-
-#DesktopNav #social i {
-  vertical-align: middle;
 }
 
 @media only screen and (max-width: 768px) {
