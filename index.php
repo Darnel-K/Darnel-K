@@ -49,7 +49,10 @@
             <p id="DownArrowContainer">
                 <i class="fas fa-angle-down fa-3x bounce" id="DownArrow"></i>
             </p>
-            <footer></footer>
+            <div class="WrapperContent">
+                <footer></footer>
+            </div>
+            <!-- /.WrapperContent -->
         </div>
         <!-- /#wrapper -->
     </div>
