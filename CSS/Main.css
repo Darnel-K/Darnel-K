@@ -23,6 +23,7 @@ body a:hover, body a i:hover {
 
 #content {
   position: absolute;
+  background-color: #FFF;
 }
 
 ::-webkit-scrollbar {
