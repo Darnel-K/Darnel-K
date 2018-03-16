@@ -130,8 +130,8 @@ function SetupWindowEvents() {
     // All events attached to the browser window
     var ParticlesRunning = true
     $(window).on("scroll", function() {
-        if ($(document).scrollLeft() !== 0) {
-            $(document).scrollLeft(0);
+        if ($(window).scrollLeft() !== 0) {
+            $(window).scrollLeft(0);
         }
         ($('#HomePage') ? ($(window).scrollTop() >= $(window).outerHeight() - 100 ? $("nav").addClass("fixed") : $("nav").removeClass("fixed")) : false);
         $("#DownArrow").css("opacity", 1 - $(window).scrollTop() / ($(window).outerHeight() - 150));
