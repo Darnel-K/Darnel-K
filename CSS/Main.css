@@ -11,8 +11,13 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: Montserrat;
 }
 
-body a {
+body a, body a i {
+  color: #EEE;
   text-decoration: none;
+}
+
+body a:hover, body a i:hover {
+  color: #999;
 }
 
 #content {
