@@ -1,14 +1,11 @@
 nav
     display: grid
     position: fixed
-    #links
-        justify-content: start
     ul
         padding: 0
         list-style: none
         display: inline-block
         margin: 0 0 0 10px
-        
         li
             display: inline-block
             float: left
@@ -50,6 +47,7 @@ nav.fixed
         display: none
     #links
         display: inline-block
+        justify-content: start
         .NavBarSpacer
             color: $LinkHoverColour
     #social
@@ -79,11 +77,11 @@ nav.fixed
                 width: calc(100% - 10px)
                 height: 60px
                 line-height: 60px
-    #DesktopNav ul#links
-        display: none
+    #DesktopNav
+        #menubutton
+            display: inline-block
+        #links
+            display: none
     nav.fixed
         ul li a
             color: $TextColor
-    nav
-        ul#menubutton
-            display: inline-block
