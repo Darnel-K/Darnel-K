@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   position: absolute;
-  font-family: monospace;
+  font-family: roboto;
   overflow-x: hidden;
   width: 100%;
 }
@@ -11,8 +11,8 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: Montserrat;
 }
 
-body p {
-  font-family: roboto;
+body a {
+  text-decoration: none;
 }
 
 #content {
@@ -114,13 +114,13 @@ nav ul li {
   display: inline-block;
   vertical-align: middle;
   padding: 0 5px;
+  text-align: center;
   font-weight: bold;
   font-family: Montserrat;
   font-size: small;
 }
 
 nav ul li a, nav ul li i {
-  text-decoration: none;
   vertical-align: middle;
   color: #EEE;
 }
