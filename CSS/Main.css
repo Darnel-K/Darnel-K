@@ -118,14 +118,10 @@ nav ul li {
   font-weight: bold;
   font-family: Montserrat;
   font-size: small;
-}
-
-nav ul li a, nav ul li i {
-  vertical-align: middle;
   color: #EEE;
 }
 
-nav ul li a:hover, nav ul li i:hover {
+nav ul li:hover {
   color: #999;
 }
 
