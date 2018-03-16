@@ -5,6 +5,7 @@ body {
   font-family: roboto;
   overflow-x: hidden;
   width: 100%;
+  color: #2F2F2F;
 }
 
 body h1, body h2, body h3, body h4, body h5, body h6 {
@@ -124,10 +125,6 @@ nav ul li {
   font-family: Montserrat;
   font-size: small;
   color: #EEE;
-}
-
-nav ul li:hover {
-  color: #999;
 }
 
 nav.fixed {
