@@ -4,13 +4,10 @@ nav
     ul
         padding: 0
         list-style: none
-        display: inline-block
-        margin: 0 0 0 10px
+        // display: inline-block
         li
             display: inline-block
-            float: left
-            height: $NavBarHeight
-            line-height: $NavBarHeight
+            // float: left
             vertical-align: middle
             padding: 0 5px
             font-weight: bold
@@ -43,6 +40,10 @@ nav.fixed
     grid-template-columns: auto auto
     ul
         height: $NavBarHeight
+        margin: 0 0 0 10px
+        li
+            height: $NavBarHeight
+            line-height: $NavBarHeight
     #menubutton
         display: none
     #links
