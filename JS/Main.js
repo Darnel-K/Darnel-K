@@ -117,11 +117,11 @@ function SetupMobileMenuEvents() {
         if (MenuOpen) {
             MenuOpen = false;
             $("#menubutton li i").attr('class', 'fas fa-bars fa-2x');
-            $("#content").animate({ left: "0" }, MovementSpeed);
+            $("body").animate({ left: "0" }, MovementSpeed);
         } else {
             MenuOpen = true;
             $("#menubutton li i").attr("class", "fas fa-angle-left fa-3x");
-            $('#content').animate({left: '80vw'}, MovementSpeed);
+            $('body').animate({left: '80vw'}, MovementSpeed);
         }
     });
 }

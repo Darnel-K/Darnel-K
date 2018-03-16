@@ -29,32 +29,29 @@
             echo GenNav::GenNavHTML(GlobalVars::$NavLinks);
         ?>
     </nav>
-    <div id="content">
-        <nav id='DesktopNav'>
-            <ul id='menubutton'><li><i class='fas fa-bars fa-2x'></i></li></ul>
-            <?php
-                echo GenNav::GenNavHTML(GlobalVars::$NavLinks, GlobalVars::$SocialLinks);
-            ?>
-        </nav>
-        <div id="HeaderBack"></div>
-        <!-- /#HeaderBack -->
-        <header>
-            <div id='particles-js'></div>
-            <div id='overlay'>
-                <section>
-                    <img src='<?php echo GlobalVars::$LogoPath; ?>' alt='Logo SVG'>
-                    <h1>Freelance Web Design &amp; Development</h1>
-                </section>
-            </div>
-        </header>
-        <div id="Wrapper">
-            <p id="DownArrowContainer">
-                <i class="fas fa-angle-down fa-3x bounce" id="DownArrow"></i>
-            </p>
-            <footer></footer>
+    <nav id='DesktopNav'>
+        <ul id='menubutton'><li><i class='fas fa-bars fa-2x'></i></li></ul>
+        <?php
+            echo GenNav::GenNavHTML(GlobalVars::$NavLinks, GlobalVars::$SocialLinks);
+        ?>
+    </nav>
+    <div id="HeaderBack"></div>
+    <!-- /#HeaderBack -->
+    <header>
+        <div id='particles-js'></div>
+        <div id='overlay'>
+            <section>
+                <img src='<?php echo GlobalVars::$LogoPath; ?>' alt='Logo SVG'>
+                <h1>Freelance Web Design &amp; Development</h1>
+            </section>
         </div>
-        <!-- /#wrapper -->
+    </header>
+    <div id="Wrapper">
+        <p id="DownArrowContainer">
+            <i class="fas fa-angle-down fa-3x bounce" id="DownArrow"></i>
+        </p>
+        <footer></footer>
     </div>
-    <!-- /#content -->
+    <!-- /#wrapper -->
 </body>
 </html>

@@ -15,10 +15,6 @@ body p {
   font-family: roboto;
 }
 
-#content {
-  position: absolute;
-}
-
 ::-webkit-scrollbar {
   height: 4px;
   width: 4px;
