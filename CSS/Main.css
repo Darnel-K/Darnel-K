@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -22,7 +26,7 @@ body a:hover, body a i:hover {
 }
 
 #content {
-  position: absolute;
+  position: relative;
   background-color: #FFF;
 }
 
@@ -196,21 +200,25 @@ nav.fixed ul li a, nav.fixed ul li i {
 }
 
 #Wrapper {
-  position: absolute;
+  position: relative;
   top: 0;
   min-height: 1000px;
-  background-color: #FFF;
   width: 100vw;
   z-index: 4;
   margin-top: 50px;
 }
 
-#Wrapper section {
+#Wrapper .WrapperContent {
+  width: 100%;
+  background-color: #FFF;
+}
+
+#Wrapper .WrapperContent section {
   width: 100%;
 }
 
 #HomePage #Wrapper {
-  margin-top: 100vh;
+  margin-top: -50px;
 }
 
 #HomePage #Wrapper #DownArrowContainer {
@@ -219,7 +227,6 @@ nav.fixed ul li a, nav.fixed ul li i {
   margin: 0;
   text-align: center;
   color: #EEE;
-  margin-top: -50px;
 }
 
 footer {
