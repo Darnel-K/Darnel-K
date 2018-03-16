@@ -8,7 +8,7 @@ body {
   position: absolute;
   font-family: roboto;
   overflow-x: hidden;
-  width: 100%;
+  width: 0;
   color: #2F2F2F;
 }
 
@@ -23,11 +23,6 @@ body a, body a i {
 
 body a:hover, body a i:hover {
   color: #999 !important;
-}
-
-#content {
-  position: relative;
-  background-color: #FFF;
 }
 
 ::-webkit-scrollbar {
@@ -192,6 +187,11 @@ nav.fixed ul li a, nav.fixed ul li i {
 #DesktopNav #social li {
   float: right;
   font-weight: initial;
+}
+
+#content {
+  position: relative;
+  background-color: #FFF;
 }
 
 .WrapperContent, header {
