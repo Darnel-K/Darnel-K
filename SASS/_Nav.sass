@@ -8,7 +8,6 @@ nav
         li
             display: inline-block
             // float: left
-            vertical-align: middle
             padding: 0 5px
             text-align: center
             font-weight: bold
@@ -17,18 +16,11 @@ nav
             color: $TextColor
 nav.fixed
     background-color: $BackgroundColour
-    ul
-        li
-            a, i
-                color: $WhiteBGTextColour
-
+    ul li
+        a, i
+            color: $WhiteBGTextColour
 #MobileNav
     display: none
-    #links li
-        a
-            width: 100%
-            height: 100%
-            display: inline-block
 #DesktopNav
     width: 100vw
     height: $NavBarHeight
@@ -61,12 +53,11 @@ nav.fixed
     #MobileNav
         display: grid
         z-index: -1
-        ul#links
+        #links
             position: fixed
             width: 80vw
             height: 100%
             margin: 0
-            left: 0
             background-color: $MobileNavBackColour
             .NavBarSpacer
                 display: none
@@ -74,11 +65,14 @@ nav.fixed
                 width: calc(100% - 10px)
                 height: 60px
                 line-height: 60px
+                a
+                    width: 100%
+                    height: 100%
+                    display: inline-block
     #DesktopNav
         #menubutton
             display: inline-block
         #links
             display: none
-    nav.fixed
-        ul li a
-            color: $TextColor
+    nav.fixed #links li a
+        color: $TextColor
