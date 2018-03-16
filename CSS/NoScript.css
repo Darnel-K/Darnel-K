@@ -6,12 +6,12 @@ nav #menubutton {
   display: none !important;
 }
 
-nav ul li a {
+nav ul li a, nav ul li i {
   color: #2F2F2F !important;
   white-space: nowrap !important;
 }
 
-nav ul#links {
+nav #links {
   overflow-x: auto !important;
   overflow-y: hidden !important;
   display: -webkit-box !important;
@@ -26,7 +26,7 @@ nav ul#links {
   background-color: initial !important;
 }
 
-nav ul#links .NavBarSpacer {
+nav #links .NavBarSpacer {
   display: initial !important;
 }
 /*# sourceMappingURL=NoScript.css.map */
