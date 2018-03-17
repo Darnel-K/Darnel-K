@@ -8,7 +8,7 @@ body {
   position: absolute;
   font-family: roboto;
   z-index: -2;
-  overflow: hidden;
+  overflow-x: hidden;
   width: 100%;
   color: #2F2F2F;
 }
@@ -193,7 +193,6 @@ nav.fixed ul li a, nav.fixed ul li i {
 #content {
   position: relative;
   background-color: #FFF;
-  overflow-y: auto;
 }
 
 .WrapperContent, header {
@@ -208,7 +207,6 @@ nav.fixed ul li a, nav.fixed ul li i {
   width: 100vw;
   z-index: 4;
   margin-top: 0;
-  overscroll-behavior: none;
 }
 
 #Wrapper .WrapperContent {
