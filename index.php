@@ -23,7 +23,7 @@
     ?>
     <title>Darnel-K | Home</title>
 </head>
-<body id="">
+<body id="HomePage">
     <nav id='MobileNav'>
         <?php
             echo GenNav::GenNavHTML(GlobalVars::$NavLinks);
