@@ -193,11 +193,13 @@ nav.fixed ul li a, nav.fixed ul li i {
 #content {
   position: relative;
   background-color: #FFF;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
 }
 
-.WrapperContent, header {
-  -webkit-box-shadow: 0px 0px 20px 0px;
-          box-shadow: 0px 0px 20px 0px;
+.WrapperContent {
+  -webkit-box-shadow: 0 -10px 20px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 -10px 20px -5px rgba(0, 0, 0, 0.5);
 }
 
 #Wrapper {
