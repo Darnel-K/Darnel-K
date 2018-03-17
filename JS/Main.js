@@ -130,9 +130,9 @@ function SetupWindowEvents() {
     // All events attached to the browser window
     var ParticlesRunning = true
     $(window).on("scroll", function() {
-        ($('#HomePage') ? ($(window).scrollTop() >= $(window).outerHeight() - 100 ? $("nav").addClass("fixed") : $("nav").removeClass("fixed")) : false);
+        ($('#HomePage').length ? ($(window).scrollTop() >= $(window).outerHeight() - 100 ? $("nav").addClass("fixed") : $("nav").removeClass("fixed")) : false);
         $("#DownArrow").css("opacity", 1 - $(window).scrollTop() / ($(window).outerHeight() - 150));
-        ($('header') ? $("header").css("opacity", 1 - $(window).scrollTop() / ($(window).outerHeight() - 100)) : false);
+        ($('header').length ? $("header").css("opacity", 1 - $(window).scrollTop() / ($(window).outerHeight() - 100)) : false);
         if (($(window).scrollTop() >= $(window).outerHeight()) && ParticlesRunning) {
             cancelRequestAnimFrame(pJSDom[0].pJS.fn.checkAnimFrame);
             cancelRequestAnimFrame(pJSDom[0].pJS.fn.drawAnimFrame);
@@ -148,7 +148,7 @@ function SetupWindowEvents() {
 
 function SetupDownArrowEvents() {
     // All events attached to the bouncing down arrow
-    ($("#DownArrow") ? $("#DownArrow").on("click", function () { $("html, body").animate({ scrollTop: $("#Wrapper").offset().top }, 700); }) : false);
+    ($("#DownArrow").length ? $("#DownArrow").on("click", function () { $("html, body").animate({ scrollTop: $("#Wrapper").offset().top }, 700); }) : false);
 }
 
 function StartEvents() {
