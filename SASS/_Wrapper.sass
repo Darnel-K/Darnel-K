@@ -1,24 +1,20 @@
 #content
     position: relative
     background-color: $BackgroundColour
-    // box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.8)
-    
+    #Wrapper
+        position: relative
+        top: 0
+        width: 100vw
+        z-index: 4
+        margin-top: 0
+        .WrapperContent
+            width: 100%
+            min-height: 100vh
+            background-color: $BackgroundColour
+            section
+                width: 100%
 .WrapperContent, #content
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8)
-    
-    
-#Wrapper
-    position: relative
-    top: 0
-    width: 100vw
-    z-index: 4
-    margin-top: 0
-    .WrapperContent
-        width: 100%
-        min-height: 100vh
-        background-color: $BackgroundColour
-        section
-            width: 100%
 
 #HomePage #Wrapper
     margin-top: -50px

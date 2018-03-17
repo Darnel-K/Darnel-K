@@ -54,13 +54,6 @@ body a:hover, body a i:hover {
   border: thin solid #666;
 }
 
-#HeaderBack {
-  width: 100vw;
-  height: 100vh;
-  background-color: #FFF;
-  position: fixed;
-}
-
 header {
   width: 100vw;
   height: 100vh;
@@ -195,12 +188,7 @@ nav.fixed ul li a, nav.fixed ul li i {
   background-color: #FFF;
 }
 
-.WrapperContent, #content {
-  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
-          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
-}
-
-#Wrapper {
+#content #Wrapper {
   position: relative;
   top: 0;
   width: 100vw;
@@ -208,14 +196,19 @@ nav.fixed ul li a, nav.fixed ul li i {
   margin-top: 0;
 }
 
-#Wrapper .WrapperContent {
+#content #Wrapper .WrapperContent {
   width: 100%;
   min-height: 100vh;
   background-color: #FFF;
 }
 
-#Wrapper .WrapperContent section {
+#content #Wrapper .WrapperContent section {
   width: 100%;
+}
+
+.WrapperContent, #content {
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
 }
 
 #HomePage #Wrapper {
