@@ -207,6 +207,7 @@ nav.fixed ul li a, nav.fixed ul li i {
   width: 100vw;
   z-index: 4;
   margin-top: 0;
+  overscroll-behavour: none;
 }
 
 #Wrapper .WrapperContent {
