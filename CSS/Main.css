@@ -196,8 +196,8 @@ nav.fixed ul li a, nav.fixed ul li i {
 }
 
 .WrapperContent, #content {
-  -webkit-box-shadow: 0 -10px 20px -5px rgba(0, 0, 0, 0.8);
-          box-shadow: 0 -10px 20px -5px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.8);
 }
 
 #Wrapper {
