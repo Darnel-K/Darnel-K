@@ -24,13 +24,13 @@
     <title>Darnel-K | Contact Me</title>
 </head>
 <body>
-    <nav id='MobileNav'>
+    <nav id='MobileNav' class="fixed">
         <?php
             echo Factory::GetNavList(GlobalVars::$NavLinks);
         ?>
     </nav>
     <div id="content">
-        <nav id='DesktopNav'>
+        <nav id='DesktopNav' class="fixed">
             <ul id='menubutton'><li><i class='fas fa-bars fa-2x'></i></li></ul>
             <?php
                 echo Factory::GetNavList(GlobalVars::$NavLinks, GlobalVars::$SocialLinks);
