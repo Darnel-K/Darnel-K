@@ -71,7 +71,7 @@ class Factory {
         $output .= "</ul>";
         if ($SocialLinks != null) {
             $output .= "<ul id='social'>";
-            $output .= self::GenSocialButtonsHTML($SocialLinks);
+            $output .= self::GetSocialButtonsList($SocialLinks);
             $output .= "</ul>";
         }
         return $output;
