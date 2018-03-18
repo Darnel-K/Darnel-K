@@ -11,7 +11,7 @@ class GenNav {
     }
 
     public static function GenNavHTML(array $LinkArray, array $SocialLinks = null, $spacer = '|') {
-        $output = "<ul id='links'>";
+        $output = "<ul class='links'>";
         $arr = $LinkArray;
         foreach ($arr as $i) {
             $output .= "<li><a href='" . $i['Path'] . ($i['Disabled'] ? "' onclick='return false;'" : "'") . ">" . $i['Text'] . "</a></li>";
@@ -19,7 +19,7 @@ class GenNav {
         }
         $output .= "</ul>";
         if ($SocialLinks != null) {
-            $output .= "<ul id='social'>";
+            $output .= "<ul class='social'>";
             $output .= self::GenSocialButtonsHTML($SocialLinks);
             $output .= "</ul>";
         }

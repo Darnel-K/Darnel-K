@@ -153,11 +153,11 @@ nav.fixed ul li a, nav.fixed ul li i {
   line-height: 50px;
 }
 
-#DesktopNav #menubutton {
+#DesktopNav .menubutton {
   display: none;
 }
 
-#DesktopNav #links {
+#DesktopNav .links {
   display: inline-block;
   -webkit-box-pack: start;
   -webkit-justify-content: start;
@@ -165,11 +165,11 @@ nav.fixed ul li a, nav.fixed ul li i {
           justify-content: start;
 }
 
-#DesktopNav #links .NavBarSpacer {
+#DesktopNav .links .NavBarSpacer {
   color: #999;
 }
 
-#DesktopNav #social {
+#DesktopNav .social {
   -webkit-box-pack: end;
   -webkit-justify-content: end;
       -ms-flex-pack: end;
@@ -178,7 +178,7 @@ nav.fixed ul li a, nav.fixed ul li i {
   margin: 0 10px 0 0;
 }
 
-#DesktopNav #social li {
+#DesktopNav .social li {
   float: right;
   font-weight: initial;
 }
@@ -273,19 +273,19 @@ footer {
     height: 100%;
     background-color: #2F2F2F;
   }
-  #MobileNav #links {
+  #MobileNav .links {
     margin: 0;
   }
-  #MobileNav #links .NavBarSpacer {
+  #MobileNav .links .NavBarSpacer {
     display: none;
   }
-  #MobileNav #links li {
+  #MobileNav .links li {
     width: -webkit-calc(100% - 10px);
     width: calc(100% - 10px);
     height: 60px;
     line-height: 60px;
   }
-  #MobileNav #links li a {
+  #MobileNav .links li a {
     width: 100%;
     height: 100%;
     display: inline-block;
@@ -293,10 +293,10 @@ footer {
   #DesktopNav #menubutton {
     display: inline-block;
   }
-  #DesktopNav #links {
+  #DesktopNav .links {
     display: none;
   }
-  nav.fixed #links li a {
+  nav.fixed .links li a {
     color: #EEE;
   }
 }
