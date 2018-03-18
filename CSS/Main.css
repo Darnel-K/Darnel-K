@@ -202,8 +202,13 @@ nav.fixed ul li a, nav.fixed ul li i {
   background-color: #FFF;
 }
 
-#content #Wrapper .WrapperContent section {
+#content #Wrapper .WrapperContent .Spacer {
+  height: 50px;
   width: 100%;
+}
+
+#content #Wrapper .WrapperContent section {
+  width: 80%;
 }
 
 .WrapperContent, #content {
