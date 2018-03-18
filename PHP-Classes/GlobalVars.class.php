@@ -6,7 +6,7 @@ class GlobalVars {
         array("Text" => 'Portfolio', "Path" => '/Portfolio', "Disabled" => true),
         array("Text" => 'Projects', "Path" => '/Projects', "Disabled" => true),
         array("Text" => 'Get A Quote', "Path" => '/QuoteMe', "Disabled" => true),
-        array("Text" => 'Contact', "Path" => '/Contact', "Disabled" => true)
+        array("Text" => 'Contact', "Path" => '/Contact', "Disabled" => false)
     );
 
     public static $SocialLinks = array(
