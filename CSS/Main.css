@@ -227,6 +227,7 @@ footer {
   min-height: 100px;
   background-color: #1F1F1F;
   width: 100%;
+  display: grid;
 }
 
 @-webkit-keyframes bounce {
