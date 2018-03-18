@@ -12,7 +12,7 @@ Versioning numbers defined as MAJOR.MINOR.PATCH
 
 ### Changed
 - Cleaned up Nav Sass files
-- Wrapper minimum height
+- Wrapper minimum height to 100vh
 
 ## [0.15.0] - 2018-03-15
 ### Added
