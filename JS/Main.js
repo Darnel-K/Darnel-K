@@ -164,7 +164,7 @@ function init() {
     $(window).scroll();
     var out = "";
     $('*').each(function (i) {
-        out += i + ', ' + $(this)[0]['nodeName'] + ': ' + $(this)[0]['scrollTop'] + "\n";
+        out += i + ', ' + $(this)[0]['nodeName'] + ': ' + $(this)[0]['scrollHeight'] + "\n";
     });
     alert(out);
 }
