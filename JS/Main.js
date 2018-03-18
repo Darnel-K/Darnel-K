@@ -162,6 +162,9 @@ function init() {
     StartEvents();
     SetupMobileMenuEvents();
     $(window).scroll();
+    $('html, body').each(function (i) {
+        console.log(i + ': ' + $(this)[0]['scrollTop']);
+    });
 }
 
 $(document).ready(function() {
