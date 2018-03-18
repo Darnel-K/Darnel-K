@@ -7,8 +7,8 @@
 <html lang="en">
 <head>
     <?php
-        echo GenHead::GenScripts(GlobalVars::$Scripts);
-        echo GenHead::GenCSS(GlobalVars::$CSS, GlobalVars::$NoScriptCSS);
+        echo Factory::GetScripts(GlobalVars::$Scripts);
+        echo Factory::GetCSS(GlobalVars::$CSS, GlobalVars::$NoScriptCSS);
         $OpenGraph = array(
             "Title" => "Darnel-K | Home",
             "Type" => "website",
@@ -17,23 +17,23 @@
             "Description" => "Development area of my site",
             "Locale" => "en_GB"
         );
-        echo GenHead::GenSocialCards(GlobalVars::$Twitter, $OpenGraph);
-        echo GenHead::GenLinks(GlobalVars::$Links);
-        echo GenHead::GenExtraMetadata(GlobalVars::$ExtraMetadata);
+        echo Factory::GetSocialCards(GlobalVars::$Twitter, $OpenGraph);
+        echo Factory::GetLinks(GlobalVars::$Links);
+        echo Factory::GetExtraMetadata(GlobalVars::$ExtraMetadata);
     ?>
     <title>Darnel-K | Home</title>
 </head>
 <body id="HomePage">
     <nav id='MobileNav'>
         <?php
-            echo GenNav::GenNavHTML(GlobalVars::$NavLinks);
+            echo Factory::GetNavList(GlobalVars::$NavLinks);
         ?>
     </nav>
     <div id="content">
         <nav id='DesktopNav'>
             <ul id='menubutton'><li><i class='fas fa-bars fa-2x'></i></li></ul>
             <?php
-                echo GenNav::GenNavHTML(GlobalVars::$NavLinks, GlobalVars::$SocialLinks);
+                echo Factory::GetNavList(GlobalVars::$NavLinks, GlobalVars::$SocialLinks);
             ?>
         </nav>
         <header>
@@ -50,7 +50,7 @@
                 <i class="fas fa-angle-down fa-3x bounce" id="DownArrow"></i>
             </p>
             <div class="WrapperContent">
-                <footer></footer>
+                <footer><?php echo Factory::GetFooter(); ?></footer>
             </div>
             <!-- /.WrapperContent -->
         </div>
