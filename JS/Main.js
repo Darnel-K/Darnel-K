@@ -163,7 +163,7 @@ function init() {
     SetupMobileMenuEvents();
     $(window).scroll();
     $('html, body').each(function (i) {
-        console.log(i + ': ' + $(this)[0]['scrollTop']);
+        alert(i + ': ' + $(this)[0]['scrollTop']);
     });
 }
 
