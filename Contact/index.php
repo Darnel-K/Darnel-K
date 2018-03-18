@@ -40,7 +40,9 @@
             <div class="WrapperContent">
                 <section class="Spacer"></section>
                 <section id="Contact">
-                    
+                    <form action="" method="post"></form>
+                    <div id="Bar"></div>
+                    <div id="ContactSocial"></div>
                 </section>
                 <footer><?php echo Factory::GetFooter(); ?></footer>
             </div>

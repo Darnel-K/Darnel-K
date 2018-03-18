@@ -17,6 +17,7 @@
             section
                 width: 80%
                 display: grid
+                margin: 0 auto
             #Contact
                 grid-template-areas: 'C_Form Bar Social'
                 grid-gap: 10px
@@ -24,10 +25,13 @@
                     grid-area: 'C_Form'
                 #Bar
                     grid-area: 'Bar'
-                #SocialLinks
+                    width: 1px
+                    height: 100%
+                    background-color: $WhiteBGTextColour
+                #ContactSocial
                     grid-area: 'Social'
 .WrapperContent, #content
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8)
+    box-shadow: 0 0 20px 0 $BoxShadowColour
 
 #HomePage #Wrapper
     margin-top: -50px

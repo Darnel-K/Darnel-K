@@ -210,6 +210,7 @@ nav.fixed ul li a, nav.fixed ul li i {
 #content #Wrapper .WrapperContent section {
   width: 80%;
   display: grid;
+  margin: 0 auto;
 }
 
 #content #Wrapper .WrapperContent #Contact {
@@ -223,9 +224,12 @@ nav.fixed ul li a, nav.fixed ul li i {
 
 #content #Wrapper .WrapperContent #Contact #Bar {
   grid-area: 'Bar';
+  width: 1px;
+  height: 100%;
+  background-color: #2F2F2F;
 }
 
-#content #Wrapper .WrapperContent #Contact #SocialLinks {
+#content #Wrapper .WrapperContent #Contact #ContactSocial {
   grid-area: 'Social';
 }
 
