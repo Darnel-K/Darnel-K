@@ -38,8 +38,8 @@
         </nav>
         <div id="Wrapper">
             <div class="WrapperContent">
-                <span class="Spacer"></span> <!-- /.Spacer -->
-                <section></section>
+                <section class="Spacer"></section> <!-- /.Spacer -->
+                <section id="Contact"></section>
                 <footer><?php echo Factory::GetFooter(); ?></footer>
             </div>
             <!-- /.WrapperContent -->

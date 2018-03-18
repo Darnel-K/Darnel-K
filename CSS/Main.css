@@ -209,6 +209,7 @@ nav.fixed ul li a, nav.fixed ul li i {
 
 #content #Wrapper .WrapperContent section {
   width: 80%;
+  display: grid;
 }
 
 .WrapperContent, #content {
