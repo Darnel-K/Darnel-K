@@ -13,6 +13,9 @@ Versioning numbers defined as MAJOR.MINOR.PATCH
 ### Changed
 - Cleaned up Nav Sass files
 - Wrapper minimum height to 100vh
+- Moved HTML around
+- Changed position on certain HTML elements
+- Set body z-index to -2
 
 ## [0.15.0] - 2018-03-15
 ### Added
