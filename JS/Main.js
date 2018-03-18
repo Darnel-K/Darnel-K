@@ -162,11 +162,6 @@ function init() {
     StartEvents();
     SetupMobileMenuEvents();
     $(window).scroll();
-    var out = "";
-    $('*').each(function (i) {
-        out += i + ', ' + $(this)[0]['nodeName'] + ': ' + $(this)[0]['offsetTop'] + "\n";
-    });
-    alert(out);
 }
 
 $(document).ready(function() {
