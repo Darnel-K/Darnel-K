@@ -153,7 +153,7 @@ nav.fixed ul li a, nav.fixed ul li i {
   line-height: 50px;
 }
 
-#DesktopNav .menubutton {
+#DesktopNav #menubutton {
   display: none;
 }
 
@@ -169,7 +169,7 @@ nav.fixed ul li a, nav.fixed ul li i {
   color: #999;
 }
 
-#DesktopNav .social {
+#DesktopNav #social {
   -webkit-box-pack: end;
   -webkit-justify-content: end;
       -ms-flex-pack: end;
@@ -178,7 +178,7 @@ nav.fixed ul li a, nav.fixed ul li i {
   margin: 0 10px 0 0;
 }
 
-#DesktopNav .social li {
+#DesktopNav #social li {
   float: right;
   font-weight: initial;
 }
@@ -290,7 +290,7 @@ footer {
     height: 100%;
     display: inline-block;
   }
-  #DesktopNav .menubutton {
+  #DesktopNav #menubutton {
     display: inline-block;
   }
   #DesktopNav .links {

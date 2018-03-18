@@ -31,7 +31,7 @@
     </nav>
     <div id="content">
         <nav id='DesktopNav'>
-            <ul class='menubutton'><li><i class='fas fa-bars fa-2x'></i></li></ul>
+            <ul id='menubutton'><li><i class='fas fa-bars fa-2x'></i></li></ul>
             <?php
                 echo GenNav::GenNavHTML(GlobalVars::$NavLinks, GlobalVars::$SocialLinks);
             ?>
