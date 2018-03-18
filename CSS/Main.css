@@ -290,7 +290,7 @@ footer {
     height: 100%;
     display: inline-block;
   }
-  #DesktopNav #menubutton {
+  #DesktopNav .menubutton {
     display: inline-block;
   }
   #DesktopNav .links {
