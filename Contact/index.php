@@ -39,7 +39,9 @@
         <div id="Wrapper">
             <div class="WrapperContent">
                 <section class="Spacer"></section>
-                <section id="Contact"></section>
+                <section id="Contact">
+                    
+                </section>
                 <footer><?php echo Factory::GetFooter(); ?></footer>
             </div>
             <!-- /.WrapperContent -->
