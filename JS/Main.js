@@ -158,7 +158,7 @@ function StartEvents() {
 
 function init() {
     // Start Particles JS
-    window.particlesJS("particles-js", particlesJSON);
+    ($('#particles-js').length ? window.particlesJS("particles-js", particlesJSON) : false);
     StartEvents();
     SetupMobileMenuEvents();
     $(window).scroll();
