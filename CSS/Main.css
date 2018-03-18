@@ -264,29 +264,6 @@ footer {
           animation: bounce 2s infinite;
 }
 
-@-webkit-keyframes MenuOpen {
-  from {
-    left: 0;
-  }
-  to {
-    left: 80vw;
-  }
-}
-
-@keyframes MenuOpen {
-  from {
-    left: 0;
-  }
-  to {
-    left: 80vw;
-  }
-}
-
-.MenuOpen {
-  -webkit-animation: MenuOpen 0.8s 1;
-          animation: MenuOpen 0.8s 1;
-}
-
 @media only screen and (max-width: 768px) {
   #MobileNav {
     display: grid;
