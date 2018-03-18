@@ -59,7 +59,7 @@ class Factory {
 
     public static function GetNavList(array $LinkArray, array $SocialLinks = null, $Spacer = '|') {
         $output = "<ul class='links'>";
-        foreach ($arr as $i) {
+        foreach ($LinkArray as $i) {
             $output .= "<li><a href='" . $i['Path'] . ($i['Disabled'] ? "' onclick='return false;'" : "'") . ">" . $i['Text'] . "</a></li>";
             $output .= (count($LinkArray) - 1 != array_search($i, $LinkArray) ? "<li class='NavBarSpacer'>" . $Spacer . "</li>" : '');
         }
