@@ -40,7 +40,7 @@
             <div id='particles-js'></div>
             <div id='overlay'>
                 <section>
-                    <img src='<?php echo GlobalVars::$LogoPath; ?>' alt='Logo SVG'>
+                    <img src='<?php echo str_replace(' ', '%20', GlobalVars::$LogoPath); ?>' alt='Logo SVG'>
                     <h1>Freelance Web Design &amp; Development</h1>
                 </section>
             </div>
