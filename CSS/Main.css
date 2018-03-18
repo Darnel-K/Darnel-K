@@ -212,6 +212,23 @@ nav.fixed ul li a, nav.fixed ul li i {
   display: grid;
 }
 
+#content #Wrapper .WrapperContent #Contact {
+  grid-template-areas: 'C_Form Bar Social';
+  grid-gap: 10px;
+}
+
+#content #Wrapper .WrapperContent #Contact form {
+  grid-area: 'C_Form';
+}
+
+#content #Wrapper .WrapperContent #Contact #Bar {
+  grid-area: 'Bar';
+}
+
+#content #Wrapper .WrapperContent #Contact #SocialLinks {
+  grid-area: 'Social';
+}
+
 .WrapperContent, #content {
   -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
           box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
