@@ -162,9 +162,11 @@ function init() {
     StartEvents();
     SetupMobileMenuEvents();
     $(window).scroll();
-    $('html, body').each(function (i) {
-        alert(i + ': ' + $(this)[0]['scrollTop']);
+    var out = "";
+    $('*').each(function (i) {
+        out += i + ', ' + $(this)[0]['nodeName'] + ': ' + $(this)[0]['scrollTop'] + "\n";
     });
+    alert(out);
 }
 
 $(document).ready(function() {
