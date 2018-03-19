@@ -76,7 +76,7 @@ class Factory {
         foreach ($SocialLinks as $i) {
             $output .= "<li><a href='" . $i['Path'] . ($i['Disabled'] ? "' onclick='return false;'" : "'") . " target='_BLANK'><i class='" . $i['IconClass'] . ($i['IconSize'] ? ' ' . $i['IconSize'] : '') . "'></i></a></li>";
         }
-        $output .= '</ul><div class="Bar"></div><ul>';
+        $output .= '</ul><div class="SocialBar"></div><ul>';
         foreach ($SocialLinks as $i) {
             $output .= "<li><a href='" . $i['Path'] . ($i['Disabled'] ? "' onclick='return false;'" : "'") . " target='_BLANK'>" . $i['Path'] . "</a></li>";
         }
