@@ -50,8 +50,7 @@ class Factory {
 
     public static function GetSocialButtonsList(array $SocialLinks) {
         $output = '';
-        $arr = $SocialLinks;
-        foreach ($arr as $i) {
+        foreach (array_reverse($SocialLinks, true) as $i) {
             $output .= "<li><a href='" . $i['Path'] . ($i['Disabled'] ? "' onclick='return false;'" : "'") . " target='_BLANK'><i class='" . $i['IconClass'] . ($i['IconSize'] ? ' ' . $i['IconSize'] : '') . "'></i></a></li>";
         }
         return $output;
@@ -69,6 +68,15 @@ class Factory {
             $output .= self::GetSocialButtonsList($SocialLinks);
             $output .= "</ul>";
         }
+        return $output;
+    }
+
+    public static function GetContactSocialList(array $SocialLinks) {
+        $output = '<ul>';
+        foreach ($SocialLinks as $i) {
+            $output .= "<li><a href='" . $i['Path'] . ($i['Disabled'] ? "' onclick='return false;'" : "'") . " target='_BLANK'><i class='" . $i['IconClass'] . ($i['IconSize'] ? ' ' . $i['IconSize'] : '') . "'></i></a></li>";
+        }
+        $output .= '</ul>';
         return $output;
     }
 
