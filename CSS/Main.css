@@ -266,15 +266,25 @@ nav.fixed ul li a, nav.fixed ul li i {
       -ms-flex-line-pack: center;
           align-content: center;
   grid-template-columns: 2em 1px auto;
+  grid-template-areas: 'Icons SocialBar Links';
 }
 
 #content #Wrapper .WrapperContent #Contact #ContactSocial ul {
   list-style: none;
 }
 
-#content #Wrapper .WrapperContent #Contact #ContactSocial .Bar {
-  width: 1px !important;
-  height: 100% !important;
+#content #Wrapper .WrapperContent #Contact #ContactSocial ul:nth-child(1) {
+  grid-area: Icons;
+}
+
+#content #Wrapper .WrapperContent #Contact #ContactSocial ul:nth-child(2) {
+  grid-area: Links;
+}
+
+#content #Wrapper .WrapperContent #Contact #ContactSocial .SocialBar {
+  grid-area: SocialBar;
+  width: 1px;
+  height: 100%;
 }
 
 .WrapperContent, #content {

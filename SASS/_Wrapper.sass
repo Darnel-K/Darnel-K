@@ -53,11 +53,17 @@
                     padding: 50px
                     align-content: center
                     grid-template-columns: 2em 1px auto
+                    grid-template-areas: 'Icons SocialBar Links'
                     ul
                         list-style: none
-                    .Bar
-                        width: 1px !important
-                        height: 100% !important
+                    ul:nth-child(1)
+                        grid-area: Icons
+                    ul:nth-child(2)
+                        grid-area: Links
+                    .SocialBar
+                        grid-area: SocialBar
+                        width: 1px
+                        height: 100%
 .WrapperContent, #content
     box-shadow: 0 0 20px 0 $BoxShadowColour
 
