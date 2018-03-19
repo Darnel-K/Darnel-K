@@ -281,6 +281,7 @@ nav.fixed ul li a, nav.fixed ul li i {
 #content #Wrapper .WrapperContent #Contact #ContactSocial ul li a {
   width: 100%;
   vertical-align: middle;
+  line-height: 40px;
 }
 
 #content #Wrapper .WrapperContent #Contact #ContactSocial ul li a i {
