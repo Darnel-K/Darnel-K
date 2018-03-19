@@ -398,6 +398,7 @@ footer {
     color: #EEE;
   }
   #content #Wrapper .WrapperContent #Contact {
+    width: initial;
     grid-template-areas: 'C_Form' 'Bar' 'Social';
     grid-template-columns: none;
   }
@@ -407,6 +408,9 @@ footer {
   #content #Wrapper .WrapperContent #Contact .Bar {
     width: 100%;
     height: 1px;
+  }
+  #content #Wrapper .WrapperContent #Contact #ContactSocial {
+    padding: initial;
   }
 }
 /*# sourceMappingURL=Main.css.map */
