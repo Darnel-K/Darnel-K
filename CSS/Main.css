@@ -251,7 +251,7 @@ nav.fixed ul li a, nav.fixed ul li i {
   background-color: #5F5F5F;
 }
 
-#content #Wrapper .WrapperContent #Contact .Bar {
+#content #Wrapper .WrapperContent #Contact .Bar, #content #Wrapper .WrapperContent #Contact .SocialBar {
   grid-area: Bar;
   width: 1px;
   height: 100%;
@@ -283,8 +283,6 @@ nav.fixed ul li a, nav.fixed ul li i {
 
 #content #Wrapper .WrapperContent #Contact #ContactSocial .SocialBar {
   grid-area: SocialBar;
-  width: 1px;
-  height: 100%;
 }
 
 .WrapperContent, #content {
