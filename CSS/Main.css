@@ -265,6 +265,7 @@ nav.fixed ul li a, nav.fixed ul li i {
   -webkit-align-content: center;
       -ms-flex-line-pack: center;
           align-content: center;
+  grid-template-columns: 2em 1px auto;
 }
 
 #content #Wrapper .WrapperContent #Contact #ContactSocial ul {
