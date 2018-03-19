@@ -260,6 +260,11 @@ nav.fixed ul li a, nav.fixed ul li i {
 
 #content #Wrapper .WrapperContent #Contact #ContactSocial {
   grid-area: Social;
+  display: grid;
+  padding: 50px;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
 }
 
 #content #Wrapper .WrapperContent #Contact #ContactSocial ul {
