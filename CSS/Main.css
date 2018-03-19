@@ -267,7 +267,7 @@ nav.fixed ul li a, nav.fixed ul li i {
           align-content: center;
   grid-template-columns: 40px 1px auto;
   grid-template-areas: 'Icons SocialBar Links';
-  grid-column-gap: 10px;
+  grid-column-gap: 15px;
 }
 
 #content #Wrapper .WrapperContent #Contact #ContactSocial ul {
