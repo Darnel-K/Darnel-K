@@ -243,6 +243,8 @@ nav.fixed ul li a, nav.fixed ul li i {
   padding: 5px;
   background-color: #EEE;
   color: #2F2F2F;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 #content #Wrapper .WrapperContent #Contact form input:hover, #content #Wrapper .WrapperContent #Contact form textarea:hover, #content #Wrapper .WrapperContent #Contact form button:hover {
