@@ -16,6 +16,7 @@ nav #links {
   overflow-y: hidden !important;
   display: -webkit-box !important;
   display: -webkit-flex !important;
+  display: -moz-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
   margin: 0 10px !important;
