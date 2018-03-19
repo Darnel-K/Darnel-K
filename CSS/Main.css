@@ -251,7 +251,7 @@ nav.fixed ul li a, nav.fixed ul li i {
   background-color: #DDD;
 }
 
-#content #Wrapper .WrapperContent #Contact #Bar {
+#content #Wrapper .WrapperContent #Contact .Bar {
   grid-area: Bar;
   width: 1px;
   height: 100%;
