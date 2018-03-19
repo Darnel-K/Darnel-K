@@ -61,7 +61,7 @@
                     <div id="Bar"></div>
                     <div id="ContactSocial">
                         <ul>
-                            <?php echo Factory::GetSocialButtonsList(GlobalVars::$SocialLinks); ?>
+                            <?php echo Factory::GetContactSocialList(GlobalVars::$SocialLinks); ?>
                         </ul>
                     </div>
                 </section>
