@@ -265,12 +265,15 @@ nav.fixed ul li a, nav.fixed ul li i {
   -webkit-align-content: center;
       -ms-flex-line-pack: center;
           align-content: center;
-  grid-template-columns: 2em 1px auto;
+  grid-template-columns: 50px 1px auto;
   grid-template-areas: 'Icons SocialBar Links';
+  grid-column-gap: 10px;
 }
 
 #content #Wrapper .WrapperContent #Contact #ContactSocial ul {
   list-style: none;
+  padding: 0;
+  margin: 20px 0;
 }
 
 #content #Wrapper .WrapperContent #Contact #ContactSocial ul:nth-child(1) {
