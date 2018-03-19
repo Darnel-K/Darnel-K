@@ -40,7 +40,15 @@
             <div class="WrapperContent">
                 <section class="Spacer"></section>
                 <section id="Contact">
-                    <form action="" method="post"></form>
+                    <form action="" method="post">
+                        <input type="text" name="FName" id="FName" placeholder="Full Name (*)" required>
+                        <input type="email" name="Email" id="Email" placeholder="Email (*)" required>
+                        <input type="text" name="Subject" id="Subject" placeholder="Subject" list="SubjectList">
+                        <datalist id="SubjectList">
+                            <option value="Option 1">Option 1</option>
+                        </datalist>
+                        <textarea name="MSG" id="MSG" placeholder="Message (*)" required></textarea>
+                    </form>
                     <div id="Bar"></div>
                     <div id="ContactSocial"></div>
                 </section>
