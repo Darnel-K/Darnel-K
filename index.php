@@ -60,9 +60,7 @@
                     </form>
                     <div class="Bar"></div>
                     <div id="ContactSocial">
-                        <ul>
-                            <?php echo Factory::GetContactSocialList(GlobalVars::$SocialLinks); ?>
-                        </ul>
+                        <?php echo Factory::GetContactSocialList(GlobalVars::$SocialLinks); ?>
                     </div>
                 </section>
                 <footer><?php echo Factory::GetFooter(); ?></footer>
