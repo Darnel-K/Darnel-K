@@ -214,7 +214,7 @@ nav.fixed ul li a, nav.fixed ul li i {
 }
 
 #content #Wrapper .WrapperContent #Contact {
-  grid-template-areas: 'C_Form Bar Social';
+  grid-template-areas: 'Head Head Head' 'MSG MSG MSG' 'C_Form Bar Social';
   grid-gap: 10px;
   grid-template-columns: -webkit-calc((80vw - 20px) / 2) 1px -webkit-calc((80vw - 20px) / 2);
   grid-template-columns: calc((80vw - 20px) / 2) 1px calc((80vw - 20px) / 2);
