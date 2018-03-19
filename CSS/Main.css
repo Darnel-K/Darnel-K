@@ -277,7 +277,7 @@ nav.fixed ul li a, nav.fixed ul li i {
   grid-area: Icons;
 }
 
-#content #Wrapper .WrapperContent #Contact #ContactSocial ul:nth-child(2) {
+#content #Wrapper .WrapperContent #Contact #ContactSocial ul:nth-child(3) {
   grid-area: Links;
 }
 

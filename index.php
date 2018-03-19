@@ -58,7 +58,7 @@
                         <textarea name="MSG" id="MSG" placeholder="Message *" required></textarea>
                         <button type="submit">Submit</button>
                     </form>
-                    <div class="Bar"></div>
+                    <div class="SocialBar"></div>
                     <div id="ContactSocial">
                         <?php echo Factory::GetContactSocialList(GlobalVars::$SocialLinks); ?>
                     </div>
