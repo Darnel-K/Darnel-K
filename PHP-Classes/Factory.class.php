@@ -78,7 +78,7 @@ class Factory {
         }
         $output .= '</ul><div class="SocialBar"></div><ul>';
         foreach ($SocialLinks as $i) {
-            $output .= "<li><a href='" . $i['Path'] . ($i['Disabled'] ? "' onclick='return false;'" : "'") . " target='_BLANK'>" . $i['Path'] . "</a></li>";
+            $output .= "<li><a href='" . $i['Path'] . ($i['Disabled'] ? "' onclick='return false;'" : "'") . " target='_BLANK'>" . $i['Text'] . "</a></li>";
         }
         $output .= '</ul>';
         return $output;
