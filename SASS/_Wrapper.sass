@@ -52,15 +52,27 @@
                     display: grid
                     padding: 50px
                     align-content: center
-                    grid-template-columns: 50px 1px auto
+                    grid-template-columns: 40px 1px auto
                     grid-template-areas: 'Icons SocialBar Links'
                     grid-column-gap: 10px
                     ul
                         list-style: none
                         padding: 0
                         margin: 20px 0
+                        display: grid
+                        grid-auto-rows: 40px
                     ul:nth-child(1)
                         grid-area: Icons
+                        text-align: center
+                        li
+                            a
+                                width: 100%
+                                line-height: 40px
+                                vertical-align: middle
+                                i
+                                    width: 100%
+                                    vertical-align: middle
+                                    line-height: 40px
                     ul:nth-child(3)
                         grid-area: Links
                     .SocialBar

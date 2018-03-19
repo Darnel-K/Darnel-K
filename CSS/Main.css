@@ -265,7 +265,7 @@ nav.fixed ul li a, nav.fixed ul li i {
   -webkit-align-content: center;
       -ms-flex-line-pack: center;
           align-content: center;
-  grid-template-columns: 50px 1px auto;
+  grid-template-columns: 40px 1px auto;
   grid-template-areas: 'Icons SocialBar Links';
   grid-column-gap: 10px;
 }
@@ -274,10 +274,25 @@ nav.fixed ul li a, nav.fixed ul li i {
   list-style: none;
   padding: 0;
   margin: 20px 0;
+  display: grid;
+  grid-auto-rows: 40px;
 }
 
 #content #Wrapper .WrapperContent #Contact #ContactSocial ul:nth-child(1) {
   grid-area: Icons;
+  text-align: center;
+}
+
+#content #Wrapper .WrapperContent #Contact #ContactSocial ul:nth-child(1) li a {
+  width: 100%;
+  line-height: 40px;
+  vertical-align: middle;
+}
+
+#content #Wrapper .WrapperContent #Contact #ContactSocial ul:nth-child(1) li a i {
+  width: 100%;
+  vertical-align: middle;
+  line-height: 40px;
 }
 
 #content #Wrapper .WrapperContent #Contact #ContactSocial ul:nth-child(3) {
