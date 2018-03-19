@@ -1,5 +1,5 @@
 nav {
-  background-color: #FFF;
+  background-color: #2F2F2F;
 }
 
 nav #menubutton {
@@ -7,7 +7,7 @@ nav #menubutton {
 }
 
 nav ul li a, nav ul li i {
-  color: #2F2F2F !important;
+  color: #EEE !important;
   white-space: nowrap !important;
 }
 
