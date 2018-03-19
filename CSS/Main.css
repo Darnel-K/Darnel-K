@@ -278,21 +278,20 @@ nav.fixed ul li a, nav.fixed ul li i {
   grid-auto-rows: 40px;
 }
 
+#content #Wrapper .WrapperContent #Contact #ContactSocial ul li a {
+  width: 100%;
+  vertical-align: middle;
+}
+
+#content #Wrapper .WrapperContent #Contact #ContactSocial ul li a i {
+  width: 100%;
+  vertical-align: middle;
+  line-height: 40px;
+}
+
 #content #Wrapper .WrapperContent #Contact #ContactSocial ul:nth-child(1) {
   grid-area: Icons;
   text-align: center;
-}
-
-#content #Wrapper .WrapperContent #Contact #ContactSocial ul:nth-child(1) li a {
-  width: 100%;
-  line-height: 40px;
-  vertical-align: middle;
-}
-
-#content #Wrapper .WrapperContent #Contact #ContactSocial ul:nth-child(1) li a i {
-  width: 100%;
-  vertical-align: middle;
-  line-height: 40px;
 }
 
 #content #Wrapper .WrapperContent #Contact #ContactSocial ul:nth-child(3) {
