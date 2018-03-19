@@ -21,15 +21,19 @@
             #Contact
                 grid-template-areas: 'C_Form Bar Social'
                 grid-gap: 10px
+                grid-template-columns: auto 1px auto
+                max-height: calc(100vh - 250px)
+                padding: 50px 20px
+                min-height: 250px
                 form
-                    grid-area: 'C_Form'
+                    grid-area: C_Form
                 #Bar
-                    grid-area: 'Bar'
+                    grid-area: Bar
                     width: 1px
                     height: 100%
                     background-color: $WhiteBGTextColour
                 #ContactSocial
-                    grid-area: 'Social'
+                    grid-area: Social
 .WrapperContent, #content
     box-shadow: 0 0 20px 0 $BoxShadowColour
 
