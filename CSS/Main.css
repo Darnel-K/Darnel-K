@@ -10,7 +10,7 @@ body {
   z-index: -2;
   overflow-x: hidden;
   width: 100%;
-  color: #2F2F2F;
+  color: #EEE;
 }
 
 body h1, body h2, body h3, body h4, body h5, body h6 {
@@ -125,11 +125,11 @@ nav ul li a, nav ul li i {
 }
 
 nav.fixed {
-  background-color: #FFF;
+  background-color: #2F2F2F;
 }
 
 nav.fixed ul li a, nav.fixed ul li i {
-  color: #2F2F2F;
+  color: #EEE;
 }
 
 #MobileNav {
@@ -185,7 +185,7 @@ nav.fixed ul li a, nav.fixed ul li i {
 
 #content {
   position: relative;
-  background-color: #FFF;
+  background-color: #2F2F2F;
 }
 
 #content #Wrapper {
@@ -199,7 +199,7 @@ nav.fixed ul li a, nav.fixed ul li i {
 #content #Wrapper .WrapperContent {
   width: 100%;
   min-height: 100vh;
-  background-color: #FFF;
+  background-color: #2F2F2F;
 }
 
 #content #Wrapper .WrapperContent .Spacer {
@@ -242,7 +242,7 @@ nav.fixed ul li a, nav.fixed ul li i {
   border: 1px solid #CCC;
   padding: 5px;
   background-color: #EEE;
-  color: #2F2F2F;
+  color: #EEE;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
 }
@@ -255,7 +255,7 @@ nav.fixed ul li a, nav.fixed ul li i {
   grid-area: Bar;
   width: 1px;
   height: 100%;
-  background-color: #2F2F2F;
+  background-color: #EEE;
 }
 
 #content #Wrapper .WrapperContent #Contact #ContactSocial {
