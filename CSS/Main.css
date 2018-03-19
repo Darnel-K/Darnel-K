@@ -234,7 +234,7 @@ nav.fixed ul li a, nav.fixed ul li i {
           align-content: center;
 }
 
-#content #Wrapper .WrapperContent #Contact form input, #content #Wrapper .WrapperContent #Contact form textarea {
+#content #Wrapper .WrapperContent #Contact form input, #content #Wrapper .WrapperContent #Contact form textarea, #content #Wrapper .WrapperContent #Contact form button {
   width: 90%;
   margin: 0 auto;
   -webkit-border-radius: 6px;
@@ -245,7 +245,7 @@ nav.fixed ul li a, nav.fixed ul li i {
   color: #2F2F2F;
 }
 
-#content #Wrapper .WrapperContent #Contact form input:hover, #content #Wrapper .WrapperContent #Contact form textarea:hover {
+#content #Wrapper .WrapperContent #Contact form input:hover, #content #Wrapper .WrapperContent #Contact form textarea:hover, #content #Wrapper .WrapperContent #Contact form button:hover {
   background-color: #DDD;
 }
 

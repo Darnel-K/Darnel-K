@@ -45,7 +45,7 @@
                         <input type="email" name="Email" id="Email" placeholder="* Email" required>
                         <input type="text" name="Subject" id="Subject" placeholder="Subject">
                         <textarea name="MSG" id="MSG" placeholder="* Message" required></textarea>
-                        <input type="submit" value="Submit">
+                        <button type="submit">Submit</button>
                     </form>
                     <div id="Bar"></div>
                     <div id="ContactSocial">
