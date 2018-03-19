@@ -48,9 +48,14 @@
                             <option value="Option 1">Option 1</option>
                         </datalist>
                         <textarea name="MSG" id="MSG" placeholder="Message (*)" required></textarea>
+                        <input type="submit" value="Submit">
                     </form>
                     <div id="Bar"></div>
-                    <div id="ContactSocial"></div>
+                    <div id="ContactSocial">
+                        <ul>
+                            <?php echo Factory::GetSocialButtonsList(GlobalVars::$SocialLinks); ?>
+                        </ul>
+                    </div>
                 </section>
                 <footer><?php echo Factory::GetFooter(); ?></footer>
             </div>

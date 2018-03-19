@@ -21,12 +21,26 @@
             #Contact
                 grid-template-areas: 'C_Form Bar Social'
                 grid-gap: 10px
-                grid-template-columns: auto 1px auto
-                max-height: calc(100vh - 250px)
+                grid-template-columns: calc((80vw - 20px) / 2) 1px calc((80vw - 20px) / 2)
+                height: calc(100vh - 50px - 200px)
                 padding: 50px 20px
-                min-height: 250px
                 form
                     grid-area: C_Form
+                    grid-template-rows: 50px 50px 50px 100px 50px
+                    display: grid
+                    grid-row-gap: 10px
+                    padding: 50px
+                    align-content: center
+                    input, textarea
+                        width: 90%
+                        margin: 0 auto
+                        border-radius: 6px
+                        border: 1px solid $InputBorderColour
+                        padding: 5px
+                        background-color: $InputBGColour
+                        color: $WhiteBGTextColour
+                    input:hover, textarea:hover
+                        background-color: $InputBGHoverColour
                 #Bar
                     grid-area: Bar
                     width: 1px
