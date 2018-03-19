@@ -354,5 +354,12 @@ footer {
   nav.fixed .links li a {
     color: #EEE;
   }
+  #content #Wrapper .WrapperContent #Contact {
+    grid-template-areas: 'C_Form' 'Bar' 'Social';
+    grid-template-columns: none;
+  }
+  #content #Wrapper .WrapperContent #Contact form {
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=Main.css.map */
