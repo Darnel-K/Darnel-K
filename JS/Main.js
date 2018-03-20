@@ -126,6 +126,16 @@ function SetupMobileMenuEvents() {
     });
 }
 
+function SetupHomePageLinkEvents() {
+    if ($('#HomePage').length) {
+        $('.links li').on('click', function(e) {
+            e.preventDefault();
+            var ScrollItem = $(this).find('a').attr('href').replace(' ', '').replace('/', '');
+            $('html, body').animate({ scrollTop: $("#" + ScrollItem).offset().top }, 700);
+        });
+    }
+}
+
 function SetupWindowEvents() {
     // All events attached to the browser window
     var ParticlesRunning = true
@@ -163,6 +173,7 @@ function init() {
     ($('#particles-js').length ? window.particlesJS("particles-js", particlesJSON) : false);
     StartEvents();
     SetupMobileMenuEvents();
+    SetupHomePageLinkEvents();
     $(window).scroll();
 }
 
