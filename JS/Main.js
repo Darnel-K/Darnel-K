@@ -133,15 +133,17 @@ function SetupWindowEvents() {
         ($('#HomePage').length ? ($(window).scrollTop() >= $(window).outerHeight() - 100 ? $("nav").addClass("fixed") : $("nav").removeClass("fixed")) : false);
         $("#DownArrow").css("opacity", 1 - $(window).scrollTop() / ($(window).outerHeight() - 150));
         ($('header').length ? $("header").css("opacity", 1 - $(window).scrollTop() / ($(window).outerHeight() - 100)) : false);
-        if (($(window).scrollTop() >= $(window).outerHeight()) && ParticlesRunning) {
-            cancelRequestAnimFrame(pJSDom[0].pJS.fn.checkAnimFrame);
-            cancelRequestAnimFrame(pJSDom[0].pJS.fn.drawAnimFrame);
-            pJSDom[0].pJS.fn.particlesEmpty();
-            pJSDom[0].pJS.fn.canvasClear();
-            ParticlesRunning = false;
-        } else if (($(window).scrollTop() <= $(window).outerHeight()) && !ParticlesRunning) {
-            pJSDom[0].pJS.fn.vendors.start();
-            ParticlesRunning = true;
+        if ($('header').length) {
+            if (($(window).scrollTop() >= $(window).outerHeight()) && ParticlesRunning) {
+                cancelRequestAnimFrame(pJSDom[0].pJS.fn.checkAnimFrame);
+                cancelRequestAnimFrame(pJSDom[0].pJS.fn.drawAnimFrame);
+                pJSDom[0].pJS.fn.particlesEmpty();
+                pJSDom[0].pJS.fn.canvasClear();
+                ParticlesRunning = false;
+            } else if (($(window).scrollTop() <= $(window).outerHeight()) && !ParticlesRunning) {
+                pJSDom[0].pJS.fn.vendors.start();
+                ParticlesRunning = true;
+            }
         }
     });
 }
