@@ -342,6 +342,11 @@ footer {
   background-color: #1F1F1F;
   width: 100%;
   display: grid;
+  grid-template-areas: 'Copy';
+}
+
+footer #Copyright {
+  grid-area: Copy;
 }
 
 @-webkit-keyframes bounce {
