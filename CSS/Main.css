@@ -120,6 +120,10 @@ nav ul li {
   color: #EEE;
 }
 
+nav ul li, nav ul li a, nav ul li i {
+  vertical-align: middle;
+}
+
 nav.fixed {
   background-color: #2F2F2F;
 }
