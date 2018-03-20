@@ -136,6 +136,7 @@ function SetupHomePageLinkEvents() {
             } else {
                 $('html, body').animate({ scrollTop: $("#" + ScrollItem).offset().top }, 700);
             }
+            ($('#menubutton').length && $('#content').css('left') != '0px' ? $('#menubutton').click() : false);
         });
     }
 }
