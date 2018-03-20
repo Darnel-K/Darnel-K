@@ -50,18 +50,19 @@
                         box-sizing: content-box
                     input:hover, textarea:hover, button:hover
                         background-color: $InputBGHoverColour
-                .Bar, .SocialBar
+                .Bar
                     grid-area: Bar
                     width: 1px
                     height: 100%
                     background-color: $WhiteBGTextColour
+                    opacity: 0.2
                 #ContactSocial
                     grid-area: Social
                     display: grid
                     padding: 50px
                     align-content: center
                     grid-template-columns: 40px 1px auto
-                    grid-template-areas: 'Icons SocialBar Links'
+                    grid-template-areas: 'Icons Links'
                     grid-column-gap: 15px
                     ul
                         list-style: none
@@ -83,8 +84,6 @@
                         text-align: center
                     ul:nth-child(3)
                         grid-area: Links
-                    .SocialBar
-                        grid-area: SocialBar
 .WrapperContent, #content
     box-shadow: 0 0 20px 0 $BoxShadowColour
 

@@ -265,11 +265,12 @@ nav.fixed ul li a, nav.fixed ul li i {
   background-color: #5F5F5F;
 }
 
-#content #Wrapper .WrapperContent #Contact .Bar, #content #Wrapper .WrapperContent #Contact .SocialBar {
+#content #Wrapper .WrapperContent #Contact .Bar {
   grid-area: Bar;
   width: 1px;
   height: 100%;
   background-color: #EEE;
+  opacity: 0.2;
 }
 
 #content #Wrapper .WrapperContent #Contact #ContactSocial {
@@ -280,7 +281,7 @@ nav.fixed ul li a, nav.fixed ul li i {
       -ms-flex-line-pack: center;
           align-content: center;
   grid-template-columns: 40px 1px auto;
-  grid-template-areas: 'Icons SocialBar Links';
+  grid-template-areas: 'Icons Links';
   grid-column-gap: 15px;
 }
 
@@ -311,10 +312,6 @@ nav.fixed ul li a, nav.fixed ul li i {
 
 #content #Wrapper .WrapperContent #Contact #ContactSocial ul:nth-child(3) {
   grid-area: Links;
-}
-
-#content #Wrapper .WrapperContent #Contact #ContactSocial .SocialBar {
-  grid-area: SocialBar;
 }
 
 .WrapperContent, #content {
