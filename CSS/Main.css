@@ -253,8 +253,8 @@ nav.fixed ul li a, nav.fixed ul li i {
   margin: 0 auto;
   -webkit-border-radius: 6px;
           border-radius: 6px;
-  border: 1px solid #6F6F6F;
-  padding: 5px;
+  border: 1px solid #4F4F4F;
+  padding: 10px;
   background-color: #3F3F3F;
   color: #EEE;
   -webkit-box-sizing: content-box;
