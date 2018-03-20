@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 Versioning numbers defined as MAJOR.MINOR.PATCH
 
+## [0.16.0] - 2018-03-20
+### Added
+- Contact form on both home and contact page
+- Social links in contact sections
+- Head to contact section
+
+### Changed
+- Entire website to dark theme
+- Form submit button text
+
 ## [0.15.1] - 2018-03-17
 ### Fixed
 - Mobile nav buttons not clickable

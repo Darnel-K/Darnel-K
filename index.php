@@ -60,7 +60,7 @@
                         <input type="email" name="Email" id="Email" placeholder="Email *" required>
                         <input type="text" name="Subject" id="Subject" placeholder="Subject">
                         <textarea name="MSG" id="MSG" placeholder="Message *" required></textarea>
-                        <button type="submit">Submit</button>
+                        <button type="submit">Send</button>
                     </form>
                     <div class="Bar"></div>
                     <div id="ContactSocial">
