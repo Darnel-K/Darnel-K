@@ -59,12 +59,13 @@ class GlobalVars {
         array("Name" => "viewport", "Content" => "width=device-width, initial-scale=1.0"),
         array("Name" => "msapplication-TileColor", "Content" => "#2F2F2F"),
         array("Name" => "msapplication-TileImage", "Content" => "/Icons/ms-icon-144x144.png"),
-        array("Name" => "theme-color", "Content" => "#2F2F2F")
+        array("Name" => "theme-color", "Content" => "#2F2F2F"),
+        array("Name" => "description", "Content" => "")
     );
 
     public static $LogoPath = '/Images/Logo - White Text.svg';
 
-    public static $OpenGraphImage = '/Images/Logo - White Text.svg';
+    public static $OpenGraphImage = '/Images/OpenGraph.png';
 
     public static $NoScriptCSS = '/CSS/NoScript.min.css';
 }
