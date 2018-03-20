@@ -266,6 +266,9 @@ nav.fixed ul li a, nav.fixed ul li i {
 
 #content #Wrapper .WrapperContent #Contact form textarea {
   height: 78px;
+}
+
+#content #Wrapper .WrapperContent #Contact form button {
   font-size: medium;
 }
 
