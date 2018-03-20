@@ -231,6 +231,7 @@ nav.fixed ul li a, nav.fixed ul li i {
 #content #Wrapper .WrapperContent #Contact #C_MSG {
   grid-area: MSG;
   text-align: center;
+  opacity: 0.5;
 }
 
 #content #Wrapper .WrapperContent #Contact form {

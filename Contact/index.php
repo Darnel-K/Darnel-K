@@ -40,6 +40,12 @@
             <div class="WrapperContent">
                 <section class="Spacer"></section>
                 <section id="Contact">
+                    <div id="C_Head">
+                        <h2>Contact Me</h2>
+                    </div>
+                    <div id="C_MSG">
+                        <p>Use the form below to contact me or use one of the links on the right to contact me on social media or by email</p>
+                    </div>
                     <form action="" method="post">
                         <input type="text" name="FName" id="FName" placeholder="Full Name *" required>
                         <input type="email" name="Email" id="Email" placeholder="Email *" required>
