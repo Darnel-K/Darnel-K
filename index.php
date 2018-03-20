@@ -50,6 +50,10 @@
                 <i class="fas fa-angle-down fa-3x bounce" id="DownArrow"></i>
             </p>
             <div class="WrapperContent">
+                <section id="Portfolio"></section>
+                <section id="Projects"></section>
+                <section id="Resume"></section>
+                <section id="QuoteMe"></section>
                 <section id="Contact">
                     <div id="C_Head">
                         <h2>Contact Me</h2>

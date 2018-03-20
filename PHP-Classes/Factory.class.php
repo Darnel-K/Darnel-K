@@ -51,7 +51,7 @@ class Factory {
     public static function GetSocialButtonsList(array $SocialLinks) {
         $output = '';
         foreach (array_reverse($SocialLinks, true) as $i) {
-            $output .= "<li><a href='" . $i['Path'] . ($i['Disabled'] ? "' onclick='return false;'" : "'") . " target='_BLANK'><i class='" . $i['IconClass'] . ($i['IconSize'] ? ' ' . $i['IconSize'] : '') . "'></i></a></li>";
+            $output .= (!$i['Disabled'] ? "<li><a href='" . $i['Path'] . "' target='_BLANK'><i class='" . $i['IconClass'] . ($i['IconSize'] ? ' ' . $i['IconSize'] : '') . "'></i></a></li>" : '');
         }
         return $output;
     }
@@ -59,7 +59,7 @@ class Factory {
     public static function GetNavList(array $LinkArray, array $SocialLinks = null, $Spacer = '|') {
         $output = "<ul class='links'>";
         foreach ($LinkArray as $i) {
-            $output .= "<li><a href='" . $i['Path'] . ($i['Disabled'] ? "' onclick='return false;'" : "'") . ">" . $i['Text'] . "</a></li>";
+            $output .= (!$i['Disabled'] ? "<li><a href='" . $i['Path'] . "'>" . $i['Text'] . "</a></li>" : '');
             $output .= (count($LinkArray) - 1 != array_search($i, $LinkArray) ? "<li class='NavBarSpacer'>" . $Spacer . "</li>" : '');
         }
         $output .= "</ul>";
@@ -74,11 +74,11 @@ class Factory {
     public static function GetContactSocialList(array $SocialLinks) {
         $output = '<ul>';
         foreach ($SocialLinks as $i) {
-            $output .= "<li><a href='" . $i['Path'] . ($i['Disabled'] ? "' onclick='return false;'" : "'") . " target='_BLANK'><i class='" . $i['IconClass'] . ($i['IconSize'] ? ' ' . $i['IconSize'] : '') . "'></i></a></li>";
+            $output .= (!$i['Disabled'] ? "<li><a href='" . $i['Path'] . "' target='_BLANK'><i class='" . $i['IconClass'] . ($i['IconSize'] ? ' ' . $i['IconSize'] : '') . "'></i></a></li>" : '');
         }
         $output .= '</ul><ul>';
         foreach ($SocialLinks as $i) {
-            $output .= "<li><a href='" . $i['Path'] . ($i['Disabled'] ? "' onclick='return false;'" : "'") . " target='_BLANK'>" . $i['Text'] . "</a></li>";
+            $output .= (!$i['Disabled'] ? "<li><a href='" . $i['Path'] . "' target='_BLANK'>" . $i['Text'] . "</a></li>" : '');
         }
         $output .= '</ul>';
         return $output;

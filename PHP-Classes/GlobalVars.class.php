@@ -2,7 +2,7 @@
 class GlobalVars {
     public static $NavLinks = array(
         array("Text" => 'Home', "Path" => '/', "Disabled" => false),
-        array("Text" => 'CV', "Path" => '/CV', "Disabled" => true),
+        array("Text" => 'Resume', "Path" => '/Resume', "Disabled" => true),
         array("Text" => 'Portfolio', "Path" => '/Portfolio', "Disabled" => true),
         array("Text" => 'Projects', "Path" => '/Projects', "Disabled" => true),
         array("Text" => 'Get A Quote', "Path" => '/QuoteMe', "Disabled" => true),
