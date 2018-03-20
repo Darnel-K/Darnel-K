@@ -347,6 +347,7 @@ footer {
 
 footer #Copyright {
   grid-area: Copy;
+  font-size: small;
 }
 
 @-webkit-keyframes bounce {
