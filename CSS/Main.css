@@ -260,6 +260,8 @@ nav.fixed ul li a, nav.fixed ul li i {
   height: 28px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+  font-family: roboto;
+  font-size: small;
 }
 
 #content #Wrapper .WrapperContent #Contact form textarea {
