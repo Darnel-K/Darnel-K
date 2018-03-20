@@ -131,7 +131,11 @@ function SetupHomePageLinkEvents() {
         $('.links li').on('click', function(e) {
             e.preventDefault();
             var ScrollItem = $(this).find('a').attr('href').replace(' ', '').replace('/', '');
-            $('html, body').animate({ scrollTop: $("#" + ScrollItem).offset().top }, 700);
+            if (ScrollItem == "") {
+                $('html, body').animate({ scrollTop: $("#HomePage").offset().top }, 700);
+            } else {
+                $('html, body').animate({ scrollTop: $("#" + ScrollItem).offset().top }, 700);
+            }
         });
     }
 }
