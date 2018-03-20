@@ -226,11 +226,14 @@ nav.fixed ul li a, nav.fixed ul li i {
 #content #Wrapper .WrapperContent #Contact #C_Head {
   grid-area: Head;
   text-align: center;
+  display: grid;
+  grid-template-rows: auto auto;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
 }
 
-#content #Wrapper .WrapperContent #Contact #C_MSG {
-  grid-area: MSG;
-  text-align: center;
+#content #Wrapper .WrapperContent #Contact #C_Head p {
   opacity: 0.5;
 }
 
