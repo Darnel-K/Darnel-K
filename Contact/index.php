@@ -42,7 +42,7 @@
                 <section id="Contact">
                     <div id="C_Head">
                         <h2>Contact Me</h2>
-                        <p>Use the form below to contact me or use one of the links on the right to contact me on social media or by email</p>
+                        <p>Use the form, one of my social media links or my email below to contact me.</p>
                     </div>
                     <form action="" method="post">
                         <input type="text" name="FName" id="FName" placeholder="Full Name *" required>
