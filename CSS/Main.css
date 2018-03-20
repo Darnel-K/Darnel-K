@@ -218,8 +218,8 @@ nav.fixed ul li a, nav.fixed ul li i {
   grid-gap: 10px;
   grid-template-columns: -webkit-calc((80vw - 20px) / 2) 1px -webkit-calc((80vw - 20px) / 2);
   grid-template-columns: calc((80vw - 20px) / 2) 1px calc((80vw - 20px) / 2);
-  min-height: -webkit-calc(100vh - 50px - 100px);
-  min-height: calc(100vh - 50px - 100px);
+  min-height: -webkit-calc(100vh - 50px - 146px);
+  min-height: calc(100vh - 50px - 146px);
   padding: 50px 20px;
 }
 
