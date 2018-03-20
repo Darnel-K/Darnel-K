@@ -85,7 +85,7 @@ class Factory {
     }
 
     public static function GetFooter() {
-        
+        return "&copy; Darnel-K 2018";
     }
 }
 ?>
