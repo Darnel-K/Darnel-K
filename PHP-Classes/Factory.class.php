@@ -3,9 +3,9 @@ class Factory {
     public static function GetCSS(array $CSS, $NoScript) {
         $out = "";
         foreach ($CSS as $i) {
-            $out .= "<link rel='stylesheet' " . ($i['Path'] ? "href='" . $i['Path'] . "'" : 'DISABLED') . ($i['Path'] && $i['Media'] ? " media='" . $i['Media'] . "'" : '') . ">\n";
+            $out .= "<link rel='stylesheet' " . ($i['Path'] ? "href='" . $i['Path'] . "'" : 'DISABLED') . ($i['Path'] && $i['Media'] ? " media='" . $i['Media'] . "'" : '') . ">";
         }
-        $out .= "<noscript><link rel='stylesheet' href='" . $NoScript . "'></noscript>\n";
+        $out .= "<noscript><link rel='stylesheet' href='" . $NoScript . "'></noscript>";
         return $out;
     }
 
@@ -13,12 +13,12 @@ class Factory {
         $out = "";
         foreach ($Twitter as $k => $v) {
             if (strtolower($k) == 'card' || 'site' || 'creator') {
-                $out .= "<meta name='twitter:" . strtolower($k) . "' content='" . $v . "' />\n";
+                $out .= "<meta name='twitter:" . strtolower($k) . "' content='" . $v . "' />";
             }
         }
         foreach ($OpenGraph as $k => $v) {
             if (strtolower($k) == 'card' || 'site' || 'creator') {
-                $out .= "<meta property='og:" . strtolower($k) . "' content='" . $v . "' />\n";
+                $out .= "<meta property='og:" . strtolower($k) . "' content='" . $v . "' />";
             }
         }
         return $out;
@@ -27,7 +27,7 @@ class Factory {
     public static function GetLinks(array $Links) {
         $out = "";
         foreach ($Links as $i) {
-            $out .= "<link" . ($i['Path'] && $i['Rel'] ? '' : ' DISABLED') . " rel='" . $i['Rel'] . "' href='" . $i['Path'] . "'" . ($i['Type'] ? " type='" . $i['Type'] . "'" : '') . ($i['Size'] ? " sizes='" . $i['Size'] . "'" : '') . " >\n";
+            $out .= "<link" . ($i['Path'] && $i['Rel'] ? '' : ' DISABLED') . " rel='" . $i['Rel'] . "' href='" . $i['Path'] . "'" . ($i['Type'] ? " type='" . $i['Type'] . "'" : '') . ($i['Size'] ? " sizes='" . $i['Size'] . "'" : '') . " >";
         }
         return $out;
     }
@@ -35,7 +35,7 @@ class Factory {
     public static function GetExtraMetadata(array $Meta) {
         $out = "";
         foreach ($Meta as $i) {
-            $out .= ($i['Name'] && $i['Content'] ? "<meta name='" . $i['Name'] . "' content='" . $i['Content'] . "'>\n" : '');
+            $out .= ($i['Name'] && $i['Content'] ? "<meta name='" . $i['Name'] . "' content='" . $i['Content'] . "'>" : '');
         }
         return $out;
     }
@@ -43,7 +43,7 @@ class Factory {
     public static function GetScripts(array $Scripts) {
         $out = "";
         foreach ($Scripts as $i) {
-            $out .= "<script " . ( $i['Async'] ? 'ASYNC' : '') . ($i['Async'] && $i['Defer'] ? ' ' : '') . ( $i['Defer'] ? 'DEFER' : '') . ($i['Async'] || $i['Defer'] ? ' ' : '') . ($i['Path'] ? "src='" . $i['Path'] . "'" : 'DISABLED') . ($i['Path'] && $i['Type'] ? "type='" . $i['Type'] . "'" : '') . "></script>\n";
+            $out .= "<script " . ( $i['Async'] ? 'ASYNC' : '') . ($i['Async'] && $i['Defer'] ? ' ' : '') . ( $i['Defer'] ? 'DEFER' : '') . ($i['Async'] || $i['Defer'] ? ' ' : '') . ($i['Path'] ? "src='" . $i['Path'] . "'" : 'DISABLED') . ($i['Path'] && $i['Type'] ? "type='" . $i['Type'] . "'" : '') . '></script>';
         }
         return $out;
     }
@@ -51,22 +51,22 @@ class Factory {
     public static function GetSocialButtonsList(array $SocialLinks) {
         $output = '';
         foreach (array_reverse($SocialLinks, true) as $i) {
-            $output .= (!$i['Disabled'] ? "<li><a href='" . $i['Path'] . "' target='_BLANK'><i class='" . $i['IconClass'] . ($i['IconSize'] ? ' ' . $i['IconSize'] : '') . "'></i></a></li>\n" : '');
+            $output .= (!$i['Disabled'] ? "<li><a href='" . $i['Path'] . "' target='_BLANK'><i class='" . $i['IconClass'] . ($i['IconSize'] ? ' ' . $i['IconSize'] : '') . "'></i></a></li>" : '');
         }
         return $output;
     }
 
     public static function GetNavList(array $LinkArray, array $SocialLinks = null, $Spacer = '|') {
-        $output = "<ul class='links'>\n";
+        $output = "<ul class='links'>";
         foreach ($LinkArray as $i) {
-            $output .= (!$i['Disabled'] ? "<li><a href='" . $i['Path'] . "'>" . $i['Text'] . "</a></li>\n" : '');
-            $output .= (!$i['Disabled'] ? (count($LinkArray) - 1 != array_search($i, $LinkArray) ? "<li class='NavBarSpacer'>" . $Spacer . "</li>\n" : '') : '');
+            $output .= (!$i['Disabled'] ? "<li><a href='" . $i['Path'] . "'>" . $i['Text'] . "</a></li>" : '');
+            $output .= (!$i['Disabled'] ? (count($LinkArray) - 1 != array_search($i, $LinkArray) ? "<li class='NavBarSpacer'>" . $Spacer . "</li>" : '') : '');
         }
-        $output .= "</ul>\n";
+        $output .= "</ul>";
         if ($SocialLinks != null) {
-            $output .= "<ul id='social'>\n";
+            $output .= "<ul id='social'>";
             $output .= self::GetSocialButtonsList($SocialLinks);
-            $output .= "</ul>\n";
+            $output .= "</ul>";
         }
         return $output;
     }
