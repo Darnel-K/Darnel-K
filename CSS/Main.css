@@ -265,7 +265,7 @@ nav.fixed ul li a, nav.fixed ul li i {
   background-color: #5F5F5F;
 }
 
-#content #Wrapper .WrapperContent #Contact form input:hover, #content #Wrapper .WrapperContent #Contact form textarea:hover, #content #Wrapper .WrapperContent #Contact form button:hover {
+#content #Wrapper .WrapperContent #Contact form input:focus, #content #Wrapper .WrapperContent #Contact form textarea:focus, #content #Wrapper .WrapperContent #Contact form button:focus {
   -webkit-box-shadow: 0 0 0 1px #AAA;
           box-shadow: 0 0 0 1px #AAA;
 }
