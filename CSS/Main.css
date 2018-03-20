@@ -257,8 +257,13 @@ nav.fixed ul li a, nav.fixed ul li i {
   padding: 10px;
   background-color: #3F3F3F;
   color: #EEE;
+  height: 28px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+}
+
+#content #Wrapper .WrapperContent #Contact form textarea {
+  height: 78px;
 }
 
 #content #Wrapper .WrapperContent #Contact form input:hover, #content #Wrapper .WrapperContent #Contact form textarea:hover, #content #Wrapper .WrapperContent #Contact form button:hover {
@@ -343,6 +348,7 @@ footer {
   display: grid;
   grid-template-areas: 'Copy';
   padding: 10px;
+  grid-gap: 10px;
 }
 
 footer #Copyright {
