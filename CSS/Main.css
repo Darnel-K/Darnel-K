@@ -182,6 +182,7 @@ nav.fixed ul li a, nav.fixed ul li i {
 #content {
   position: relative;
   background-color: #2F2F2F;
+  left: 0;
 }
 
 #content #Wrapper {
