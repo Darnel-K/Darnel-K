@@ -410,7 +410,7 @@ footer {
   }
   #content #Wrapper .WrapperContent #Contact {
     width: initial;
-    grid-template-areas: 'C_Form' 'Bar' 'Social';
+    grid-template-areas: 'Head' 'MSG' 'C_Form' 'Bar' 'Social';
     grid-template-columns: none;
     grid-row-gap: 30px;
   }
