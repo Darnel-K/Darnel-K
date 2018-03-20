@@ -85,7 +85,9 @@ class Factory {
     }
 
     public static function GetFooter() {
-        return "<p id='Copyright'>&copy; Darnel-K 2018</p>";
+        $output = '';
+        $output .= "<p id='Copyright'>Copyright &copy; " . date('Y') . " Darnel-K</p>";
+        return $output;
     }
 }
 ?>
