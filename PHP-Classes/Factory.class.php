@@ -60,7 +60,7 @@ class Factory {
         $output = "<ul class='links'>";
         foreach ($LinkArray as $i) {
             $output .= (!$i['Disabled'] ? "<li><a href='" . $i['Path'] . "'>" . $i['Text'] . "</a></li>" : '');
-            $output .= (count($LinkArray) - 1 != array_search($i, $LinkArray) ? "<li class='NavBarSpacer'>" . $Spacer . "</li>" : '');
+            $output .= (!$i['Disabled'] ? (count($LinkArray) - 1 != array_search($i, $LinkArray) ? "<li class='NavBarSpacer'>" . $Spacer . "</li>" : '') : '');
         }
         $output .= "</ul>";
         if ($SocialLinks != null) {
