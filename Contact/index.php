@@ -24,6 +24,9 @@
     <title>Darnel-K | Contact Me</title>
 </head>
 <body>
+    <?php
+        echo Factory::GTagManager();
+    ?>
     <nav id='MobileNav' class="fixed">
         <?php
             echo Factory::GetNavList(GlobalVars::$NavLinks);

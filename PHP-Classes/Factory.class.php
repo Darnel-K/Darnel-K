@@ -89,5 +89,10 @@ class Factory {
         $output .= "<p id='Copyright'>Copyright &copy; " . date('Y') . " Darnel-K</p>";
         return $output;
     }
+
+    public static function GTagManager() {
+        $output = "<noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-KBHHQVX' height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>";
+        return $output;
+    }
 }
 ?>

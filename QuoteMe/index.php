@@ -25,6 +25,9 @@
     <title>Darnel-K | Generate A Quote</title>
 </head>
 <body>
+    <?php
+        echo Factory::GTagManager();
+    ?>
     <nav id='MobileNav' class="fixed">
         <?php
             echo Factory::GetNavList(GlobalVars::$NavLinks);

@@ -25,6 +25,9 @@
     <title>Darnel-K | Home</title>
 </head>
 <body id="HomePage">
+    <?php
+        echo Factory::GTagManager();
+    ?>
     <nav id='MobileNav'>
         <?php
             echo Factory::GetNavList(GlobalVars::$NavLinks);
