@@ -338,16 +338,17 @@ nav.fixed ul li a, nav.fixed ul li i {
 }
 
 footer {
-  min-height: 30px;
   background-color: #1F1F1F;
   width: 100%;
   display: grid;
   grid-template-areas: 'Copy';
+  padding: 10px;
 }
 
 footer #Copyright {
   grid-area: Copy;
   font-size: small;
+  margin: 5px 0;
 }
 
 @-webkit-keyframes bounce {
