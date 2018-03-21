@@ -11,7 +11,7 @@ nav ul li a, nav ul li i {
   white-space: nowrap !important;
 }
 
-nav #links {
+nav .links {
   overflow-x: auto !important;
   overflow-y: hidden !important;
   display: -webkit-box !important;
@@ -26,7 +26,7 @@ nav #links {
   background-color: initial !important;
 }
 
-nav #links .NavBarSpacer {
+nav .links .NavBarSpacer {
   display: initial !important;
 }
 /*# sourceMappingURL=NoScript.css.map */
