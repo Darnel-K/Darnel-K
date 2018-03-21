@@ -436,7 +436,7 @@ footer #Copyright {
   }
   #content #Wrapper .WrapperContent #Contact {
     width: initial;
-    grid-template-areas: 'Head' 'MSG' 'C_Form' 'Bar' 'Social';
+    grid-template-areas: 'Head' 'C_Form' 'Bar' 'Social';
     grid-template-columns: none;
     grid-row-gap: 30px;
   }
