@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 Versioning numbers defined as MAJOR.MINOR.PATCH
 
 ## [0.16.0] - 2018-03-20
+### Fixed
+- Contact form layout and size in Edge Browser
+
 ### Added
 - Contact form on both home and contact page
 - Social links in contact sections
