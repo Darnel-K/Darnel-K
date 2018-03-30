@@ -62,7 +62,9 @@ function FP() {
     setTimeout(function () {
         new Fingerprint2().get(function (result, components) {
             SETTINGS['FP'] = result;
-            SETTINGS['FP_Data'] = components;
+            for (var i=0; i < components.length; i++) {
+                SETTINGS['FP_Data'][components[i]['key']] = components[i]['value']
+            }
             console.log(result) // a hash, representing your device fingerprint
             console.log(components) // an array of FP components
         })
