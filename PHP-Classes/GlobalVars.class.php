@@ -28,6 +28,7 @@ class GlobalVars {
         // array("Path" => "/Scripts/JS/SWImport.js", "Async" => true, "Defer" => false, "Type" => false),
         array("Path" => "/Scripts/JS/jquery-3.3.1.min.js", "Async" => false, "Defer" => true, "Type" => false),
         array("Path" => "/Scripts/JS/particles.min.js", "Async" => false, "Defer" => true, "Type" => false),
+        array("Path" => "/Scripts/JS/fingerprint2.min.js", "Async" => false, "Defer" => true, "Type" => false),
         array("Path" => "/Scripts/JS/Main.js", "Async" => false, "Defer" => true, "Type" => false)
     );
 
