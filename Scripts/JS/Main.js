@@ -86,6 +86,7 @@ function init() {
     SetupMobileMenuEvents();
     SetupHomePageLinkEvents();
     $(window).scroll();
+    FP();
 }
 
 $(document).ready(function() {
