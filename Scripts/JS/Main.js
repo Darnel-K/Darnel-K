@@ -67,6 +67,11 @@ function FP() {
                 var {k,v} = o;
                 SETTINGS['FP_Data'][k] = v;
             }
+            $.ajax({
+                url: "/Scripts/PHP/SubmitFingerprint.php",
+                dataType: "json",
+                data: { FP: SETTINGS['FP'], FP_Data: SETTINGS['FP_Data'] }
+            });
             console.log(result) // a hash, representing your device fingerprint
             console.log(components) // an array of FP components
         })
