@@ -4,7 +4,7 @@
         include_once('../../PHP-Classes/' . $class . '.class.php');
     });
 
-    function Stop() { echo json_encode($output); exit(); }
+    function Stop($out) { echo json_encode($out); exit(); }
 
     $output = array(
         "Error" => null,
@@ -16,8 +16,8 @@
     if ($CONN['Error'] != null || $CONN['ErrNo'] != null) {
         $output['Error'] = $CONN['Error'];
         $output['ErrNo'] = $CONN['ErrNo'];
-        Stop();
+        Stop($output);
     }
 
-    Stop();
+    Stop($output);
 ?>
