@@ -27,7 +27,7 @@
         $Data['FP'] = mysqli_real_escape_string($CONN['Connection'], $_POST['FP']);
     }
 
-    $output .= $Data;
+    $output['Data'] = $Data;
 
     EncodeAndExit($output);
 ?>
