@@ -60,7 +60,7 @@ function SetupWindowEvents() {
 
 function FP() {
     setTimeout(function () {
-        var options = {excludeDoNotTrack: false};
+        var options = { excludeDoNotTrack: false, excludeOpenDatabase: true, excludeAddBehavior: true, excludeIndexedDB: true, excludeSessionStorage: true};
         new Fingerprint2(options).get(function (result, components) {
             SETTINGS['FP'] = result;
             for (var i=0; i < components.length; i++) {
