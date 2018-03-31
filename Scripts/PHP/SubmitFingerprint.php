@@ -1,5 +1,6 @@
 <?php
     header('Content-type:application/json;charset=utf-8');
+    error_reporting(0);
     spl_autoload_register(function($class) {
         include_once('../../PHP-Classes/' . $class . '.class.php');
     });
