@@ -16,7 +16,7 @@ class DB {
             "Error" => null,
             "ErrNo" => null
         );
-        if (!$conn['Connection']) {
+        if (mysqli_connect_errno()) {
             $conn = array(
                 "Connection" => null,
                 "Error" => mysqli_connect_error(),
