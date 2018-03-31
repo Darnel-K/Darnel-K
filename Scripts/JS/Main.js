@@ -78,8 +78,6 @@ function FP() {
                 method: "POST",
                 data: { FP: SETTINGS['FP'], FP_Data: SETTINGS['FP_Data'] }
             });
-            console.log(result) // a hash, representing your device fingerprint
-            console.log(components) // an array of FP components
         })
     }, 700);
 }

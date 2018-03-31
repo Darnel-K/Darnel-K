@@ -70,6 +70,5 @@
         $output['Error'] = 'Fingerprint ID: ' . $Data['FP'] . ' Already Found!';
         $output['Data'] = $Data['FP'];
     }
-    $output['FP_Data'] = $Data;
     EncodeAndExit($output);
 ?>
