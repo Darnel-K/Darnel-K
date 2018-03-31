@@ -10,5 +10,11 @@
     $DB = new DB();
     $CONN = $DB->Connect('Darnel-K');
 
+    if ($CONN['Error'] != null || $CONN['ErrNo'] != null) {
+        $output['Error'] = $CONN['Error'];
+        $output['ErrNo'] = $CONN['ErrNo'];
+        exit();
+    }
+
     echo json_encode($output);
 ?>
