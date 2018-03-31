@@ -4,20 +4,20 @@
         include_once('../../PHP-Classes/' . $class . '.class.php');
     });
 
-    function Stop($out) { echo json_encode($out); exit(); }
+    function EncodeAndExit($out) { echo json_encode($out); exit(); }
 
     $output = array(
         "Error" => null,
         "Data" => ''
     );
     $DB = new DB();
-    $CONN = $DB->Connect('DarnelK');
+    $CONN = $DB->Connect('Darnel-K');
 
     if ($CONN['Error'] != null || $CONN['ErrNo'] != null) {
         $output['Error'] = $CONN['Error'];
         $output['ErrNo'] = $CONN['ErrNo'];
-        Stop($output);
+        EncodeAndExit($output);
     }
 
-    Stop($output);
+    EncodeAndExit($output);
 ?>
