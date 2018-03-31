@@ -8,7 +8,7 @@
         "Data" => ''
     );
     $DB = new DB();
-    $CONN = $DB->Connect('Darnel-K');
+    $CONN = $DB->Connect('DarnelK');
 
     if ($CONN['Error'] != null || $CONN['ErrNo'] != null) {
         $output['Error'] = $CONN['Error'];
