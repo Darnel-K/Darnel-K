@@ -69,8 +69,5 @@
         $output['Data'] = $Data['FP'];
     }
 
-
-    $output['Data'] = $Data;
-
     EncodeAndExit($output);
 ?>
