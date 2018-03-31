@@ -61,7 +61,7 @@ function SetupWindowEvents() {
 function FP() {
     setTimeout(function () {
         var options = {excludeDoNotTrack: false};
-        new Fingerprint2().get(function (result, components) {
+        new Fingerprint2(options).get(function (result, components) {
             SETTINGS['FP'] = result;
             for (var i=0; i < components.length; i++) {
                 var o = { k: components[i]['key'], v: components[i]['value']}
