@@ -60,6 +60,7 @@ function SetupWindowEvents() {
 
 function FP() {
     setTimeout(function () {
+        var options = {excludeDoNotTrack: false};
         new Fingerprint2().get(function (result, components) {
             SETTINGS['FP'] = result;
             for (var i=0; i < components.length; i++) {
