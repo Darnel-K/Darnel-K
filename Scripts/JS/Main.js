@@ -66,7 +66,11 @@ function FP() {
             for (var i=0; i < components.length; i++) {
                 var o = { k: components[i]['key'], v: components[i]['value']}
                 var {k,v} = o;
-                SETTINGS['FP_Data'][k] = v;
+                if (v.constructor === Array && v.length <= 0) {
+                    SETTINGS['FP_Data'][k] = [0];
+                } else {
+                    SETTINGS['FP_Data'][k] = v;
+                }
             }
             $.ajax({
                 url: "/Scripts/PHP/SubmitFingerprint.php",
