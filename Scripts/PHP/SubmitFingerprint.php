@@ -44,11 +44,11 @@
             }
             $Data['FP_Data'][$k] = json_encode($arr);
         } else {
-            if (strtolower($v) == true || strtolower($v) == 'true') {
-                $v = 1;
-            } elseif (strtolower($v) == false || strtolower($v) == 'false') {
-                $v = 0;
-            }
+            // if (strtolower($v) == true || strtolower($v) == 'true') {
+            //     $v = 1;
+            // } elseif (strtolower($v) == false || strtolower($v) == 'false') {
+            //     $v = 0;
+            // }
             $Data['FP_Data'][$k] = $CONN['Connection']->real_escape_string($v);
         }
     }
