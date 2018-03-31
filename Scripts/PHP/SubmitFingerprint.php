@@ -9,4 +9,6 @@
     );
     $DB = new DB();
     $CONN = $DB->Connect('Darnel-K');
+
+    echo json_encode($output);
 ?>
