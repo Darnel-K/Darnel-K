@@ -3,6 +3,9 @@
     spl_autoload_register(function($class) {
         include_once('../../PHP-Classes/' . $class . '.class.php');
     });
+
+    function Stop() { echo json_encode($output); exit(); }
+
     $output = array(
         "Error" => null,
         "Data" => ''
@@ -10,11 +13,11 @@
     $DB = new DB();
     $CONN = $DB->Connect('DarnelK');
 
-    if (true) {
-        $output['Error'] = $CONN;
+    if ($CONN['Error'] != null || $CONN['ErrNo'] != null) {
+        $output['Error'] = $CONN['Error'];
         $output['ErrNo'] = $CONN['ErrNo'];
-        exit();
+        Stop();
     }
 
-    echo json_encode($output);
+    Stop();
 ?>
