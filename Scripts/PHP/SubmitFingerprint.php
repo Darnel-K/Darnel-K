@@ -26,6 +26,9 @@
     if (isset($_POST['FP'])) {
         $Data['FP'] = mysqli_real_escape_string($CONN['Connection'], $_POST['FP']);
     }
+    if (isset($_POST['FP_Data'])) {
+        $Data['FP_Data'] = mysqli_real_escape_string($CONN['Connection'], $_POST['FP_Data']);
+    }
 
     $output['Data'] = $Data;
 
