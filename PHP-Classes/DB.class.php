@@ -14,15 +14,15 @@ class DB {
         mysqli_report(MYSQLI_REPORT_STRICT);
         try {
             $conn = array(
-                "Connection" => mysqli_connect($this->HOST, $this->USER, $this->PASS, $DB),
+                "Connection" => new mysqli($this->HOST, $this->USER, $this->PASS, $DB),
                 "Error" => null,
                 "ErrNo" => null
             );
         } catch(Exception $e) {
             $conn = array(
                 "Connection" => null,
-                "Error" => mysqli_connect_error(),
-                "ErrNo" => mysqli_connect_errno()
+                "Error" => $conn['Connection']->connect_error,
+                "ErrNo" => $conn['Connection']->connect_errno
             );
         }
         
