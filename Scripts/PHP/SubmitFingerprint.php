@@ -10,7 +10,7 @@
     $DB = new DB();
     $CONN = $DB->Connect('DarnelK');
 
-    if ($CONN['Error'] != null || $CONN['ErrNo'] != null) {
+    if (true) {
         $output['Error'] = $CONN;
         $output['ErrNo'] = $CONN['ErrNo'];
         exit();
