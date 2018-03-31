@@ -11,7 +11,7 @@
     $CONN = $DB->Connect('DarnelK');
 
     if ($CONN['Error'] != null || $CONN['ErrNo'] != null) {
-        $output['Error'] = $CONN['Error'];
+        $output['Error'] = $CONN;
         $output['ErrNo'] = $CONN['ErrNo'];
         exit();
     }
