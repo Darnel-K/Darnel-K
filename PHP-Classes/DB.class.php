@@ -12,7 +12,7 @@ class DB {
 
     public function Connect($DB) {
         $conn = array(
-            "Connection" => mysqli_connect($this->$HOST, $this->$USER, $this->$PASS, $DB)
+            "Connection" => mysqli_connect($this->HOST, $this->USER, $this->PASS, $DB)
         );
         if (!$conn['Connection']) {
             $conn = array(
