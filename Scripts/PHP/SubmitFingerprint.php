@@ -49,7 +49,7 @@
             } elseif (strtolower($v) == 'false') {
                 $v = 0;
             } elseif (strtolower($v) == 'unknown') {
-                $v = 0;
+                $v = -1;
             }
             $Data['FP_Data'][$k] = $CONN['Connection']->real_escape_string($v);
         }
