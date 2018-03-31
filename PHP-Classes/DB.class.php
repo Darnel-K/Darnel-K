@@ -11,7 +11,7 @@ class DB {
     }
 
     public function Connect($DB) {
-        $conn = array();
+        mysqli_report(MYSQLI_REPORT_STRICT);
         try {
             $conn = array(
                 "Connection" => mysqli_connect($this->HOST, $this->USER, $this->PASS, $DB),
