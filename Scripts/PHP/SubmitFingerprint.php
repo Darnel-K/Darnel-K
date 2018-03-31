@@ -48,6 +48,8 @@
                 $v = 1;
             } elseif (strtolower($v) == 'false') {
                 $v = 0;
+            } elseif (strtolower($v) == 'unknown') {
+                $v = null;
             }
             $Data['FP_Data'][$k] = $CONN['Connection']->real_escape_string($v);
         }
