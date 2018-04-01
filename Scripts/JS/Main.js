@@ -58,30 +58,6 @@ function SetupWindowEvents() {
     });
 }
 
-function FP() {
-    setTimeout(function () {
-        var options = { excludeDoNotTrack: false, excludeOpenDatabase: true, excludeAddBehavior: true, excludeIndexedDB: true, excludeSessionStorage: true};
-        new Fingerprint2(options).get(function (result, components) {
-            SETTINGS['FP'] = result;
-            for (var i=0; i < components.length; i++) {
-                var o = { k: components[i]['key'], v: components[i]['value']}
-                var {k,v} = o;
-                if (v.constructor === Array && v.length <= 0) {
-                    SETTINGS['FP_Data'][k] = [0];
-                } else {
-                    SETTINGS['FP_Data'][k] = v;
-                }
-            }
-            $.ajax({
-                url: "/Scripts/PHP/SubmitFingerprint.php",
-                dataType: "json",
-                method: "POST",
-                data: { FP: SETTINGS['FP'], FP_Data: SETTINGS['FP_Data'] }
-            });
-        })
-    }, 700);
-}
-
 function SetupDownArrowEvents() {
     // All events attached to the bouncing down arrow
     ($("#DownArrow").length ? $("#DownArrow").on("click", function () { $("html, body").animate({ scrollTop: $("#Wrapper").offset().top }, 700); }) : false);
@@ -99,7 +75,6 @@ function init() {
     SetupMobileMenuEvents();
     SetupHomePageLinkEvents();
     $(window).scroll();
-    FP();
 }
 
 $(document).ready(function() {
