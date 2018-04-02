@@ -40,7 +40,7 @@ function SetupHomePageLinkEvents() {
 function HomePageMenuButtonClickEvents(target) {
     switch (target) {
         case "Contact":
-            setTimeout($('#Contact form input[name="FName"]').focus(), 700);
+            setTimeout($('#Contact form input:first-child').focus(), 700);
             break;
         default:
             break;
