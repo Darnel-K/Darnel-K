@@ -30,6 +30,7 @@ function SetupHomePageLinkEvents() {
                 $('html, body').animate({ scrollTop: $("#HomePage").offset().top }, 700);
             } else {
                 $('html, body').animate({ scrollTop: $("#" + ScrollItem).offset().top }, 700);
+                // $('#Contact form input[name="FName"]').focus()
             }
             ($('#menubutton').length && $('#content').css('left') != '0px' ? $('#menubutton').click() : false);
         });
