@@ -30,10 +30,20 @@ function SetupHomePageLinkEvents() {
                 $('html, body').animate({ scrollTop: $("#HomePage").offset().top }, 700);
             } else {
                 $('html, body').animate({ scrollTop: $("#" + ScrollItem).offset().top }, 700);
-                // $('#Contact form input[name="FName"]').focus()
+                HomePageMenuButtonClickEvents(e.target.text);
             }
             ($('#menubutton').length && $('#content').css('left') != '0px' ? $('#menubutton').click() : false);
         });
+    }
+}
+
+function HomePageMenuButtonClickEvents(target) {
+    switch (target) {
+        case "Contact":
+            setTimeout($('#Contact form input[name="FName"]').focus(), 700);
+            break;
+        default:
+            break;
     }
 }
 
