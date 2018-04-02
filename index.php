@@ -64,8 +64,8 @@
                         <p>Use the form, one of my social media links or my email below to contact me.</p>
                     </div>
                     <form action="" method="post">
-                        <input type="text" name="FName" id="FName" placeholder="Full Name *" required>
-                        <input type="email" name="Email" id="Email" placeholder="Email *" required>
+                        <input type="text" name="FName" id="FName" placeholder="Full Name *" autocomplete="name" required>
+                        <input type="email" name="Email" id="Email" placeholder="Email *" autocomplete="email" required>
                         <input type="text" name="Subject" id="Subject" placeholder="Subject">
                         <textarea name="MSG" id="MSG" placeholder="Message *" required></textarea>
                         <button type="submit">Send</button>
