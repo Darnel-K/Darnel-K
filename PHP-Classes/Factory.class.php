@@ -51,7 +51,7 @@ class Factory {
     public static function GetSocialButtonsList(array $SocialLinks) {
         $output = '';
         foreach (array_reverse($SocialLinks, true) as $i) {
-            $output .= (!$i['Disabled'] ? "<li><a href='" . $i['Path'] . "' target='_BLANK'><i class='" . $i['IconClass'] . ($i['IconSize'] ? ' ' . $i['IconSize'] : '') . "'></i></a></li>" : '');
+            $output .= (!$i['Disabled'] ? "<li><a href='" . $i['Path'] . "' target='_BLANK' rel='noopener'><i class='" . $i['IconClass'] . ($i['IconSize'] ? ' ' . $i['IconSize'] : '') . "'></i></a></li>" : '');
         }
         return $output;
     }
@@ -74,11 +74,11 @@ class Factory {
     public static function GetContactSocialList(array $SocialLinks) {
         $output = '<ul>';
         foreach ($SocialLinks as $i) {
-            $output .= (!$i['Disabled'] ? "<li><a href='" . $i['Path'] . "' target='_BLANK'><i class='" . $i['IconClass'] . ($i['IconSize'] ? ' ' . $i['IconSize'] : '') . "'></i></a></li>" : '');
+            $output .= (!$i['Disabled'] ? "<li><a href='" . $i['Path'] . "' target='_BLANK' rel='noopener'><i class='" . $i['IconClass'] . ($i['IconSize'] ? ' ' . $i['IconSize'] : '') . "'></i></a></li>" : '');
         }
         $output .= '</ul><ul>';
         foreach ($SocialLinks as $i) {
-            $output .= (!$i['Disabled'] ? "<li><a href='" . $i['Path'] . "' target='_BLANK'>" . $i['Text'] . "</a></li>" : '');
+            $output .= (!$i['Disabled'] ? "<li><a href='" . $i['Path'] . "' target='_BLANK' rel='noopener'>" . $i['Text'] . "</a></li>" : '');
         }
         $output .= '</ul>';
         return $output;
