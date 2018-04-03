@@ -48,10 +48,10 @@
                         <p>Use the form, one of my social media links or my email below to contact me.</p>
                     </div>
                     <form action="" method="post">
-                        <input type="text" name="FName" id="FName" placeholder="Full Name *" autocomplete="name" autofocus required>
-                        <input type="email" name="Email" id="Email" placeholder="Email *" autocomplete="email" required>
-                        <input type="text" name="Subject" id="Subject" placeholder="Subject">
-                        <textarea name="MSG" id="MSG" placeholder="Message *" required></textarea>
+                        <input type="text" name="FName" id="FName" placeholder="Full Name *" autocomplete="name" aria-label="Full Name" autofocus required>
+                        <input type="email" name="Email" id="Email" placeholder="Email *" autocomplete="email" aria-label="Email" required>
+                        <input type="text" name="Subject" id="Subject" placeholder="Subject" aria-label="Subject">
+                        <textarea name="MSG" id="MSG" placeholder="Message *" aria-label="Message" required></textarea>
                         <button type="submit">Send</button>
                     </form>
                     <div class="Bar"></div>
