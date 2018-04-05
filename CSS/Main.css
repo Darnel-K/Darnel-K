@@ -384,6 +384,8 @@ footer #Copyright {
 
 footer section {
   height: 100px;
+  margin: 0;
+  width: initial;
 }
 
 footer .S1 {
