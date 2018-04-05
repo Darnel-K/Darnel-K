@@ -69,7 +69,7 @@
                         <input type="text" name="Subject" id="Subject" placeholder="Subject" aria-label="Subject">
                         <textarea name="MSG" id="MSG" placeholder="Message *" aria-label="Message" required></textarea>
                         <button type="submit">Send</button>
-                        <p><i class="fab fa-slack-hash"></i>Powered By Slack</p>
+                        <p><i class="fab fa-slack-hash"></i>&nbsp;Powered By Slack</p>
                     </form>
                     <div class="Bar"></div>
                     <div id="ContactSocial">

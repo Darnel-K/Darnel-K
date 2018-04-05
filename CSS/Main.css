@@ -283,6 +283,13 @@ nav.fixed ul li a, nav.fixed ul li i {
   outline: none;
 }
 
+#content #Wrapper .WrapperContent #Contact form p {
+  width: 92.5%;
+  margin: 0 auto;
+  vertical-align: middle;
+  font-size: small;
+}
+
 #content #Wrapper .WrapperContent #Contact .Bar {
   grid-area: Bar;
   width: 1px;
