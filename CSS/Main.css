@@ -371,7 +371,7 @@ footer {
   background-color: #1F1F1F;
   width: 100%;
   display: grid;
-  grid-template-areas: 'Copy';
+  grid-template-areas: 'S1 S2 S3 S4 S5' 'Copy Copy Copy Copy Copy';
   padding: 10px;
   grid-gap: 10px;
 }
@@ -380,6 +380,26 @@ footer #Copyright {
   grid-area: Copy;
   font-size: small;
   margin: 5px 0;
+}
+
+footer .S1 {
+  grid-area: S1;
+}
+
+footer .S2 {
+  grid-area: S2;
+}
+
+footer .S3 {
+  grid-area: S3;
+}
+
+footer .S4 {
+  grid-area: S4;
+}
+
+footer .S5 {
+  grid-area: S5;
 }
 
 @-webkit-keyframes bounce {

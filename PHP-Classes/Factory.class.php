@@ -86,6 +86,11 @@ class Factory {
 
     public static function GetFooter() {
         $output = '';
+        $output .= "<section class='S1'></section>";
+        $output .= "<section class='S2'></section>";
+        $output .= "<section class='S3'></section>";
+        $output .= "<section class='S4'></section>";
+        $output .= "<section class='S5'></section>";
         $output .= "<p id='Copyright'>Copyright &copy; " . date('Y') . " Darnel-K</p>";
         // Not created by, affiliated with, or supported by Slack Technologies, Inc.
         return $output;
