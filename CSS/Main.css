@@ -382,6 +382,10 @@ footer #Copyright {
   margin: 5px 0;
 }
 
+footer section {
+  height: 100px;
+}
+
 footer .S1 {
   grid-area: S1;
 }
