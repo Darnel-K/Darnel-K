@@ -382,10 +382,10 @@ footer #Copyright {
   margin: 5px 0;
 }
 
-footer .S1, footer .S2, footer .S3, footer .S4, footer .S5 {
+footer section {
   min-height: 100px;
-  margin: 0;
-  width: 100%;
+  margin: 0 !important;
+  width: 100% !important;
 }
 
 footer .S1 {
