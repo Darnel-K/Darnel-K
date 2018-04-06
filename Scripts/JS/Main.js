@@ -77,7 +77,7 @@ function ContactFormEvents() {
                 "FName": $('#Contact form input[name="FName"]').val(),
                 "Email": $('#Contact form input[name="Email"]').val(),
                 "Subject": $('#Contact form input[name="Subject"]').val(),
-                "MSG": $('#Contact form input[name="MSG"]').val()
+                "MSG": $('#Contact form textarea[name="MSG"]').val()
             };
             $.ajax({
                 url: "/Scripts/PHP/SubmitContactForm.php",
