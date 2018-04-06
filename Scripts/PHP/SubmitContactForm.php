@@ -6,7 +6,9 @@
 
     $SLACK = array(
         "URL" => "https://hooks.slack.com/services/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",
-        "Color" => '#2F2F2F'
+        "Color" => '#2F2F2F',
+        "Date" => date("Y-m-d"),
+        "Time" => date("h:i:s A T")
     );
 
     function EncodeAndExit($out) { echo json_encode($out); exit(); }
@@ -40,7 +42,7 @@
         'username' => $Data['FName'],
         'attachments' => array([
             'fallback' => $Data['Subject'],
-            'pretext' => 'Message From ' . $Data['FName'],
+            'pretext' => $SLACK['Date'] . ' ' . $SLACK['Time'] . ': Message From ' . $Data['FName'],
             'color' => $SLACK['Color'],
             'fields' => array(
                 [
