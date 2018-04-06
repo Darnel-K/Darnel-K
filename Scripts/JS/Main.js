@@ -73,6 +73,18 @@ function ContactFormEvents() {
     if ($('#Contact').length) {
         $('#Contact form').on('click', function(e) {
             e.preventDefault();
+            var Form_Data = {
+                "FName": this.FName.value,
+                "Email": this.Email.value,
+                "Subject": this.Subject.value,
+                "MSG": this.MSG.value
+            };
+            $.ajax({
+                url: "/Scripts/PHP/SubmitContactForm.php",
+                dataType: "json",
+                method: "POST",
+                data: { Form_Data: Form_Data }
+            });
         });
     }
 }
