@@ -69,6 +69,14 @@ function SetupWindowEvents() {
     });
 }
 
+function ContactFormEvents() {
+    if ($('#Contact').length) {
+        $('#Contact form').on('click', function(e) {
+            e.preventDefault();
+        });
+    }
+}
+
 function SetupDownArrowEvents() {
     // All events attached to the bouncing down arrow
     ($("#DownArrow").length ? $("#DownArrow").on("click", function () { $("html, body").animate({ scrollTop: $("#Wrapper").offset().top }, 700); }) : false);
@@ -85,6 +93,7 @@ function init() {
     StartEvents();
     SetupMobileMenuEvents();
     SetupHomePageLinkEvents();
+    ContactFormEvents();
     $(window).scroll();
 }
 

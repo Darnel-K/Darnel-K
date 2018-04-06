@@ -63,7 +63,7 @@
                         <h2>Contact Me</h2>
                         <p>Use the form, one of my social media links or my email below to contact me.</p>
                     </div>
-                    <form action="" method="post">
+                    <form method="post">
                         <input type="text" name="FName" id="FName" placeholder="Full Name *" autocomplete="name" aria-label="Full Name" required>
                         <input type="email" name="Email" id="Email" placeholder="Email *" autocomplete="email" aria-label="Email" required>
                         <input type="text" name="Subject" id="Subject" placeholder="Subject" aria-label="Subject">
