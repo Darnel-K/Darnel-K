@@ -71,13 +71,13 @@ function SetupWindowEvents() {
 
 function ContactFormEvents() {
     if ($('#Contact').length) {
-        $('#Contact form').on('click', function(e) {
+        $('#Contact form button[type="submit"]').on('click', function(e) {
             e.preventDefault();
             var Form_Data = {
-                "FName": this.FName.value,
-                "Email": this.Email.value,
-                "Subject": this.Subject.value,
-                "MSG": this.MSG.value
+                "FName": $('#Contact form input[name="FName"]').val(),
+                "Email": $('#Contact form input[name=""]').val(),
+                "Subject": $('#Contact form input[name=""]').val(),
+                "MSG": $('#Contact form input[name=""]').val()
             };
             $.ajax({
                 url: "/Scripts/PHP/SubmitContactForm.php",
