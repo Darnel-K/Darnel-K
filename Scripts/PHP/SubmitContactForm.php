@@ -42,6 +42,7 @@
     $Data['FName'] = ucwords($Data['FName']);
     $Data['Email'] = strtolower($Data['Email']);
     $Data['Subject'] = ucfirst($Data['Subject']);
+    $Data['MSG'] = ucfirst($Data['MSG']);
 
     $SlackData = array(
         'username' => $Data['FName'],
