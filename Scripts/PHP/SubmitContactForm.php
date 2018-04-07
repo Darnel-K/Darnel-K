@@ -4,13 +4,7 @@
         include_once('../../PHP-Classes/' . $class . '.class.php');
     });
 
-    $SLACK = array(
-        "URL" => "https://hooks.slack.com/services/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",
-        "Color" => '#2F2F2F',
-        "Date" => date("Y-m-d"),
-        "Time" => date("h:i:s A T"),
-        "Sent" => 0
-    );
+    $SlackURL = "https://hooks.slack.com/services/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";
 
     function EncodeAndExit($out) { echo json_encode($out); exit(); }
     $Data = array();
@@ -21,6 +15,7 @@
     );
     $DB = new DB();
     $CONN = $DB->Connect('Darnel-K');
+    $Slack = new Slack($SlackURL);
 
     if ($CONN['Error'] != null || $CONN['ErrNo'] != null) {
         $output['Error'] = $CONN['Error'];
@@ -43,13 +38,17 @@
     $Data['Email'] = strtolower($Data['Email']);
     $Data['Subject'] = ucfirst($Data['Subject']);
     $Data['MSG'] = ucfirst($Data['MSG']);
+    $Data['Date'] = date("Y-m-d");
+    $Data['Time'] = date("h:i:s A T");
+    $Data['Slack_Sent'] = 0;
+    $Data['Color'] = '#2F2F2F';
 
     $SlackData = array(
         'username' => $Data['FName'],
         'attachments' => array([
             'fallback' => $Data['Subject'],
-            'pretext' => $SLACK['Date'] . ' ' . $SLACK['Time'] . ': Message From ' . $Data['FName'],
-            'color' => $SLACK['Color'],
+            'pretext' => $Data['Date'] . ' ' . $Data['Time'] . ': Message From ' . $Data['FName'],
+            'color' => $Data['Color'],
             'fields' => array(
                 [
                     'title' => 'Email',
@@ -70,29 +69,18 @@
         ])
     );
 
-    $SlackData = json_encode($SlackData);
-
-    $ch = curl_init($SLACK['URL']);
-    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-    curl_setopt($ch, CURLOPT_POSTFIELDS, $SlackData);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-        'Content-Type: application/json',
-        'Content-Length: ' . strlen($SlackData))
-    );
-
-    $result = curl_exec($ch);
+    $result = $Slack->Send($SlackData);
 
     if ($result) {
-        $SLACK['Sent'] = 1;
+        $Data['Slack_Sent'] = 1;
     }
 
-    $SQL = "INSERT INTO Contact_Submissions (FUll_Name, Email, Subject, MSG, Slack_Sent, Date_Added) VALUES ('{$Data['FName']}', '{$Data['Email']}', '{$Data['Subject']}', '{$Data['MSG']}', '{$SLACK['Sent']}', '{$SLACK['Date']}')";
+    $SQL = "INSERT INTO Contact_Submissions (FUll_Name, Email, Subject, MSG, Slack_Sent, Date_Added) VALUES ('{$Data['FName']}', '{$Data['Email']}', '{$Data['Subject']}', '{$Data['MSG']}', '{$Data['Slack_Sent']}', '{$Data['Date']}')";
     if ($CONN['Connection']->query($SQL) === TRUE) {
-        $output['Error'] = ($SLACK['Sent'] == 0 ? 'Unable to send to slack, will try again later.' : null);
-        $output['Data'] = ($SLACK['Sent'] == 1 ? 'Message stored & sent to slack successfully.' : 'Message stored but not sent to slack.');
+        $output['Error'] = ($Data['Slack_Sent'] == 0 ? 'Unable to send to slack, will try again later.' : null);
+        $output['Data'] = ($Data['Slack_Sent'] == 1 ? 'Message stored & sent to slack successfully.' : 'Message stored but not sent to slack.');
     } else {
-        $output['Error'] = ($SLACK['Sent'] == 0 ? 'Something went wrong, your message was not stored or sent to slack.' : 'Something went wrong, your message could not be stored but has been sent to slack.');
+        $output['Error'] = ($Data['Slack_Sent'] == 0 ? 'Something went wrong, your message was not stored or sent to slack.' : 'Something went wrong, your message could not be stored but has been sent to slack.');
         $output['Data'] = null;
     }
     EncodeAndExit($output);
