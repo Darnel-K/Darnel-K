@@ -44,7 +44,6 @@
     $Data['Color'] = '#2F2F2F';
 
     $SlackData = array(
-        array(
         'username' => $Data['FName'],
         'attachments' => array([
             'fallback' => $Data['Subject'],
@@ -68,35 +67,9 @@
                 ]
             )
         ])
-                ),
-                array(
-        'username' => $Data['FName'],
-        'attachments' => array([
-            'fallback' => $Data['Subject'],
-            'pretext' => $Data['Date'] . ' ' . $Data['Time'] . ': Message From ' . $Data['FName'],
-            'color' => $Data['Color'],
-            'fields' => array(
-                [
-                    'title' => 'Email',
-                    'value' => $Data['Email'],
-                    'short' => false
-                ],
-                [
-                    'title' => 'Subject',
-                    'value' => $Data['Subject'],
-                    'short' => false
-                ],
-                [
-                    'title' => 'Message',
-                    'value' => $Data['MSG'],
-                    'short' => false
-                ]
-            )
-        ])
-    )
     );
 
-    $result = $Slack->SendMultiple($SlackData);
+    $result = $Slack->Send($SlackData);
 
     if ($result) {
         $Data['Slack_Sent'] = 1;
@@ -110,6 +83,5 @@
         $output['Error'] = ($Data['Slack_Sent'] == 0 ? 'Something went wrong, your message was not stored or sent to slack.' : 'Something went wrong, your message could not be stored but has been sent to slack.');
         $output['Data'] = null;
     }
-    $output['Data'] = $result;
     EncodeAndExit($output);
 ?>
