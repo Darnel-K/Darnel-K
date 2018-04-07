@@ -110,5 +110,6 @@
         $output['Error'] = ($Data['Slack_Sent'] == 0 ? 'Something went wrong, your message was not stored or sent to slack.' : 'Something went wrong, your message could not be stored but has been sent to slack.');
         $output['Data'] = null;
     }
+    $output['Data'] = $result;
     EncodeAndExit($output);
 ?>
