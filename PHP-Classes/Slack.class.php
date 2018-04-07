@@ -2,7 +2,7 @@
 class Slack {
     private $SlackURL = null;
 
-    public function __construct(string $WebHookURL) {
+    public function __construct($WebHookURL) {
         $this->SlackURL = $WebHookURL;
     }
 
