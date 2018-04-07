@@ -26,14 +26,6 @@ body a:hover, body a i:hover {
   color: #999 !important;
 }
 
-::-moz-selection {
-  background-color: #8A0707;
-}
-
-::selection {
-  background-color: #8A0707;
-}
-
 ::-webkit-scrollbar {
   height: 4px;
   width: 4px;
