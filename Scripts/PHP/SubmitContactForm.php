@@ -39,6 +39,10 @@
         $Data[$k] = $CONN['Connection']->real_escape_string($v);
     }
 
+    $Data['FName'] = ucwords($Data['FName']);
+    $Data['Email'] = strtolower($Data['Email']);
+    $Data['Subject'] = ucfirst($Data['Subject']);
+
     $SlackData = array(
         'username' => $Data['FName'],
         'attachments' => array([
