@@ -44,6 +44,7 @@
     $Data['Color'] = '#2F2F2F';
 
     $SlackData = array(
+        array(
         'username' => $Data['FName'],
         'attachments' => array([
             'fallback' => $Data['Subject'],
@@ -67,9 +68,35 @@
                 ]
             )
         ])
+                ),
+                array(
+        'username' => $Data['FName'],
+        'attachments' => array([
+            'fallback' => $Data['Subject'],
+            'pretext' => $Data['Date'] . ' ' . $Data['Time'] . ': Message From ' . $Data['FName'],
+            'color' => $Data['Color'],
+            'fields' => array(
+                [
+                    'title' => 'Email',
+                    'value' => $Data['Email'],
+                    'short' => false
+                ],
+                [
+                    'title' => 'Subject',
+                    'value' => $Data['Subject'],
+                    'short' => false
+                ],
+                [
+                    'title' => 'Message',
+                    'value' => $Data['MSG'],
+                    'short' => false
+                ]
+            )
+        ])
+    )
     );
 
-    $result = $Slack->Send($SlackData);
+    $result = $Slack->SendMultiple($SlackData);
 
     if ($result) {
         $Data['Slack_Sent'] = 1;

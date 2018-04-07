@@ -22,7 +22,11 @@ class Slack {
     }
 
     public function SendMultiple(array $Data) {
-        
+        $arr = array();
+        foreach ($Data as $v) {
+            array_push($arr, $this->Send($v));
+        }
+        return $arr;
     }
 }
 ?>
