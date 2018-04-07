@@ -7,6 +7,7 @@ Versioning numbers defined as MAJOR.MINOR.PATCH
 ## [0.18.0] - 2018-04-07
 ### Added
 - On contact form submit send form data to slack & store in the DB
+- Slack class
 
 ## [0.17.0] - 2018-04-02
 ### Added

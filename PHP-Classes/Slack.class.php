@@ -23,8 +23,9 @@ class Slack {
 
     public function SendMultiple(array $Data) {
         $arr = array();
-        foreach ($Data as $v) {
-            array_push($arr, $this->Send($v));
+        foreach ($Data as $k => $v) {
+            // array_push($arr, $this->Send($v));
+            $arr[$k] = $this->Send($v);
         }
         return $arr;
     }
