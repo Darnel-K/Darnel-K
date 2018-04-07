@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 Versioning numbers defined as MAJOR.MINOR.PATCH
 
+## [0.18.0] - 2018-04-07
+### Added
+- On contact form submit send form data to slack & store in the DB
+
 ## [0.17.0] - 2018-04-02
 ### Added
 - HomePage on click contact auto focus first form input after scroll complete
