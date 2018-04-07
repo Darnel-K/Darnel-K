@@ -82,7 +82,7 @@
         $SLACK['Sent'] = 1;
     }
 
-    $SQL = "INSERT INTO Contact_Submissions (FUll_Name, Email, Subject, MSG, Slack_Sent, Date_Added) VALUES (UNHEX('" . bin2hex("'{$Data['FName']}'") . "'), UNHEX('" . bin2hex("'{$Data['Email']}'") . "'), UNHEX('" . bin2hex("'{$Data['Subject']}'") . "'), UNHEX('" . bin2hex("'{$Data['MSG']}'") . "'), UNHEX('" . bin2hex("'{$SLACK['Sent']}'") . "'), UNHEX('" . bin2hex("'{$SLACK['Date']}'") . "'))";
+    $SQL = "INSERT INTO Contact_Submissions (FUll_Name, Email, Subject, MSG, Slack_Sent, Date_Added) VALUES ('{$Data['FName']}', '{$Data['Email']}', '{$Data['Subject']}', '{$Data['MSG']}', '{$SLACK['Sent']}', '{$SLACK['Date']}')";
     if ($CONN['Connection']->query($SQL) === TRUE) {
         $output['Error'] = ($SLACK['Sent'] == 0 ? 'Unable to send to slack, will try again later.' : null);
         $output['Data'] = ($SLACK['Sent'] == 1 ? 'Message stored & sent to slack successfully.' : 'Message stored but not sent to slack.');
