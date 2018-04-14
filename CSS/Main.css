@@ -247,12 +247,6 @@ nav.fixed ul li a, nav.fixed ul li i {
   -webkit-align-content: center;
       -ms-flex-line-pack: center;
           align-content: center;
-  opacity: 1;
-  position: relative;
-  right: -40px;
-  -webkit-transition: opacity 1s linear, right 1s linear;
-  -o-transition: opacity 1s linear, right 1s linear;
-  transition: opacity 1s linear, right 1s linear;
 }
 
 #content #Wrapper .WrapperContent #Contact form input, #content #Wrapper .WrapperContent #Contact form textarea, #content #Wrapper .WrapperContent #Contact form button {
