@@ -250,6 +250,9 @@ nav.fixed ul li a, nav.fixed ul li i {
 }
 
 #content #Wrapper .WrapperContent #Contact form input, #content #Wrapper .WrapperContent #Contact form textarea, #content #Wrapper .WrapperContent #Contact form button {
+  -webkit-transition: width 4s linear;
+  -o-transition: width 4s linear;
+  transition: width 4s linear;
   width: 90%;
   margin: 0 auto;
   -webkit-border-radius: 6px;
