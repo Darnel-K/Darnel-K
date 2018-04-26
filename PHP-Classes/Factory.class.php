@@ -12,14 +12,10 @@ class Factory {
     public static function GetSocialCards(array $Twitter, array $OpenGraph) {
         $out = "";
         foreach ($Twitter as $k => $v) {
-            if (strtolower($k) == 'card' || 'site' || 'creator') {
-                $out .= "<meta name='twitter:" . strtolower($k) . "' content='" . $v . "' />";
-            }
+            $out .= "<meta name='twitter:" . strtolower($k) . "' content='" . $v . "' />";
         }
         foreach ($OpenGraph as $k => $v) {
-            if (strtolower($k) == 'card' || 'site' || 'creator') {
-                $out .= "<meta property='og:" . strtolower($k) . "' content='" . $v . "' />";
-            }
+            $out .= "<meta property='og:" . strtolower($k) . "' content='" . $v . "' />";
         }
         return $out;
     }
