@@ -67,10 +67,6 @@
 
     $result = $Slack->Send($SlackData);
 
-    foreach ($Data as $k => $v) {
-        $Data[$k] = $CONN['Connection']->real_escape_string($v);
-    }
-
     if ($result) {
         $Data['Slack_Sent'] = 1;
     }
@@ -78,7 +74,6 @@
     $stmt = $CONN['Connection']->prepare("INSERT INTO Contact_Submissions (FUll_Name, Email, Subject, MSG, Slack_Sent, Date_Added) VALUES (?, ?, ?, ?, ?, ?)");
     $stmt->bind_param("ssssis", $Data['FName'], $Data['Email'], $Data['Subject'], $Data['MSG'], $Data['Slack_Sent'], $Data['Date']);
 
-    // $SQL = "INSERT INTO Contact_Submissions (FUll_Name, Email, Subject, MSG, Slack_Sent, Date_Added) VALUES ('{$Data['FName']}', '{$Data['Email']}', '{$Data['Subject']}', '{$Data['MSG']}', '{$Data['Slack_Sent']}', '{$Data['Date']}')";
     if ($stmt->execute() === TRUE) {
         $output['Error'] = ($Data['Slack_Sent'] == 0 ? 'Unable to send to slack, will try again later.' : null);
         $output['Data'] = ($Data['Slack_Sent'] == 1 ? 'Message stored & sent to slack successfully.' : 'Message stored but not sent to slack.');
@@ -86,8 +81,6 @@
         $output['Error'] = ($Data['Slack_Sent'] == 0 ? 'Something went wrong, your message could not be stored or sent to slack.' : 'Something went wrong, your message could not be stored but has been sent to slack.');
         $output['Data'] = null;
     }
-    $Data['MSG'] = "THIS IS A TEXT";
-    $stmt->execute();
     $stmt->close();
     EncodeAndExit($output);
 ?>
