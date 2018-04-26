@@ -30,10 +30,6 @@
         EncodeAndExit($output);
     }
 
-    foreach ($Data as $k => $v) {
-        $Data[$k] = $CONN['Connection']->real_escape_string($v);
-    }
-
     $Data['FName'] = ucwords($Data['FName']);
     $Data['Email'] = strtolower($Data['Email']);
     $Data['Subject'] = ucfirst($Data['Subject']);
@@ -70,6 +66,10 @@
     );
 
     $result = $Slack->Send($SlackData);
+
+    foreach ($Data as $k => $v) {
+        $Data[$k] = $CONN['Connection']->real_escape_string($v);
+    }
 
     if ($result) {
         $Data['Slack_Sent'] = 1;
