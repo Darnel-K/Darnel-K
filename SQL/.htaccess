@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+	RewriteCond %{REMOTE_ADDR} !^82\.19\.138\.203
+	RewriteCond %{REMOTE_ADDR} !^82\.24\.22\.196
+	RewriteRule .* - [R=403,L]
+</IfModule>

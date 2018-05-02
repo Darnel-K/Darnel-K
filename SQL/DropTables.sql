@@ -1,0 +1,1 @@
+DROP TABLE `Darnel-K`.`Contact_Submissions`;
