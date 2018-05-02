@@ -1,7 +1,6 @@
 CREATE TABLE `Darnel-K`.`Contact_Submissions` (
   `ID` INT NOT NULL AUTO_INCREMENT,
-  `First_Name` VARCHAR(32) NOT NULL,
-  `Last_Name` VARCHAR(32) NOT NULL,
+  `Full_Name` VARCHAR(64) NOT NULL,
   `Email` VARCHAR(254) NOT NULL,
   `Subject` VARCHAR(64) NULL,
   `MSG` TEXT NOT NULL,
