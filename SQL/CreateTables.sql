@@ -8,25 +8,25 @@ CREATE TABLE `Darnel-K`.`Contact_Submissions` (
   `Slack_Sent` TINYINT NOT NULL DEFAULT 0,
   `Date_Added` DATE NOT NULL,
   PRIMARY KEY (`ID`),
-  INDEX `CS_Email_FK` (`Email` ASC),
-  INDEX `CS_Slack_Sent_FK` (`Slack_Sent` ASC),
-  INDEX `CS_Date_Added_FK` (`Date_Added` ASC))
+  INDEX `CS_Email_I` (`Email` ASC),
+  INDEX `CS_Slack_Sent_I` (`Slack_Sent` ASC),
+  INDEX `CS_Date_Added_I` (`Date_Added` ASC)
+)
 ENGINE = InnoDB
 ROW_FORMAT = COMPRESSED;
 
-CREATE TABLE `Darnel-K`.`Users` (
-    `ID` INT NOT NULL AUTO_INCREMENT,
-    `First_Name` VARCHAR(32) NOT NULL,
-    `Middle_Name` VARCHAR(64) NOT NULL,
-    `Last_Name` VARCHAR(32) NOT NULL
+CREATE TABLE `Darnel-K`.`Admin_Logins` (
+  `ID` INT NOT NULL AUTO_INCREMENT,
+  `Username` VARCHAR(16) NOT NULL,
+  `First_Name` VARCHAR(32) NOT NULL,
+  `Last_Name` VARCHAR(32) NOT NULL,
+  `Phone_Number` VARCHAR(20) NULL,
+  `Email` VARCHAR(254) NOT NULL,
+  `Pass` VARCHAR(256) NOT NULL,
+  PRIMARY KEY (`ID`),
+  INDEX `AL_Username_I` (`Username` ASC),
+  INDEX `AL_Email_I` (`Email` ASC),
+  INDEX `AL_Phone_I` (`Phone_Number` ASC)
 )
-
-CREATE TABLE `Darnel-K`.`Admins` (
-    `ID` INT NOT NULL AUTO_INCREMENT,
-    `Username` VARCHAR(16) NOT NULL,
-    `First_Name` VARCHAR(32) NOT NULL,
-    `Last_Name` VARCHAR(32) NOT NULL,
-    `Phone_Number` VARCHAR(20) NOT NULL,
-    `Email` VARCHAR(254) NOT NULL,
-    `Pass` VARCHAR(256) NOT NULL
-)
+ENGINE = InnoDB
+ROW_FORMAT = COMPRESSED;
