@@ -71,7 +71,7 @@
         $Data['Slack_Sent'] = 1;
     }
 
-    $stmt = $CONN['Connection']->prepare("INSERT INTO Contact_Submissions (FUll_Name, Email, Subject, MSG, Slack_Sent, Date_Added) VALUES (?, ?, ?, ?, ?, ?)");
+    $stmt = $CONN['Connection']->prepare("INSERT INTO Contact_Submissions (Full_Name, Email, Subject, MSG, Slack_Sent, Date_Added) VALUES (?, ?, ?, ?, ?, ?)");
     $stmt->bind_param("ssssis", $Data['FName'], $Data['Email'], $Data['Subject'], $Data['MSG'], $Data['Slack_Sent'], $Data['Date']);
 
     if ($stmt->execute() === TRUE) {
