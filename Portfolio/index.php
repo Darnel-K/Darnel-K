@@ -44,7 +44,7 @@
             <div class="WrapperContent">
                 <section class="Spacer"></section>
                 <section id="Portfolio">
-                    
+
                 </section>
                 <footer><?php echo Factory::GetFooter(); ?></footer>
             </div>

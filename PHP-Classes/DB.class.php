@@ -25,7 +25,7 @@ class DB {
                 "ErrNo" => $conn['Connection']->connect_errno
             );
         }
-        
+
         return $conn;
     }
 }
