@@ -64,7 +64,7 @@ class GlobalVars {
         array("Name" => "description", "Content" => "")
     );
 
-    public static $LogoPath = '/Images/Logo - White Text.svg';
+    public static $LogoPath = '/Images/Logo%20-%20White%20Text.svg';
 
     public static $OpenGraphImage = '/Images/OpenGraph.png';
 
