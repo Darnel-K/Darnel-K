@@ -25,10 +25,10 @@ class GlobalVars {
 
     public static $Scripts = array(
         array("Path" => "/Scripts/JS/GoogleTagManager.js", "Async" => false, "Defer" => false, "Type" => false),
-        // array("Path" => "/Scripts/JS/SWImport.js", "Async" => true, "Defer" => false, "Type" => false),
+        // array("Path" => "/Scripts/JS/SWImport.min.js", "Async" => true, "Defer" => false, "Type" => false),
         array("Path" => "/Scripts/JS/jquery-3.3.1.min.js", "Async" => false, "Defer" => true, "Type" => false),
         array("Path" => "/Scripts/JS/particles.min.js", "Async" => false, "Defer" => true, "Type" => false),
-        array("Path" => "/Scripts/JS/Main.js", "Async" => false, "Defer" => true, "Type" => false)
+        array("Path" => "/Scripts/JS/Main.min.js", "Async" => false, "Defer" => true, "Type" => false)
     );
 
     public static $Twitter = array(
