@@ -91,20 +91,12 @@ function SetupHomePageLinkEvents() {
                 .replace(" ", "")
                 .replace("/", "");
             if (ScrollItem == "") {
-                $("html, body").animate(
-                    { scrollTop: $("#HomePage").offset().top },
-                    700
-                );
+                $("html, body").animate({ scrollTop: $("#HomePage").offset().top }, 700);
             } else {
-                $("html, body").animate(
-                    { scrollTop: $("#" + ScrollItem).offset().top },
-                    700
-                );
+                $("html, body").animate({ scrollTop: $("#" + ScrollItem).offset().top }, 700);
                 HomePageMenuButtonClickEvents(e.target.text);
             }
-            $("#menubutton").length && $("#content").css("left") != "0px"
-                ? $("#menubutton").click()
-                : false;
+            $("#menubutton").length && $("#content").css("left") != "0px" ? $("#menubutton").click() : false;
         });
     }
 }
@@ -125,35 +117,17 @@ function SetupWindowEvents() {
     // All events attached to the browser window
     var ParticlesRunning = true;
     $(window).on("scroll", function() {
-        $("#HomePage").length
-            ? $(window).scrollTop() >= $(window).outerHeight() - 100
-                ? $("nav").addClass("fixed")
-                : $("nav").removeClass("fixed")
-            : false;
-        $("#DownArrow").css(
-            "opacity",
-            1 - $(window).scrollTop() / ($(window).outerHeight() - 150)
-        );
-        $("header").length
-            ? $("header").css(
-                  "opacity",
-                  1 - $(window).scrollTop() / ($(window).outerHeight() - 100)
-              )
-            : false;
+        $("#HomePage").length ? ($(window).scrollTop() >= $(window).outerHeight() - 100 ? $("nav").addClass("fixed") : $("nav").removeClass("fixed")) : false;
+        $("#DownArrow").css("opacity", 1 - $(window).scrollTop() / ($(window).outerHeight() - 150));
+        $("header").length ? $("header").css("opacity", 1 - $(window).scrollTop() / ($(window).outerHeight() - 100)) : false;
         if ($("header").length) {
-            if (
-                $(window).scrollTop() >= $(window).outerHeight() &&
-                ParticlesRunning
-            ) {
+            if ($(window).scrollTop() >= $(window).outerHeight() && ParticlesRunning) {
                 cancelRequestAnimFrame(pJSDom[0].pJS.fn.checkAnimFrame);
                 cancelRequestAnimFrame(pJSDom[0].pJS.fn.drawAnimFrame);
                 pJSDom[0].pJS.fn.particlesEmpty();
                 pJSDom[0].pJS.fn.canvasClear();
                 ParticlesRunning = false;
-            } else if (
-                $(window).scrollTop() <= $(window).outerHeight() &&
-                !ParticlesRunning
-            ) {
+            } else if ($(window).scrollTop() <= $(window).outerHeight() && !ParticlesRunning) {
                 pJSDom[0].pJS.fn.vendors.start();
                 ParticlesRunning = true;
             }
@@ -185,10 +159,7 @@ function SetupDownArrowEvents() {
     // All events attached to the bouncing down arrow
     $("#DownArrow").length
         ? $("#DownArrow").on("click", function() {
-              $("html, body").animate(
-                  { scrollTop: $("#Wrapper").offset().top },
-                  700
-              );
+              $("html, body").animate({ scrollTop: $("#Wrapper").offset().top }, 700);
           })
         : false;
 }
@@ -200,9 +171,7 @@ function StartEvents() {
 
 function init() {
     // Start Particles JS
-    $("#particles-js").length
-        ? window.particlesJS("particles-js", SETTINGS["ParticlesJS"])
-        : false;
+    $("#particles-js").length ? window.particlesJS("particles-js", SETTINGS["ParticlesJS"]) : false;
     StartEvents();
     SetupMobileMenuEvents();
     SetupHomePageLinkEvents();

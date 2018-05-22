@@ -1,3 +1,3 @@
 # Darnel-K
 
-[View Changelog](CHANGELOG.md)
+**[View Changelog](CHANGELOG.md)**
