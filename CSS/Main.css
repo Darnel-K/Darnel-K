@@ -73,6 +73,7 @@ header #overlay {
   width: 100vw;
   height: 100vh;
   position: fixed;
+  display: -ms-grid;
   display: grid;
   -webkit-align-content: center;
       -ms-flex-line-pack: center;
@@ -84,8 +85,10 @@ header #overlay {
 }
 
 header #overlay section {
+  display: -ms-grid;
   display: grid;
-  grid-template-rows: auto auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
 }
 
 header #overlay section img {
@@ -101,6 +104,7 @@ header #overlay section h1 {
 }
 
 nav {
+  display: -ms-grid;
   display: grid;
   position: fixed;
 }
@@ -140,7 +144,8 @@ nav.fixed ul li a, nav.fixed ul li i {
   width: 100%;
   height: 50px;
   z-index: 5;
-  grid-template-columns: auto auto;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
 }
 
 #DesktopNav ul {
@@ -174,7 +179,8 @@ nav.fixed ul li a, nav.fixed ul li i {
   -webkit-justify-content: end;
       -ms-flex-pack: end;
           justify-content: end;
-  grid-column-start: 2;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
   margin: 0 10px 0 0;
 }
 
@@ -210,25 +216,32 @@ nav.fixed ul li a, nav.fixed ul li i {
 
 #content #Wrapper .WrapperContent section {
   width: 80%;
+  display: -ms-grid;
   display: grid;
   margin: 0 auto;
 }
 
 #content #Wrapper .WrapperContent #Contact {
-  grid-template-areas: 'Head Head Head' 'C_Form Bar Social';
+      grid-template-areas: 'Head Head Head' 'C_Form Bar Social';
   grid-gap: 10px;
-  grid-template-columns: -webkit-calc((80vw - 20px) / 2) 1px -webkit-calc((80vw - 20px) / 2);
-  grid-template-columns: calc((80vw - 20px) / 2) 1px calc((80vw - 20px) / 2);
+  -ms-grid-columns: calc((80vw - 20px) / 2) 1px calc((80vw - 20px) / 2);
+      grid-template-columns: -webkit-calc((80vw - 20px) / 2) 1px -webkit-calc((80vw - 20px) / 2);
+      grid-template-columns: calc((80vw - 20px) / 2) 1px calc((80vw - 20px) / 2);
   min-height: -webkit-calc(100vh - 50px - 146px);
   min-height: calc(100vh - 50px - 146px);
   padding: 50px 20px;
 }
 
 #content #Wrapper .WrapperContent #Contact #C_Head {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: Head;
   text-align: center;
+  display: -ms-grid;
   display: grid;
-  grid-template-rows: auto auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
   -webkit-align-content: center;
       -ms-flex-line-pack: center;
           align-content: center;
@@ -239,8 +252,12 @@ nav.fixed ul li a, nav.fixed ul li i {
 }
 
 #content #Wrapper .WrapperContent #Contact form {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: C_Form;
-  grid-template-rows: 50px 50px 50px 100px 50px;
+  -ms-grid-rows: 50px 50px 50px 100px 50px;
+      grid-template-rows: 50px 50px 50px 100px 50px;
+  display: -ms-grid;
   display: grid;
   grid-row-gap: 10px;
   padding: 50px;
@@ -303,6 +320,8 @@ nav.fixed ul li a, nav.fixed ul li i {
 }
 
 #content #Wrapper .WrapperContent #Contact .Bar {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: Bar;
   width: 1px;
   height: 100%;
@@ -311,14 +330,18 @@ nav.fixed ul li a, nav.fixed ul li i {
 }
 
 #content #Wrapper .WrapperContent #Contact #ContactSocial {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-area: Social;
+  display: -ms-grid;
   display: grid;
   padding: 50px;
   -webkit-align-content: center;
       -ms-flex-line-pack: center;
           align-content: center;
-  grid-template-columns: 40px 1px auto;
-  grid-template-areas: 'Icons Links';
+  -ms-grid-columns: 40px 1px auto;
+      grid-template-columns: 40px 1px auto;
+      grid-template-areas: 'Icons Links';
   grid-column-gap: 15px;
 }
 
@@ -326,6 +349,7 @@ nav.fixed ul li a, nav.fixed ul li i {
   list-style: none;
   padding: 0;
   margin: 20px 0;
+  display: -ms-grid;
   display: grid;
   grid-auto-rows: 40px;
 }
@@ -338,11 +362,15 @@ nav.fixed ul li a, nav.fixed ul li i {
 }
 
 #content #Wrapper .WrapperContent #Contact #ContactSocial ul:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: Icons;
   text-align: center;
 }
 
 #content #Wrapper .WrapperContent #Contact #ContactSocial ul:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: Links;
 }
 
@@ -366,13 +394,17 @@ nav.fixed ul li a, nav.fixed ul li i {
 footer {
   background-color: #1F1F1F;
   width: 100%;
+  display: -ms-grid;
   display: grid;
-  grid-template-areas: 'S1 S2 S3 S4 S5' 'Copy Copy Copy Copy Copy';
+      grid-template-areas: 'S1 S2 S3 S4 S5' 'Copy Copy Copy Copy Copy';
   padding: 10px;
   grid-gap: 10px;
 }
 
 footer #Copyright {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
   grid-area: Copy;
   font-size: small;
   margin: 5px 0;
@@ -385,22 +417,32 @@ footer section {
 }
 
 footer .S1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: S1;
 }
 
 footer .S2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: S2;
 }
 
 footer .S3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: S3;
 }
 
 footer .S4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
   grid-area: S4;
 }
 
 footer .S5 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
   grid-area: S5;
 }
 
@@ -441,6 +483,7 @@ footer .S5 {
 
 @media only screen and (max-width: 768px) {
   #MobileNav {
+    display: -ms-grid;
     display: grid;
     z-index: -1;
     position: fixed;
@@ -476,8 +519,9 @@ footer .S5 {
   }
   #content #Wrapper .WrapperContent #Contact {
     width: initial;
-    grid-template-areas: 'Head' 'C_Form' 'Bar' 'Social';
-    grid-template-columns: none;
+        grid-template-areas: 'Head' 'C_Form' 'Bar' 'Social';
+    -ms-grid-columns: none;
+        grid-template-columns: none;
     grid-row-gap: 30px;
   }
   #content #Wrapper .WrapperContent #Contact form {
