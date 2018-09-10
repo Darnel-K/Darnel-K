@@ -56,7 +56,7 @@ class GlobalVars {
     );
 
     public static $ExtraMetadata = array(
-        array("Name" => "robots", "Content" => "all"),
+        array("Name" => "robots", "Content" => "FOLLOW"),
         array("Name" => "viewport", "Content" => "width=device-width, initial-scale=1.0"),
         array("Name" => "msapplication-TileColor", "Content" => "#2F2F2F"),
         array("Name" => "msapplication-TileImage", "Content" => "/Icons/ms-icon-144x144.png"),
