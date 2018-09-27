@@ -4,7 +4,7 @@
         include_once('../../PHP-Classes/' . $class . '.class.php');
     });
 
-    $SlackURL = "https://hooks.slack.com/services/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";
+    $SlackURL = getenv('DARNELK_SLACK_URL', true);
 
     function EncodeAndExit($out) { echo json_encode($out); exit(); }
     $Data = array();
