@@ -1,6 +1,7 @@
 {
     "name": "Darnel-K Website",
     "short_name": "Darnel-K",
+    "display": "fullscreen",
     "theme_color": "#2F2F2F",
     "start_url": "https://dev.darnel-k.uk",
     "background_color": "#2F2F2F",
