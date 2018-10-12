@@ -1,6 +1,6 @@
 footer
     background-color: $HeaderBackColour
-    width: 100%
+    width: calc(100% - (10px * 2))
     display: grid
     grid-template-areas: 'S1 S2 S3 S4 S5' 'Copy Copy Copy Copy Version'
     padding: 10px
@@ -12,6 +12,7 @@ footer
     #Version
         grid-area: Version
         font-size: small
+        text-align: right
         margin: 5px 0
     section
         min-height: 100px

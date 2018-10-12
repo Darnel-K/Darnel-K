@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 Versioning numbers defined as MAJOR.MINOR.PATCH
 
+## [0.18.3] - 2018-10-12
+
+### Changed
+
+-   Aligned version number to right in footer
+
+### Fixed
+
+-   Footer width - `100% > calc(100% - (10px * 2))`
+
 ## [0.18.2] - 2018-10-12
 
 ### Fixed

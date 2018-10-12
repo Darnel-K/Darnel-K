@@ -393,7 +393,8 @@ nav.fixed ul li a, nav.fixed ul li i {
 
 footer {
   background-color: #1F1F1F;
-  width: 100%;
+  width: -webkit-calc(100% - (10px * 2));
+  width: calc(100% - (10px * 2));
   display: -ms-grid;
   display: grid;
       grid-template-areas: 'S1 S2 S3 S4 S5' 'Copy Copy Copy Copy Version';
@@ -415,6 +416,7 @@ footer #Version {
   -ms-grid-column: 5;
   grid-area: Version;
   font-size: small;
+  text-align: right;
   margin: 5px 0;
 }
 
