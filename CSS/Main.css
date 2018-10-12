@@ -396,7 +396,7 @@ footer {
   width: 100%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'S1 S2 S3 S4 S5' 'Copy Copy Copy Copy Copy';
+      grid-template-areas: 'S1 S2 S3 S4 S5' 'Copy Copy Copy Copy Version';
   padding: 10px;
   grid-gap: 10px;
 }
@@ -404,8 +404,16 @@ footer {
 footer #Copyright {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
+  -ms-grid-column-span: 4;
   grid-area: Copy;
+  font-size: small;
+  margin: 5px 0;
+}
+
+footer #Version {
+  -ms-grid-row: 2;
+  -ms-grid-column: 5;
+  grid-area: Version;
   font-size: small;
   margin: 5px 0;
 }

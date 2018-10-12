@@ -70,5 +70,9 @@ class GlobalVars {
     public static $OpenGraphImage = '/Images/OpenGraph.png';
 
     public static $NoScriptCSS = '/CSS/NoScript.min.css';
+
+    public static function HTTPS(){
+        return (isset($_SERVER['HTTPS']) ? true : false);
+    }
 }
 ?>
