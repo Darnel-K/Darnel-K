@@ -5,7 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 Versioning numbers defined as MAJOR.MINOR.PATCH
 
-## [0.13.4] - 2018-10-13
+## [0.18.5] - 2018-10-13
+
+### Fixed
+
+-   Linkedin > LinkedIn 
+-   Incorrect version number in changelog - 0.13.4 > 0.18.4
+
+## [0.18.4] - 2018-10-13
 
 ### Changed
 

@@ -13,7 +13,7 @@ class GlobalVars {
         array("IconClass" => 'fab fa-github', "Path" => 'https://github.com/Darnel-K', "Text" => 'GitHub', "IconSize" => 'fa-2x', "Disabled" => false),
         array("IconClass" => 'fab fa-facebook', "Path" => 'https://www.facebook.com/Darnel.Kumar', "Text" => 'Facebook', "IconSize" => 'fa-2x', "Disabled" => false),
         array("IconClass" => 'fab fa-twitter', "Path" => 'https://twitter.com/Darnel_Kumar', "Text" => 'Twitter', "IconSize" => 'fa-2x', "Disabled" => false),
-        array("IconClass" => 'fab fa-linkedin', "Path" => 'https://linkedin.com/in/darnel-k', "Text" => 'Linkedin', "IconSize" => 'fa-2x', "Disabled" => false),
+        array("IconClass" => 'fab fa-linkedin', "Path" => 'https://linkedin.com/in/darnel-k', "Text" => 'LinkedIn', "IconSize" => 'fa-2x', "Disabled" => false),
         array("IconClass" => 'fab fa-instagram', "Path" => 'https://www.instagram.com/darnelkumar/', "Text" => 'Instagram', "IconSize" => 'fa-2x', "Disabled" => false),
         array("IconClass" => "far fa-envelope", "Path" => "mailto:darnel.kumar91@gmail.com?subject=Sent%20From%20Darnel-K.uk", "Text" => 'darnel.kumar91@gmail.com', "IconSize" => 'fa-2x', "Disabled" => false)
     );
