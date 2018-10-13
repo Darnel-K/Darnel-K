@@ -88,7 +88,7 @@ class Factory {
         $output .= "<section class='S4'></section>";
         $output .= "<section class='S5'></section>";
         $output .= "<p id='Copyright'>Copyright &copy; " . date('Y') . " Darnel-K</p>";
-        $output .= "<p id='Version'>V0.18.3 - 2018-10-12</p>";
+        $output .= "<p id='Version'>V0.18.4 - 2018-10-13</p>";
         // Not created by, affiliated with, or supported by Slack Technologies, Inc.
         return $output;
     }
