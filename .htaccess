@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_URI} [^\/].* [NC]
+RewriteCond %{REQUEST_URI} !\.(sass|css|map)$ [NC]
+# Let's Encrypt
+RewriteCond %{REQUEST_URI} !\.well-known.*
+RewriteRule ^.+$ / [L,R=307]

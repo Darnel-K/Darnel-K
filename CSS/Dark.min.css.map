@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,IAAI,AAAC,CACD,KAAK,CCIQ,IAAI,CDHjB,gBAAgB,CCIH,OAAO,CDJgB,AAExC,AAAA,CAAC,AAAA,MAAM,AAAC,CACJ,KAAK,CCAQ,IAAI,CDAQ",
+    "sources": [
+        "../SASS/Dark.sass",
+        "../SASS/_Vars.sass"
+    ],
+    "names": [],
+    "file": "Dark.min.css"
+}

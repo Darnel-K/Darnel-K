@@ -1,0 +1,65 @@
+@import '_Vars.sass'
+
+*
+    font-family: monospace
+
+body
+    display: grid
+    grid-template-rows: auto min-content
+    width: 100vw
+    margin: 0
+    height: 100vh
+
+#Container
+    display: grid
+    justify-content: center
+    align-content: center
+
+footer
+    margin: 5px
+    font-size: xx-small
+    display: grid
+    p
+        margin: 0
+        text-align: right
+a
+    text-decoration: none
+    color: $GlobalLinkColour
+
+@keyframes swing
+    15%
+        transform: translateX(calc(0% + 5px))
+        border-color: $GlobalBoxStandardBorderColour
+    30%
+        transform: translateX(calc(0% - 5px))
+        border-color: $GlobalBoxAlertBorderColour
+    50%
+        transform: translateX(calc(0% + 3px))
+        border-color: $GlobalBoxStandardBorderColour
+    65%
+        transform: translateX(calc(0% - 3px))
+        border-color: $GlobalBoxAlertBorderColour
+    80%
+        transform: translateX(calc(0% + 2px))
+        border-color: $GlobalBoxStandardBorderColour
+    100%
+        transform: translateX(0%)
+        border-color: $GlobalBoxAlertBorderColour
+
+.swing
+    animation: swing 1s ease
+    animation-iteration-count: 1
+    max-width: 760px
+    border: 2px solid $GlobalBoxStandardBorderColour
+    padding: 20px
+    h1
+        border-bottom: 3px solid $GlobalBoxStandardBorderColour
+        padding-bottom: 5px
+        margin-top: 5px
+    h2
+        font-weight: normal
+        word-break: break-all
+    section
+        p
+            font-size: small
+            text-align: justify

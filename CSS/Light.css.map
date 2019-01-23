@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,IAAI,CAAC;EACD,KAAK,ECCS,IAAI;EDAlB,gBAAgB,ECCF,IAAI;CDDmB;;AAEzC,AAAA,CAAC,AAAA,MAAM,CAAC;EACJ,KAAK,ECHS,IAAI;CDGQ",
+    "sources": [
+        "../SASS/Light.sass",
+        "../SASS/_Vars.sass"
+    ],
+    "names": [],
+    "file": "Light.css"
+}
