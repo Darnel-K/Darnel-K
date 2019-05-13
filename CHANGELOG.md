@@ -10,6 +10,7 @@ Versioning numbers defined as MAJOR.MINOR.PATCH
 ### Changed
 
 -   Font Awesome link to updated version
+-   Update GlobalVars.class.php
 
 ## [0.18.6] - 2019-01-21
 
