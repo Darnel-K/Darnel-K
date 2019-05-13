@@ -91,7 +91,9 @@ function SetupHomePageLinkEvents() {
                 .replace(" ", "")
                 .replace("/", "");
             if (ScrollItem == "") {
-                $("html, body").animate({ scrollTop: $("#HomePage").offset().top }, 700);
+                if ($("#" + ScrollItem).length) {
+                    $("html, body").animate({ scrollTop: $("#HomePage").offset().top }, 700);
+                }
             } else {
                 if ($("#" + ScrollItem).length) {
                     $("html, body").animate({ scrollTop: $("#" + ScrollItem).offset().top }, 700);
