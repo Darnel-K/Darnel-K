@@ -93,8 +93,10 @@ function SetupHomePageLinkEvents() {
             if (ScrollItem == "") {
                 $("html, body").animate({ scrollTop: $("#HomePage").offset().top }, 700);
             } else {
-                $("html, body").animate({ scrollTop: $("#" + ScrollItem).offset().top }, 700);
-                HomePageMenuButtonClickEvents(e.target.text);
+                if ($("#" + ScrollItem).length) {
+                    $("html, body").animate({ scrollTop: $("#" + ScrollItem).offset().top }, 700);
+                    HomePageMenuButtonClickEvents(e.target.text);
+                }
             }
             $("#menubutton").length && $("#content").css("left") != "0px" ? $("#menubutton").click() : false;
         });
