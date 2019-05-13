@@ -91,14 +91,10 @@ function SetupHomePageLinkEvents() {
                 .replace(" ", "")
                 .replace("/", "");
             if (ScrollItem == "") {
-                if ($("#" + ScrollItem).length) {
-                    $("html, body").animate({ scrollTop: $("#HomePage").offset().top }, 700);
-                }
+                $("html, body").animate({ scrollTop: $("#HomePage").offset().top }, 700);
             } else {
-                if ($("#" + ScrollItem).length) {
-                    $("html, body").animate({ scrollTop: $("#" + ScrollItem).offset().top }, 700);
-                    HomePageMenuButtonClickEvents(e.target.text);
-                }
+                $("html, body").animate({ scrollTop: $("#" + ScrollItem).offset().top }, 700);
+                HomePageMenuButtonClickEvents(e.target.text);
             }
             $("#menubutton").length && $("#content").css("left") != "0px" ? $("#menubutton").click() : false;
         });
