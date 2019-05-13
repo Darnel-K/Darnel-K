@@ -19,7 +19,7 @@ class GlobalVars {
     );
 
     public static $CSS = array(
-        array("Path" => "//use.fontawesome.com/releases/v5.0.6/css/all.css", "Media" => false),
+        array("Path" => "//use.fontawesome.com/releases/v5.8.2/css/all.css", "Media" => false),
         array("Path" => "/CSS/Main.min.css", "Media" => false),
         array("Path" => "//fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900%7COpen+Sans:300,400,600,700,800%7CRoboto:100,300,400,500,700,900&subset=latin-ext", "Media" => false)
     );

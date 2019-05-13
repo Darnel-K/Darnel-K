@@ -30,7 +30,7 @@ var urlsToCache = [
     "/Icons/ms-icon-310x310.png",
     "/SASS/Main.min.css",
     "https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Open+Sans:300,400,600,700,800|Roboto:100,300,400,500,700,900&subset=latin-ext",
-    "https://use.fontawesome.com/releases/v5.0.6/css/all.css",
+    "https://use.fontawesome.com/releases/v5.8.2/css/all.css",
     "/favicon.ico"
 ];
 
@@ -59,11 +59,7 @@ self.addEventListener("fetch", function(event) {
             return fetch(fetchRequest).then(function(response) {
                 // Inital request when not in cache
                 // Check if we received a valid response
-                if (
-                    !response ||
-                    response.status !== 200 ||
-                    response.type !== "basic"
-                ) {
+                if (!response || response.status !== 200 || response.type !== "basic") {
                     // Return errored Response
                     return response;
                 }
