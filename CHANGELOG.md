@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 Versioning numbers defined as MAJOR.MINOR.PATCH
 
+## [0.18.7] - 2019-05-13
+
+### Changed
+
+-   Font Awesome link to updated version
+-   Update GlobalVars.class.php
+
 ## [0.18.6] - 2019-01-21
 
 ### Changed
