@@ -17,5 +17,5 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS }}
-          output_action: gist
-          committer_gist: 6074e09acda352fcd4afcc80777096e5
+        #   output_action: gist
+        #   committer_gist: 6074e09acda352fcd4afcc80777096e5
