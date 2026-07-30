@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-![Metrics](https://gist.github.com/Darnel-K/6074e09acda352fcd4afcc80777096e5/raw/fee450ebcf557f7c15fba3577890e79127cf0b5f/github-metrics.svg)
+![Metrics](/github-metrics.svg)
 
 <!--
 **Darnel-K/Darnel-K** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
